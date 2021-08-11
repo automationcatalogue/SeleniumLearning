@@ -3,8 +3,8 @@ package utilities;
 public class Constant {
 	
 	public static final String Data_Location="Singapore Regional HQ";
-	//public static final String username="Admin";
-	//public static final String password="Admin@123";
+	public static final String username="Admin";
+	public static final String password="Admin@123";
 	public static final String firstname="sagar";
 	
 	//public static final String username="Admin";
