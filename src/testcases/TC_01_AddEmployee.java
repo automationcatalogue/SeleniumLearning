@@ -12,6 +12,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import utilities.Constant;
 import utilities.Utility;
 
@@ -19,19 +20,21 @@ import utilities.Utility;
 public class TC_01_AddEmployee {
 	public static void main(String[] args) throws Exception {
 		
-		FileInputStream fis = new FileInputStream("C:\\Users\\AaradhyaVashisht\\git\\SeleniumLearning\\TestData\\TestData.xlsx");
-		XSSFWorkbook wbk = new XSSFWorkbook();
+		String path=System.getProperty("user.dir");
+		System.out.println(path);
+		FileInputStream fis = new FileInputStream(path+"\\TestData\\TestData.xlsx");
+		XSSFWorkbook wbk = new XSSFWorkbook(fis);
 		XSSFSheet sh = wbk.getSheet("OrangeHRM");
 		
 		
 		
 		String un,pwd,fn,mn,ln,data,ms,g;
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Automation Catalogue\\Drivers\\Chrome\\chromedriver_win32\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		
 		WebDriver driver=new ChromeDriver();
 		
-		driver.get("https://testsautomation-trials71.orangehrmlive.com/");
+		driver.get("https://testseleniumcod-trials72.orangehrmlive.com");
 		System.out.println("Website is loaded");
 		driver.manage().window().maximize();
 		System.out.println("Window is maximized");
