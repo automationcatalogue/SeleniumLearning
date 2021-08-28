@@ -26,10 +26,10 @@ public class JSDemo {
 		XSSFWorkbook wbk = new XSSFWorkbook(fis);
 		XSSFSheet sheet=wbk.getSheet("OrangeHRM");
 		XSSFRow row=sheet.getRow(Constant.rownNmber);
-		XSSFCell cell =row.getCell(Constant.username_colNumber);
+		XSSFCell cell =row.getCell(Constant.col_UserName);
 		String username=cell.getStringCellValue();
 		
-		String password =sheet.getRow(Constant.rownNmber).getCell(Constant.password_colNumber).getStringCellValue();
+		String password =sheet.getRow(Constant.rownNmber).getCell(Constant.col_Password).getStringCellValue();
 		
 		
 		JavascriptExecutor js=(JavascriptExecutor)driver;

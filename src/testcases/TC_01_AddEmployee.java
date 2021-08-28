@@ -14,6 +14,7 @@ import org.openqa.selenium.interactions.Actions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utilities.Constant;
+import utilities.ExcelUtilities;
 import utilities.Utility;
 
 
@@ -22,11 +23,8 @@ public class TC_01_AddEmployee {
 		
 		String path=System.getProperty("user.dir");
 		System.out.println(path);
-		FileInputStream fis = new FileInputStream(path+"\\TestData\\TestData.xlsx");
-		XSSFWorkbook wbk = new XSSFWorkbook(fis);
-		XSSFSheet sh = wbk.getSheet("OrangeHRM");
 		
-		
+		ExcelUtilities.setExcelFile(path+"\\TestData\\TestData.xlsx");
 		
 		String un,pwd,fn,mn,ln,data,ms,g;
 		
@@ -40,13 +38,14 @@ public class TC_01_AddEmployee {
 		System.out.println("Window is maximized");
 		Thread.sleep(2000);
 		
-		un=sh.getRow(1).getCell(2).getStringCellValue();
-		pwd=sh.getRow(1).getCell(3).getStringCellValue();
-		driver.findElement(By.id("txtUsername")).sendKeys(un);
-		System.out.println("Username is entered");
 		
-		driver.findElement(By.name("txtPassword")).sendKeys(pwd);
-		System.out.println("password is entered");
+		String userName=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_UserName, "OrangeHRM");
+		driver.findElement(By.id("txtUsername")).sendKeys(userName);
+		System.out.println(userName+" is entered as UserName in a text-box");
+		
+		String password = ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_Password, "OrangeHRM");
+		driver.findElement(By.name("txtPassword")).sendKeys(password);
+		System.out.println(password+" is entered as Password in a text-box");
 		
 		driver.findElement(By.id("btnLogin")).click();
 		System.out.println("Login button is clicked");

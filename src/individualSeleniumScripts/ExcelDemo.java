@@ -23,10 +23,10 @@ public class ExcelDemo {
 		XSSFWorkbook wbk = new XSSFWorkbook(fis);
 		XSSFSheet sheet=wbk.getSheet("OrangeHRM");
 		XSSFRow row=sheet.getRow(Constant.rownNmber);
-		XSSFCell cell =row.getCell(Constant.username_colNumber);
+		XSSFCell cell =row.getCell(Constant.Message_colNumber);
 		String username=cell.getStringCellValue();
 		
-		String password =sheet.getRow(Constant.rownNmber).getCell(Constant.password_colNumber).getStringCellValue();
+		String password =sheet.getRow(Constant.rownNmber).getCell(Constant.col_Password).getStringCellValue();
 		
 		
 		
@@ -92,7 +92,7 @@ public class ExcelDemo {
 		int row_num=sheet.getLastRowNum();
 		System.out.println("Row Number count is :"+row_num);
 		for(int i=0;i<=row_num;i++){
-			String pwdData=sheet.getRow(i).getCell(Constant.password_colNumber).getStringCellValue();
+			String pwdData=sheet.getRow(i).getCell(Constant.col_Password).getStringCellValue();
 			System.out.println(pwdData);
 		}
 		

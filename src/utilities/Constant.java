@@ -2,6 +2,9 @@ package utilities;
 
 public class Constant {
 	
+	
+	public static final int iRowNumber=1;
+	
 	public static final String Data_Location="Singapore Regional HQ";
 	public static final String username="Admin";
 	public static final String password="Admin@123";
@@ -13,8 +16,8 @@ public class Constant {
 	public static final String PNRNumber="3472894";
 	
 	public static final int rownNmber=4;
-	public static final int username_colNumber=2;
-	public static final int password_colNumber=3;
+	public static final int col_UserName=2;
+	public static final int col_Password=3;
 	public static final int status_colNumber=4;
 	public static final int Message_colNumber=5;
 	
