@@ -1,6 +1,7 @@
 package testcases;
 
 import java.io.FileInputStream;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -26,17 +27,17 @@ public class TC_01_AddEmployee {
 		
 		ExcelUtilities.setExcelFile(path+"\\TestData\\TestData.xlsx");
 		
-		String un,pwd,fn,mn,ln,data,ms,g;
 		
 		WebDriverManager.chromedriver().setup();
 		
 		WebDriver driver=new ChromeDriver();
 		
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		
 		driver.get("https://testseleniumcod-trials72.orangehrmlive.com");
 		System.out.println("Website is loaded");
 		driver.manage().window().maximize();
 		System.out.println("Window is maximized");
-		Thread.sleep(2000);
 		
 		
 		String userName=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_UserName, "OrangeHRM");
@@ -50,30 +51,27 @@ public class TC_01_AddEmployee {
 		driver.findElement(By.id("btnLogin")).click();
 		System.out.println("Login button is clicked");
 		
-		Thread.sleep(2000);
 		driver.findElement(By.xpath("//span[text()='PIM']")).click();
 		System.out.println("Selected PIM");
 		
-		Thread.sleep(2000);
 		driver.findElement(By.xpath("//span[text()='Add Employee']")).click();
 		System.out.println("Selected add employee option");
 		
-		Thread.sleep(13000);
-		fn=Constant.firsname;
-		mn=Constant.middlename;
-		ln=Constant.lastname;
+		String firstname =ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_firsname, "OrangeHRM");
+		String middlename=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_middlename, "OrangeHRM");
+		String lastname=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_lastname, "OrangeHRM");
 		
 		driver.findElement(By.xpath("//div[@class='modal-content']")).isDisplayed();
 		System.out.println("Add Employee modal exists ");
 		Thread.sleep(8000);
 
-		driver.findElement(By.xpath("//div[@class='input-group']/input[1]")).sendKeys(fn);
+		driver.findElement(By.xpath("//div[@class='input-group']/input[1]")).sendKeys(firstname);
 		System.out.println("First name is enered");
 		
-		driver.findElement(By.xpath("//div[@class='input-group']/input[2]")).sendKeys(mn);
+		driver.findElement(By.xpath("//div[@class='input-group']/input[2]")).sendKeys(middlename);
 		System.out.println("Middle name is enetered");
 		
-		driver.findElement(By.xpath("//div[@class='input-group']/input[3]")).sendKeys(ln);
+		driver.findElement(By.xpath("//div[@class='input-group']/input[3]")).sendKeys(lastname);
 		System.out.println("Last name is enetered");
 		
 		//String emp_id=driver.findElement(By.xpath("//input[@id='employeeId']")).getText();
@@ -97,15 +95,14 @@ public class TC_01_AddEmployee {
 //			}
 //		}
 		
-		Utility.selection_dropdown(driver, "//ul[@class='dropdown-menu inner show']/li/a/span", Constant.data_location);
+		String datalocation=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_datalocation, "OrangeHRM");
+		Utility.selection_dropdown(driver, "//ul[@class='dropdown-menu inner show']/li/a/span", datalocation);
 		driver.findElement(By.xpath("//button[@class='btn btn-secondary']")).click();
 		System.out.println("Next button clicked");
 		
-		Thread.sleep(8000);
 		driver.findElement(By.xpath("//div[@id='personal_details_tab']")).isDisplayed();
 		System.out.println("Personal details page is displayed");
 		
-		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@id='otherId']")).sendKeys("JJ123");
 		System.out.println("Entered data in other Id field");
 		
@@ -113,8 +110,8 @@ public class TC_01_AddEmployee {
 		((JavascriptExecutor)driver).executeScript("arguments[0].click();", element_nationality_dd);
 		System.out.println("Nationality drop-down is clicked");
 				
-		Thread.sleep(2000);
-		Utility.selection_dropdown(driver, "//div[@id='nation_code_inputfileddiv']/div/ul/li/span",Constant.Nationality);
+		String nationality=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_Nationality, "OrangeHRM");
+		Utility.selection_dropdown(driver, "//div[@id='nation_code_inputfileddiv']/div/ul/li/span",nationality);
 		System.out.println("Nationality of the employee is selected ");
 		
 		int elements_marital_status=driver.findElements(By.xpath("//div[@id='emp_marital_status_inputfileddiv']//following-sibling::ul/li/span")).size();
@@ -124,7 +121,6 @@ public class TC_01_AddEmployee {
 		((JavascriptExecutor)driver).executeScript("arguments[0].click();", element_maritalstatus_dd1);
 		System.out.println("marital status drop-down is clicked");
 		
-		Thread.sleep(2000);
 		
 //		List<WebElement> element_mstatus=driver.findElements(By.xpath("//div[@id='emp_marital_status_inputfileddiv']//following-sibling::ul/li/span"));
 //		ms=Constant.marital_status;
@@ -138,10 +134,9 @@ public class TC_01_AddEmployee {
 //				break;
 //			}
 //		}
+		String maritalstatus=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_maritalstatus, "OrangeHRM");
+		Utility.selection_dropdown(driver, "//div[@id='emp_marital_status_inputfileddiv']//following-sibling::ul/li/span",maritalstatus);
 		
-		Utility.selection_dropdown(driver, "//div[@id='emp_marital_status_inputfileddiv']//following-sibling::ul/li/span", Constant.marital_status);
-		
-		Thread.sleep(2000);
 		
 		WebElement element_gender_dd=driver.findElement(By.xpath("//div[@id='emp_gender_inputfileddiv']/div/input"));
 		((JavascriptExecutor)driver).executeScript("arguments[0].click();", element_gender_dd);
@@ -162,8 +157,10 @@ public class TC_01_AddEmployee {
 //			}
 //		}
 		
-		Utility.selection_dropdown(driver, "//div[@id='emp_gender_inputfileddiv']/div/ul/li/span", Constant.Gender);
-		System.out.println("Gender is selcted as : Female");
+		String gender=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_Gender, "OrangeHRM");
+
+		Utility.selection_dropdown(driver, "//div[@id='emp_gender_inputfileddiv']/div/ul/li/span",gender);
+		System.out.println("Gender is selcted as :" + gender);
 		
 /*		WebElement element_checkbox=driver.findElement(By.xpath("//div[@sf-message='form.description']"));
 		
@@ -174,77 +171,72 @@ public class TC_01_AddEmployee {
 			System.out.println("Soker checkbox is already selected");
 		}*/
 		
-		Thread.sleep(2000);
 		driver.findElement(By.xpath("//label[text()='Hobbies']//preceding-sibling::input")).sendKeys("Reading novels");
 		System.out.println("Data entered in hobbies field");
 		
 		driver.findElement(By.xpath("//button[text()='Next']")).click();
 		System.out.println("Next button is clicked");
-		Thread.sleep(10000);
 		
 		driver.findElement(By.id("employement_details_tab")).isDisplayed();
 		System.out.println("Employee details page is displayed");
-		Thread.sleep(3000);
 		
 		WebElement element_region_dd=driver.findElement(By.xpath("//div[@id='9_inputfileddiv']/div/input"));
 		((JavascriptExecutor)driver).executeScript("arguments[0].click();", element_region_dd);
 		System.out.println("Region drop-down is clicked");
 		
-		Utility.selection_dropdown(driver,"//div[@id='9_inputfileddiv']/div/ul/li/span",Constant.Region);
+		String Region=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_Region, "OrangeHRM");
+
+		Utility.selection_dropdown(driver,"//div[@id='9_inputfileddiv']/div/ul/li/span",Region);
 		System.out.println("Region-2 is selcted from the dropdown");
-		Thread.sleep(2000);
 		
 		WebElement element_FTE_dd=driver.findElement(By.xpath("//div[@id='10_inputfileddiv']/div/input"));
 		((JavascriptExecutor)driver).executeScript("arguments[0].click();", element_FTE_dd);
 		System.out.println("FTE drop-down is clicked");
 		
-		Utility.selection_dropdown(driver,"//div[@id='10_inputfileddiv']/div/ul/li/span",Constant.FTE);
+		String FTE=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_FTE, "OrangeHRM");
+
+		Utility.selection_dropdown(driver,"//div[@id='10_inputfileddiv']/div/ul/li/span",FTE);
 		System.out.println("FTE is selected from the dropdown");
-		Thread.sleep(5000);
 		
 		WebElement element_tempdept_dd=driver.findElement(By.xpath("//div[@id='11_inputfileddiv']/div/input"));
 		((JavascriptExecutor)driver).executeScript("arguments[0].click();", element_tempdept_dd);
 		System.out.println("Temporary department drop-down is clicked");
 		
-		Utility.selection_dropdown(driver,"//div[@id='11_inputfileddiv']/div/ul/li/span", Constant.Temporary_Department);
+		String TempDep=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_TempDepartment, "OrangeHRM");
+
+		Utility.selection_dropdown(driver,"//div[@id='11_inputfileddiv']/div/ul/li/span", TempDep);
 		System.out.println("Temporary department is selected  from the dropdown");
-		Thread.sleep(2000);
 		
 		driver.findElement(By.xpath("//button[text()='Save']")).click();
 		System.out.println("Save button is clicked");
-		Thread.sleep(12000);
 		
 		boolean personaldetails_tab=driver.findElement(By.xpath("(//div[@class='pim-container'])[2]")).isDisplayed();
 		
 		if (personaldetails_tab) {
 			System.out.println("personal_details_page is displayed");
 		}
-		Thread.sleep(2000);
+		
 		WebElement save_btn=driver.findElement(By.xpath("(//button[text()='save'])[1]"));		
 		
 		Actions action=new Actions(driver);
 		action.click(save_btn).build().perform();
 		System.out.println("save buttonn is clicked");
 		
-		Thread.sleep(2000);
 		driver.findElement(By.xpath("(//li[@ng-repeat='item in form.titleMap'])[1]")).click();
 		System.out.println("Food selection radio button is clicked");
 		
-		Thread.sleep(4000);
 		WebElement save_btn1=driver.findElement(By.xpath("(//button[text()='save'])[2]"));		
 		
 		Actions action1=new Actions(driver);
 		action1.click(save_btn1).build().perform();
 		System.out.println("save button is clicked");
-		Thread.sleep(2000);
 		
 		((JavascriptExecutor)driver).executeScript("window.scrollTo(0, -250)");
-		Thread.sleep(1000);
 		
 		driver.findElement(By.xpath("//span[text()='Employee List']")).click();
 		System.out.println("Emloyee list is seleced");
 		
-		String employee_name= Constant.firsname + " ".concat(Constant.middlename) + " ".concat(Constant.lastname); 
+		String employee_name= firstname + " ".concat(middlename) + " ".concat(lastname); 
 		System.out.println("Employee full name is " + employee_name);
 		
 		driver.findElement(By.xpath("//input[@placeholder='Employee Name']")).sendKeys(employee_name);
@@ -252,7 +244,6 @@ public class TC_01_AddEmployee {
 		
 		driver.findElement(By.xpath("//input[@placeholder='Employee Name']")).sendKeys(Keys.ARROW_DOWN);
 		System.out.println("Employee selected from the dropdown");
-		Thread.sleep(1000);
 
 		driver.findElement(By.xpath("//input[@placeholder='Employee Name']")).sendKeys(Keys.ENTER);
 		

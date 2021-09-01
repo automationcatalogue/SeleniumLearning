@@ -1,16 +1,3 @@
-/testcases/
-/demowebshop/
 /individualSeleniumScripts/
-/actions/
-/css/
-/desiredcaps/
-/excelUtils/
-/fluentWaits/
-/jsexecutorscripts/
-/orangehrm/
-/select/
-/webdriver/
-/webdrivermanager/
-/webdriverwaitScripts/
-/webelement/
+/testcases/
 /utilities/
