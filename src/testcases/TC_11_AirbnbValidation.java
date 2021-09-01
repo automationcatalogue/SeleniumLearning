@@ -8,11 +8,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TC_11_AirbnbValidation {
-	public static void main(String[] args) throws Exception {
+	
+	@Test
+	public void priceRangeFilter() throws Exception {
 		WebDriverManager.chromedriver().setup();
 		
 		WebDriver driver=new ChromeDriver();

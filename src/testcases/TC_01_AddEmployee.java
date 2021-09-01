@@ -1,10 +1,7 @@
 package testcases;
 
-import java.io.FileInputStream;
-import java.util.concurrent.TimeUnit;
 
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -12,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utilities.Constant;
@@ -20,7 +18,9 @@ import utilities.Utility;
 
 
 public class TC_01_AddEmployee {
-	public static void main(String[] args) throws Exception {
+	
+	@Test
+	public void add_Employee() throws Exception {
 		
 		String path=System.getProperty("user.dir");
 		System.out.println(path);

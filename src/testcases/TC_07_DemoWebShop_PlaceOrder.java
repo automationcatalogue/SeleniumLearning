@@ -3,9 +3,12 @@ package testcases;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
 
 public class TC_07_DemoWebShop_PlaceOrder {
-	public static void main(String[] args) throws Exception {
+	
+	@Test
+	public void placeOrder_DemoWebshop() throws Exception {
 		Register.openBrowser();
 		Login.login();
 
