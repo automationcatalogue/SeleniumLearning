@@ -9,6 +9,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Reporter;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -19,23 +23,30 @@ import utilities.Utility;
 
 public class TC_01_AddEmployee {
 	
+	static WebDriver driver;
+	
+	@BeforeClass
+	public void setup() throws Exception{
+		String path=System.getProperty("user.dir");
+		Reporter.log("Path of the Project is :"+path, true);
+		
+		ExcelUtilities.setExcelFile(path+"\\TestData\\TestData.xlsx");
+	}
+	
+	@BeforeMethod
+	public void openBrowser() {
+		WebDriverManager.chromedriver().setup();
+		
+		driver=new ChromeDriver();		
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+	}
+	
 	@Test
 	public void add_Employee() throws Exception {
 		
-		String path=System.getProperty("user.dir");
-		System.out.println(path);
-		
-		ExcelUtilities.setExcelFile(path+"\\TestData\\TestData.xlsx");
-		
-		
-		WebDriverManager.chromedriver().setup();
-		
-		WebDriver driver=new ChromeDriver();
-		
-		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		
 		driver.get("https://testseleniumcod-trials72.orangehrmlive.com");
-		System.out.println("Website is loaded");
+		Reporter.log("Orange HRM website is loaded", true);
 		driver.manage().window().maximize();
 		System.out.println("Window is maximized");
 		
@@ -249,6 +260,12 @@ public class TC_01_AddEmployee {
 		
 		driver.findElement(By.xpath("//td[text()='0157']")).getText();
 		
+	}
+	
+	@AfterClass
+	public void tearDown() {
+		driver.quit();
+		Reporter.log("Browser is closed", true);
 	}
 
 }

@@ -1,17 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Addition of a, b is :30]]>
+    </line>
+    <line>
+      <![CDATA[I am in the Before Method]]>
+    </line>
+    <line>
+      <![CDATA[Hello India, I am learning TestNG...!!!]]>
+    </line>
+    <line>
+      <![CDATA[Given number is Prime...!!!]]>
+    </line>
+    <line>
+      <![CDATA[I am in the After Method]]>
+    </line>
+    <line>
+      <![CDATA[Hello, this is the end...!!!]]>
+    </line>
+    <line>
+      <![CDATA[I am in the Before Method]]>
+    </line>
+    <line>
+      <![CDATA[Hello India, I am learning TestNG...!!!]]>
+    </line>
+    <line>
+      <![CDATA[Given number is Odd]]>
+    </line>
+    <line>
+      <![CDATA[I am in the After Method]]>
+    </line>
+    <line>
+      <![CDATA[Hello, this is the end...!!!]]>
+    </line>
+    <line>
+      <![CDATA[I am in the Before Method]]>
+    </line>
+    <line>
+      <![CDATA[Hello India, I am learning TestNG...!!!]]>
+    </line>
+    <line>
+      <![CDATA[Cube of the given number is: 125]]>
+    </line>
+    <line>
+      <![CDATA[I am in the After Method]]>
+    </line>
+    <line>
+      <![CDATA[Hello, this is the end...!!!]]>
+    </line>
+    <line>
+      <![CDATA[Value of z is :69]]>
+    </line>
   </reporter-output>
-  <suite started-at="2021-09-01T22:04:28 IST" name="Default suite" finished-at="2021-09-01T22:04:32 IST" duration-ms="4299">
+  <suite started-at="2021-09-02T22:10:18 IST" name="Default suite" finished-at="2021-09-02T22:10:18 IST" duration-ms="34">
     <groups>
     </groups>
-    <test started-at="2021-09-01T22:04:28 IST" name="Default test" finished-at="2021-09-01T22:04:32 IST" duration-ms="4299">
-      <class name="tesngScripts.TestNGDemo1">
-        <test-method signature="login_OrangeHRM()[pri:0, instance:tesngScripts.TestNGDemo1@212b5695]" started-at="2021-09-01T22:04:28 IST" name="login_OrangeHRM" finished-at="2021-09-01T22:04:32 IST" duration-ms="4268" status="PASS">
+    <test started-at="2021-09-02T22:10:18 IST" name="Default test" finished-at="2021-09-02T22:10:18 IST" duration-ms="34">
+      <class name="tesngScripts.TestNGDemo2">
+        <test-method is-config="true" signature="beforeC()[pri:0, instance:tesngScripts.TestNGDemo2@7205765b]" started-at="2021-09-02T22:10:18 IST" name="beforeC" finished-at="2021-09-02T22:10:18 IST" duration-ms="6" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Addition of a, b is :30]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- login_OrangeHRM -->
-      </class> <!-- tesngScripts.TestNGDemo1 -->
+        </test-method> <!-- beforeC -->
+        <test-method is-config="true" signature="beforeM()[pri:0, instance:tesngScripts.TestNGDemo2@7205765b]" started-at="2021-09-02T22:10:18 IST" name="beforeM" finished-at="2021-09-02T22:10:18 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[I am in the Before Method]]>
+            </line>
+            <line>
+              <![CDATA[Hello India, I am learning TestNG...!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeM -->
+        <test-method signature="primeDemo()[pri:1, instance:tesngScripts.TestNGDemo2@7205765b]" started-at="2021-09-02T22:10:18 IST" name="primeDemo" finished-at="2021-09-02T22:10:18 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Given number is Prime...!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- primeDemo -->
+        <test-method is-config="true" signature="afterM()[pri:0, instance:tesngScripts.TestNGDemo2@7205765b]" started-at="2021-09-02T22:10:18 IST" name="afterM" finished-at="2021-09-02T22:10:18 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[I am in the After Method]]>
+            </line>
+            <line>
+              <![CDATA[Hello, this is the end...!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterM -->
+        <test-method signature="evenOdd()[pri:2, instance:tesngScripts.TestNGDemo2@7205765b]" started-at="2021-09-02T22:10:18 IST" name="evenOdd" finished-at="2021-09-02T22:10:18 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Given number is Odd]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- evenOdd -->
+        <test-method is-config="true" signature="beforeM()[pri:0, instance:tesngScripts.TestNGDemo2@7205765b]" started-at="2021-09-02T22:10:18 IST" name="beforeM" finished-at="2021-09-02T22:10:18 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[I am in the Before Method]]>
+            </line>
+            <line>
+              <![CDATA[Hello India, I am learning TestNG...!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeM -->
+        <test-method signature="cube()[pri:3, instance:tesngScripts.TestNGDemo2@7205765b]" started-at="2021-09-02T22:10:18 IST" name="cube" finished-at="2021-09-02T22:10:18 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Cube of the given number is: 125]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- cube -->
+        <test-method is-config="true" signature="afterM()[pri:0, instance:tesngScripts.TestNGDemo2@7205765b]" started-at="2021-09-02T22:10:18 IST" name="afterM" finished-at="2021-09-02T22:10:18 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[I am in the After Method]]>
+            </line>
+            <line>
+              <![CDATA[Hello, this is the end...!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterM -->
+        <test-method is-config="true" signature="beforeM()[pri:0, instance:tesngScripts.TestNGDemo2@7205765b]" started-at="2021-09-02T22:10:18 IST" name="beforeM" finished-at="2021-09-02T22:10:18 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[I am in the Before Method]]>
+            </line>
+            <line>
+              <![CDATA[Hello India, I am learning TestNG...!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeM -->
+        <test-method is-config="true" signature="afterM()[pri:0, instance:tesngScripts.TestNGDemo2@7205765b]" started-at="2021-09-02T22:10:18 IST" name="afterM" finished-at="2021-09-02T22:10:18 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[I am in the After Method]]>
+            </line>
+            <line>
+              <![CDATA[Hello, this is the end...!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterM -->
+        <test-method is-config="true" signature="afterC()[pri:0, instance:tesngScripts.TestNGDemo2@7205765b]" started-at="2021-09-02T22:10:18 IST" name="afterC" finished-at="2021-09-02T22:10:18 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Value of z is :69]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterC -->
+      </class> <!-- tesngScripts.TestNGDemo2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
