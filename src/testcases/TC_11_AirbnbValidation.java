@@ -8,70 +8,75 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Reporter;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TC_11_AirbnbValidation {
 	
-	@Test
-	public void priceRangeFilter() throws Exception {
+	static WebDriver driver;
+	
+	@BeforeClass
+	public void openBrowser() {
 		WebDriverManager.chromedriver().setup();
 		
-		WebDriver driver=new ChromeDriver();
-		
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver=new ChromeDriver();		
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+	}
+	
+	@Test
+	public void priceRangeFilter() throws Exception {
 		
 		driver.get("https://www.airbnb.co.in/?locale=en&_set_bev_on_new_domain=1626060086_MDkyYzhmZTgxNzlh");
-		System.out.println("Website is loaded");
+		Reporter.log("Airbnb website is loaded",true);
 		
 		driver.manage().window().maximize();
-		System.out.println("Window is maximized");
+		Reporter.log("Browser window is maximized", true);
 		
 		driver.findElement(By.xpath("//button[text()='OK']")).click();
-		System.out.println("cookies accepted");
+		Reporter.log("Accepted the cookies", true);
 		
 		driver.findElement(By.xpath("//input[contains(@placeholder,'Where are you going')]")).click();
-		System.out.println("Location clicked ");
+		Reporter.log("Location is clicked ", true);
 		
 		driver.findElement(By.xpath("//div[text()='I’m flexible']")).click();
-		System.out.println("I’m flexible button is clicked");
-		//Thread.sleep(8000);
+		Reporter.log("I’m flexible button is clicked", true);
 		
 		driver.findElement(By.xpath("//div[@id='search-results-container']")).isDisplayed();
-		System.out.println("Search results displayed");
+		Reporter.log("Search results are displayed",true);
 		
 		driver.findElement(By.xpath("(//span[text()='Guests'])[1]")).click();
-		System.out.println("Guests dropdown is clicked");
+		Reporter.log("Guests dropdown is clicked", true);
 		
 		WebElement element_adults=driver.findElement(By.xpath("(//button[@aria-label='increase value'])[1]"));
 		
 		Actions action_click=new Actions(driver);
 		action_click.click(element_adults).click(element_adults).build().perform();
-		System.out.println("Slected 2 adults from filter");
+		Reporter.log("No of adults selected from filter : 2", true);
 		
 		driver.findElement(By.xpath("//button[text()='Save']")).click();
-		System.out.println("Saved selection");
-		//Thread.sleep(3000);
+		Reporter.log("Saved selection",true);
 		
 		driver.findElement(By.xpath("//button[contains(@aria-label,'Filters')]/div/div")).click();
-		System.out.println("Filters button is clicked");
-		//Thread.sleep(3000);
+		Reporter.log("Filters button is clicked", true);
 		
 		WebElement checkbox=driver.findElement(By.xpath("//input[@name='Entire place']"));
 		if (!checkbox.isSelected()) {
 			checkbox.click();
-			System.out.println("Entire place checkbox is selected");
+			Reporter.log("Entire place checkbox is selected", true);
 		}else {
-			System.out.println("checkbox is already selected");
+			Reporter.log("Entire place checkbox is already selected", true);
 		}
 		
 		WebElement checkbox1=driver.findElement(By.xpath("//input[@name='Hotel room']"));
 		if (!checkbox1.isSelected()) {
 			checkbox1.click();
-			System.out.println("Hotel room checkbox is selected");
+			Reporter.log("Hotel room checkbox is selected", true);
 		}else {
-			System.out.println("checkbox is already selected");
+			Reporter.log("checkbox is already selected",true);
 		}
 		
 		WebElement verified_switch=driver.findElement(By.xpath("(//button[@role='switch'])[1]"));
@@ -81,9 +86,9 @@ public class TC_11_AirbnbValidation {
 //		System.out.println(xyz);
 		if (verified_switch.isSelected()) {
 			verified_switch.click();
-			System.out.println("Airbnb switch is disabled");
+			Reporter.log("Airbnb switch is disabled", true);
 		}else {
-			System.out.println("Airbnb switch is already disabled");
+			Reporter.log("Airbnb switch is already disabled", true);
 		}
 		
 		int expected_maxPrice=35000;
@@ -98,11 +103,10 @@ public class TC_11_AirbnbValidation {
 			String actualString_maxprice=Maxprice_btn.getAttribute("aria-valuenow");
 			actual_maxprice=Integer.parseInt(actualString_maxprice);
 			if(actual_maxprice<=expected_maxPrice) {
-				System.out.println("Final Actual max price is :"+actual_maxprice);
+				Reporter.log("Final Actual max price is :"+actual_maxprice, true);
 				break;
 			}
 		}
-		//Thread.sleep(2000);
 		
 		int expected_minprice=3000;
 		WebElement Minprice_btn=driver.findElement(By.xpath("//button[@aria-label='Minimum Price']"));
@@ -115,40 +119,36 @@ public class TC_11_AirbnbValidation {
 			String actualString_minprice=Minprice_btn.getAttribute("aria-valuenow");
 			actual_minprice=Integer.parseInt(actualString_minprice);
 			if (actual_minprice>=expected_minprice) {
-				System.out.println("Final actual min price is " + actual_minprice);
+				Reporter.log("Final actual min price is " + actual_minprice, true);
 				break;
 			}
 		}
-		//Thread.sleep(2000);
 		
 		WebElement bedroom_btn=driver.findElement(By.xpath("(//button[@aria-label='increase value'])[2]"));
 		Actions increase_btn=new Actions(driver);
 		increase_btn.click(bedroom_btn).build().perform();
-		System.out.println("Number of bedrooms set to one");
+		Reporter.log("Number of bedrooms set to one", true);
 		
 		driver.findElement(By.xpath("//button[text()='Show 300+ stays']")).click();
-		System.out.println("Show listings button is clicked");
-		Thread.sleep(10000);
+		Reporter.log("Show listings button is clicked", true);
 		
 		List<WebElement> element_price=driver.findElements(By.xpath("//div[@itemprop='itemList']//following::div[@class='_1i1hiso']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/span[1]"));
 		int size= element_price.size();
-		System.out.println(size);
+		//Reporter.log(size);
 		
 		for (WebElement element:element_price) {
 			String price=element.getText();
 			price=price.replace(",","");
 			price=price.substring(1);
-			System.out.println("Price of the elements is "+ price);
+			Reporter.log("Price of the elements is "+ price, true);
 			int pricevalue=Integer.parseInt(price);
 			
 			if (pricevalue>=actual_minprice && pricevalue<=actual_maxprice) {
-				System.out.println("Element price is beteen the range");
+				Reporter.log("Element price is beteen the range", true);
 			}else {
-				System.out.println("Element price is not within the range");
+				Reporter.log("Element price is not within the range", true);
 				throw new Exception();
 			}
 		}
-		
-		
 	}
 }
