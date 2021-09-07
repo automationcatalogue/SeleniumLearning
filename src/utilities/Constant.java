@@ -35,4 +35,7 @@ public class Constant {
 	public static final int col_FTE=14;
 	public static final int col_TempDepartment=15;
 	public static final String options="Logout";
+	
+	public static final int col_Email=2;
+	//public static final int col_Pwd=3;
 }

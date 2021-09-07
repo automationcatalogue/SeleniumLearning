@@ -1,29 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Path of the Project is :C:\Users\rehan\git\SeleniumLearning]]>
+    </line>
+    <line>
+      <![CDATA[Orange HRM website is loaded]]>
+    </line>
+    <line>
+      <![CDATA[Browser window is maximized]]>
+    </line>
+    <line>
+      <![CDATA[Admin is entered as UserName in a text-box]]>
+    </line>
+    <line>
+      <![CDATA[Admin@123 is entered as Password in a text-box]]>
+    </line>
+    <line>
+      <![CDATA[Login button is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Selected PIM from the available options]]>
+    </line>
+    <line>
+      <![CDATA[Selected add employee option]]>
+    </line>
+    <line>
+      <![CDATA[Add Employee modal exists ]]>
+    </line>
+    <line>
+      <![CDATA[Jinny is enered as first name in the text-box]]>
+    </line>
+    <line>
+      <![CDATA[and is enered as middle name in the text-box]]>
+    </line>
+    <line>
+      <![CDATA[Georgiais enered as  nalastme in the text-box]]>
+    </line>
+    <line>
+      <![CDATA[Location dropdown button is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Number of locations available:28]]>
+    </line>
+    <line>
+      <![CDATA[Next button is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Personal details page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Entered data in other Id field]]>
+    </line>
+    <line>
+      <![CDATA[Nationality drop-down is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Australian is selected as nationality of the employee]]>
+    </line>
+    <line>
+      <![CDATA[Option under marital status are 4]]>
+    </line>
+    <line>
+      <![CDATA[marital status drop-down is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Gender drop-down is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Gender is selcted as :Male]]>
+    </line>
+    <line>
+      <![CDATA[Data entered in hobbies field]]>
+    </line>
+    <line>
+      <![CDATA[Next button is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Employee details page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Exception occurred while finding the element...!!!]]>
+    </line>
+    <line>
+      <![CDATA[Exception occurred while finding the element...!!!]]>
+    </line>
   </reporter-output>
-  <suite started-at="2021-09-02T15:28:23 EDT" name="Default suite" finished-at="2021-09-02T15:28:23 EDT" duration-ms="124">
+  <suite started-at="2021-09-03T21:47:52 EDT" name="Default suite" finished-at="2021-09-03T21:48:18 EDT" duration-ms="25473">
     <groups>
     </groups>
-    <test started-at="2021-09-02T15:28:23 EDT" name="Default test" finished-at="2021-09-02T15:28:23 EDT" duration-ms="124">
-      <class name="testcases.TC_07_DemoWebShop_PlaceOrder">
-        <test-method signature="placeOrder_DemoWebshop()[pri:0, instance:testcases.TC_07_DemoWebShop_PlaceOrder@793be5ca]" started-at="2021-09-02T15:28:23 EDT" name="placeOrder_DemoWebshop" finished-at="2021-09-02T15:28:23 EDT" duration-ms="71" status="FAIL">
-          <exception class="java.lang.IllegalStateException">
+    <test started-at="2021-09-03T21:47:52 EDT" name="Default test" finished-at="2021-09-03T21:48:18 EDT" duration-ms="25473">
+      <class name="testcases.TC_01_AddEmployee">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC_01_AddEmployee@1a18644]" started-at="2021-09-03T21:47:52 EDT" name="setup" finished-at="2021-09-03T21:47:53 EDT" duration-ms="578" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Path of the Project is :C:\Users\rehan\git\SeleniumLearning]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:testcases.TC_01_AddEmployee@1a18644]" started-at="2021-09-03T21:47:53 EDT" name="openBrowser" finished-at="2021-09-03T21:47:54 EDT" duration-ms="1353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="add_Employee()[pri:0, instance:testcases.TC_01_AddEmployee@1a18644]" started-at="2021-09-03T21:47:54 EDT" name="add_Employee" finished-at="2021-09-03T21:48:18 EDT" duration-ms="23504" status="FAIL">
+          <exception class="org.openqa.selenium.JavascriptException">
             <message>
-              <![CDATA[The driver executable does not exist: C:\Automation Catalogue\Drivers\Chrome\chromedriver_win32\chromedriver.exe]]>
+              <![CDATA[javascript error: Cannot read property 'click' of null
+  (Session info: chrome=92.0.4515.159)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'LAPTOP-NK2I20DO', ip: '192.168.0.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\rehan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56787}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1db0681f65c2be9b449d866a6a0c46db]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Automation Catalogue\Drivers\Chrome\chromedriver_win32\chromedriver.exe
-at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
-at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-at testcases.Register.openBrowser(Register.java:14)
-at testcases.TC_07_DemoWebShop_PlaceOrder.placeOrder_DemoWebshop(TC_07_DemoWebShop_PlaceOrder.java:15)
+              <![CDATA[org.openqa.selenium.JavascriptException: javascript error: Cannot read property 'click' of null
+  (Session info: chrome=92.0.4515.159)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'LAPTOP-NK2I20DO', ip: '192.168.0.14', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\Users\rehan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56787}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1db0681f65c2be9b449d866a6a0c46db
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+at testcases.TC_01_AddEmployee.add_Employee(TC_01_AddEmployee.java:194)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -54,11 +164,92 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
+          </exception> <!-- org.openqa.selenium.JavascriptException -->
           <reporter-output>
+            <line>
+              <![CDATA[Orange HRM website is loaded]]>
+            </line>
+            <line>
+              <![CDATA[Browser window is maximized]]>
+            </line>
+            <line>
+              <![CDATA[Admin is entered as UserName in a text-box]]>
+            </line>
+            <line>
+              <![CDATA[Admin@123 is entered as Password in a text-box]]>
+            </line>
+            <line>
+              <![CDATA[Login button is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Selected PIM from the available options]]>
+            </line>
+            <line>
+              <![CDATA[Selected add employee option]]>
+            </line>
+            <line>
+              <![CDATA[Add Employee modal exists ]]>
+            </line>
+            <line>
+              <![CDATA[Jinny is enered as first name in the text-box]]>
+            </line>
+            <line>
+              <![CDATA[and is enered as middle name in the text-box]]>
+            </line>
+            <line>
+              <![CDATA[Georgiais enered as  nalastme in the text-box]]>
+            </line>
+            <line>
+              <![CDATA[Location dropdown button is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Number of locations available:28]]>
+            </line>
+            <line>
+              <![CDATA[Next button is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Personal details page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Entered data in other Id field]]>
+            </line>
+            <line>
+              <![CDATA[Nationality drop-down is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Australian is selected as nationality of the employee]]>
+            </line>
+            <line>
+              <![CDATA[Option under marital status are 4]]>
+            </line>
+            <line>
+              <![CDATA[marital status drop-down is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Gender drop-down is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Gender is selcted as :Male]]>
+            </line>
+            <line>
+              <![CDATA[Data entered in hobbies field]]>
+            </line>
+            <line>
+              <![CDATA[Next button is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Employee details page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Exception occurred while finding the element...!!!]]>
+            </line>
+            <line>
+              <![CDATA[Exception occurred while finding the element...!!!]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- placeOrder_DemoWebshop -->
-      </class> <!-- testcases.TC_07_DemoWebShop_PlaceOrder -->
+        </test-method> <!-- add_Employee -->
+      </class> <!-- testcases.TC_01_AddEmployee -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

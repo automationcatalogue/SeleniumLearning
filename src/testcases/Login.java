@@ -11,6 +11,7 @@ import org.testng.Reporter;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import utilities.Constant;
 import utilities.ExcelUtilities;
 
 
@@ -30,10 +31,13 @@ public class Login {
 		Register.driver.findElement(By.className("ico-login")).click();
 		Reporter.log("Login button is clicked", true);
 		
-		Register.driver.findElement(By.id("Email")).sendKeys("log-in123@gmail.com");
+		String email=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_Email, "DemoWebShop");
+		
+		Register.driver.findElement(By.id("Email")).sendKeys("email");
 		Reporter.log("Email Id is entered",true);
 		
-		Register.driver.findElement(By.id("Password")).sendKeys("login@123");
+		String password=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_Password, "DemoWebShop");
+		Register.driver.findElement(By.id("Password")).sendKeys("password");
 		Reporter.log("Entered password", true);
 		
 		Register.driver.findElement(By.xpath("//input[@value='Log in']")).click();

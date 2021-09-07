@@ -190,7 +190,7 @@ public class TC_01_AddEmployee {
 		driver.findElement(By.id("employement_details_tab")).isDisplayed();
 		Reporter.log("Employee details page is displayed",true);
 		
-		WebElement element_region_dd=driver.findElement(By.xpath("//div[@id='9_inputfileddiv']/div/input"));
+		WebElement element_region_dd=Utility.staleElement(driver,"\"//div[@id='9_inputfileddiv']/div/input" );
 		((JavascriptExecutor)driver).executeScript("arguments[0].click();", element_region_dd);
 		Reporter.log("Region drop-down is clicked", true);
 		

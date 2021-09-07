@@ -3,8 +3,10 @@ package utilities;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Reporter;
 
 public class Utility {
 	
@@ -20,6 +22,24 @@ public class Utility {
 				break;
 			}
 		}
+	}
+	
+	public static WebElement staleElement(WebDriver driver, String xpath) throws Exception{
+		WebElement element=null;;
+		for(int i=1;i<=2;i++) {
+			try {
+				element=driver.findElement(By.xpath(xpath));
+				break;			
+			}catch(StaleElementReferenceException se) {
+				Thread.sleep(1000);
+				Reporter.log("StaleElementReferenceException occured, retrying for same element...!!!", true);
+			}catch(Exception e) {
+				Reporter.log("Exception occurred while finding the element...!!!", true);
+				e.getStackTrace();
+			}
+			
+		}
+		return element;
 	}
  
 }
