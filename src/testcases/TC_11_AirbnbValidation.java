@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Reporter;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -151,4 +152,10 @@ public class TC_11_AirbnbValidation {
 			}
 		}
 	}
+	
+	@AfterClass
+	public void afterClass() {
+		driver.quit();
+	}
+	
 }

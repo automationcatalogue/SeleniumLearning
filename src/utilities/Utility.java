@@ -10,8 +10,8 @@ import org.testng.Reporter;
 
 public class Utility {
 	
-	public static void selection_dropdown(WebDriver ob, String xpathvalue, String expectedData) {
-		List<WebElement> GroupOfelements=ob.findElements(By.xpath(xpathvalue));
+	public static void selection_dropdown(WebDriver driver, String xpathvalue, String expectedData) {
+		List<WebElement> GroupOfelements=driver.findElements(By.xpath(xpathvalue));
 
 		for(WebElement eachElement:GroupOfelements) {
 			String actualData=eachElement.getText();
@@ -40,6 +40,22 @@ public class Utility {
 			
 		}
 		return element;
+	}
+	
+	public static boolean retryClick(WebDriver driver, By by) throws Exception{		
+		boolean result = false;
+		
+		for(int attempts = 0;attempts<2;attempts++) {
+			try {
+					driver.findElement(by).click();
+		            result = true;
+		            break;
+			} catch(StaleElementReferenceException e) {
+				Reporter.log("StaleElementReferenceException occured, retrying for same element...!!!", true);
+			}
+			
+		}
+		return result;		
 	}
  
 }

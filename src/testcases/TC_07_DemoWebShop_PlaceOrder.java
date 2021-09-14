@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Reporter;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
 public class TC_07_DemoWebShop_PlaceOrder {
@@ -103,6 +104,11 @@ public class TC_07_DemoWebShop_PlaceOrder {
 		String g = Register.driver.findElement(By.xpath("//ul[@class='details']/li")).getText();
 		Reporter.log(g, true);
 
+	}
+	
+	@AfterClass
+	public void afterClass() {
+		Register.driver.quit();
 	}
 		
 }

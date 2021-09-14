@@ -9,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -107,7 +109,12 @@ public class TC_01_AddEmployee {
 		
 		String datalocation=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_datalocation, "OrangeHRM");
 		Utility.selection_dropdown(driver, "//ul[@class='dropdown-menu inner show']/li/a/span", datalocation);
-		driver.findElement(By.xpath("//button[@class='btn btn-secondary']")).click();
+		
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@class='btn btn-secondary']")));
+		Thread.sleep(1000);
+		WebElement btn_Next=driver.findElement(By.xpath("//button[@class='btn btn-secondary']"));
+		((JavascriptExecutor)driver).executeScript("arguments[0].click();", btn_Next);
 		Reporter.log("Next button is clicked", true);
 		
 		driver.findElement(By.xpath("//div[@id='personal_details_tab']")).isDisplayed();
@@ -187,11 +194,15 @@ public class TC_01_AddEmployee {
 		driver.findElement(By.xpath("//button[text()='Next']")).click();
 		Reporter.log("Next button is clicked",true);
 		
-		driver.findElement(By.id("employement_details_tab")).isDisplayed();
+		WebElement element_EmployeeDetailsTab=driver.findElement(By.id("employement_details_tab"));
+		wait.until(ExpectedConditions.visibilityOf(element_EmployeeDetailsTab));
 		Reporter.log("Employee details page is displayed",true);
 		
-		WebElement element_region_dd=Utility.staleElement(driver,"\"//div[@id='9_inputfileddiv']/div/input" );
-		((JavascriptExecutor)driver).executeScript("arguments[0].click();", element_region_dd);
+		
+		((JavascriptExecutor)driver).executeScript("window.scrollBy(0,document.body.height)");
+		Thread.sleep(1000);
+		//Utility.retryClick(driver, By.xpath("//label[contains(text(),'Region')]/..//following-sibling::input[1]"));
+		((JavascriptExecutor)driver).executeScript("arguments[0].click();", driver.findElement(By.xpath("//label[contains(text(),'Region')]/..//following-sibling::input[1]")));
 		Reporter.log("Region drop-down is clicked", true);
 		
 		String Region=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_Region, "OrangeHRM");
@@ -261,11 +272,11 @@ public class TC_01_AddEmployee {
 		
 	}
 	
-	/* @AfterClass
+	@AfterClass
 	public void tearDown() {
 		driver.quit();
 		Reporter.log("Browser is closed", true);
-	}*/
+	}
 }
 
 
