@@ -4,6 +4,8 @@ public class Constant {
 	
 	
 	public static final int iRowNumber=1;
+	public static final int uRowNumber=2;
+
 	
 	public static final String Data_Location="Singapore Regional HQ";
 	public static final String username="Admin";
@@ -34,7 +36,7 @@ public class Constant {
 	public static final int col_Region=13;
 	public static final int col_FTE=14;
 	public static final int col_TempDepartment=15;
-	public static final String options="Logout";
+	public static final int options=16;
 	
 	public static final int col_Email=2;
 	//public static final int col_Pwd=3;
