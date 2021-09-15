@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 public class FibonacciDemo {
-	@Test
+	@Test(groups = {"FunctionalTest","Broken"})
 	public void test1() {
 		int a=8;
 		if(a%2==0) {
@@ -20,7 +20,7 @@ public class FibonacciDemo {
 		}
 	}
 	
-	@Test
+	@Test(groups = {"SmokeTest","RegressionTest","FunctionalTest","Broken"})
 	public void fibonacci() {
 		int a=0, b=1;
 		int c=a+b;

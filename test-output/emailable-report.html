@@ -8,81 +8,12 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">96,760</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">31</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.TC_01_AddEmployee</td><td><a href="#m0">add_Employee</a></td><td rowspan="1">1631589014348</td><td rowspan="1">36192</td></tr><tr class="failedodd"><td rowspan="1">testcases.TC_06_DemoWebShopRegister</td><td><a href="#m1">login_DemoWebshop</a></td><td rowspan="1">1631589050743</td><td rowspan="1">5053</td></tr><tr class="failedeven"><td rowspan="1">testcases.TC_07_DemoWebShop_PlaceOrder</td><td><a href="#m2">placeOrder_DemoWebshop</a></td><td rowspan="1">1631589055970</td><td rowspan="1">27267</td></tr><tr class="failedodd"><td rowspan="1">testcases.TC_11_AirbnbValidation</td><td><a href="#m3">priceRangeFilter</a></td><td rowspan="1">1631589084334</td><td rowspan="1">8723</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">tesngScripts.FactorialDemo</td><td><a href="#m0">cube</a></td><td rowspan="1">1631675955166</td><td rowspan="1">4</td></tr><tr class="passedeven"><td><a href="#m1">factorial</a></td><td rowspan="1">1631675955172</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">testcases.TC_01_AddEmployee#add_Employee</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Orange HRM website is loaded<br/>Browser window is maximized<br/>Admin is entered as UserName in a text-box<br/>Admin@123 is entered as Password in a text-box<br/>Login button is clicked<br/>Selected PIM from the available options<br/>Selected add employee option<br/>Add Employee modal exists <br/>Jinny is enered as first name in the text-box<br/>and is enered as middle name in the text-box<br/>Georgiais enered as  nalastme in the text-box<br/>Location dropdown button is clicked<br/>Number of locations available:28<br/>Next button is clicked<br/>Personal details page is displayed<br/>Entered data in other Id field<br/>Nationality drop-down is clicked<br/>Australian is selected as nationality of the employee<br/>Option under marital status are 4<br/>marital status drop-down is clicked<br/>Gender drop-down is clicked<br/>Gender is selcted as :Male<br/>Data entered in hobbies field<br/>Next button is clicked<br/>Employee details page is displayed<br/>Region drop-down is clicked</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span&gt;...&lt;/span&gt; is not clickable at point (450, 429). Other element would receive the click: &lt;input type=&quot;text&quot; class=&quot;select-dropdown&quot; readonly=&quot;true&quot; data-activates=&quot;select-options-729f6994-5581-a100-e22c-ff80b91261a1&quot; value=&quot;-- Select --&quot;&gt;
-  (Session info: chrome=93.0.4577.63)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
-System info: host: &apos;DESKTOP-807AG9O&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\AARADH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57784}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a231bb7c04a05ea29683f9c85c4efe79
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at utilities.Utility.selection_dropdown(Utility.java:20)
-	at testcases.TC_01_AddEmployee.add_Employee(TC_01_AddEmployee.java:210)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testcases.TC_06_DemoWebShopRegister#login_DemoWebshop</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Log out&apos;]&quot;}
-  (Session info: chrome=93.0.4577.63)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
-System info: host: &apos;DESKTOP-807AG9O&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\AARADH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52441}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 525fb695bf754ee2df7ca010bf00737a
-*** Element info: {Using=xpath, value=//a[text()=&apos;Log out&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at testcases.Register.register(Register.java:65)
-	at testcases.TC_06_DemoWebShopRegister.login_DemoWebshop(TC_06_DemoWebShopRegister.java:10)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testcases.TC_07_DemoWebShop_PlaceOrder#placeOrder_DemoWebshop</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Login button is clicked<br/>Email Id is entered<br/>Entered password<br/>clicked on Login button<br/>Selected Books from top menu<br/>first option selected from the dropdown<br/>Category Z to A slected from the dropdown<br/>Added item to the cart<br/>Selected shoppng cart<br/>India selected from the country drop down<br/>Other (Non US) selected from the state dropdown<br/>Entered pincode as 500060<br/>Check box is selected<br/>Checkout button is clicked</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@onclick=&apos;Billing.save()&apos;]&quot;}
-  (Session info: chrome=93.0.4577.63)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
-System info: host: &apos;DESKTOP-807AG9O&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.63, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\AARADH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63556}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 2efe9d0a33e2f95dcb562c3c04d60087
-*** Element info: {Using=xpath, value=//input[@onclick=&apos;Billing.save()&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at testcases.TC_07_DemoWebShop_PlaceOrder.placeOrder_DemoWebshop(TC_07_DemoWebShop_PlaceOrder.java:86)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testcases.TC_11_AirbnbValidation#priceRangeFilter</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Airbnb website is loaded<br/>Browser window is maximized<br/>Accepted the cookies<br/>Location is clicked <br/>I’m flexible button is clicked<br/>Search results are displayed<br/>Guests dropdown is clicked<br/>No of adults selected from filter : 2<br/>Saved selection<br/>Filters button is clicked<br/>Entire place checkbox is selected<br/>Hotel room checkbox is selected<br/>Airbnb switch is already disabled<br/>Final Actual max price is :34705<br/>Final actual min price is 3708<br/>Number of bedrooms set to one<br/>Show listings button is clicked</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.StringIndexOutOfBoundsException: begin 1, end 0, length 0
-	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3751)
-	at java.base/java.lang.String.substring(String.java:1907)
-	at java.base/java.lang.String.substring(String.java:1880)
-	at testcases.TC_11_AirbnbValidation.priceRangeFilter(TC_11_AirbnbValidation.java:143)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">tesngScripts.FactorialDemo#cube</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Cube of the Given number is :729</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tesngScripts.FactorialDemo#factorial</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

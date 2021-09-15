@@ -18,7 +18,7 @@ public class PrimeDemo {
 		Reporter.log("After Test Annotation of PrimeDemo...!!!", true);
 	}
 	
-	@Test
+	@Test(groups = {"RegressionTest","FunctionalTest"})
 	public void primeDemo() {
 		int x=17, count=0;
 		for(int i=1;i<=x;i++) {
