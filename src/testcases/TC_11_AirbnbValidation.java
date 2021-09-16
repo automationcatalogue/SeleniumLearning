@@ -153,9 +153,9 @@ public class TC_11_AirbnbValidation {
 		}
 	}
 	
-	@AfterClass
-	public void afterClass() {
-		driver.quit();
-	}
+//	@AfterClass
+//	public void afterClass() {
+//		driver.quit();
+//	}
 	
 }

@@ -87,34 +87,23 @@ static WebDriver driver;
 		driver.findElement(By.xpath("//button[text()='Save']")).click();
 		Reporter.log("Save button is clicked");
 		
-		
-	}
-	
-	@AfterMethod
-	public void logout() throws Exception {
-		
 		WebElement dropdown_logout = driver.findElement(By.xpath("//i[text()='keyboard_arrow_down']"));
 		((JavascriptExecutor)driver).executeScript("arguments[0].click();",dropdown_logout);
 		Reporter.log("Logout dropdown is clicked");
 		
 		String logout=ExcelUtilities.getCellData(Constant.uRowNumber, Constant.options, "OrangeHRM");
-
-		Utility.selection_dropdown(driver,"//div[@id='10_inputfileddiv']/div/ul/li/span",logout);
+		Utility.selection_dropdown(driver,"//ul[@id='user_menu']//li[3]/a",logout);
 		Reporter.log(logout+ " is selected from the dropdown",true);
 		
-	}
 	
-    @AfterClass
-	
-	public void login() throws Exception {
-		String userName=ExcelUtilities.getCellData(Constant.uRowNumber, Constant.col_UserName, "OrangeHRM");
-		String password = ExcelUtilities.getCellData(Constant.uRowNumber, Constant.col_Password, "OrangeHRM");
+		String newuserName=ExcelUtilities.getCellData(Constant.uRowNumber, Constant.col_UserName, "OrangeHRM");
+		String newpassword = ExcelUtilities.getCellData(Constant.uRowNumber, Constant.col_Password, "OrangeHRM");
 		
-		driver.findElement(By.id("txtUsername")).sendKeys(userName);
-		Reporter.log(userName+" is entered as UserName in a text-box", true);
+		driver.findElement(By.id("txtUsername")).sendKeys(newuserName);
+		Reporter.log(newuserName+" is entered as UserName in a text-box", true);
 		
-		driver.findElement(By.name("txtPassword")).sendKeys(password);
-		Reporter.log(password+" is entered as Password in a text-box", true);
+		driver.findElement(By.name("txtPassword")).sendKeys(newpassword);
+		Reporter.log(newpassword+" is entered as Password in a text-box", true);
 		
 		driver.findElement(By.id("btnLogin")).click();
 		Reporter.log("Login button is clicked",true);
