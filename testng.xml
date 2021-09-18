@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  	<groups>
+  		<run>
+  			<include name="FunctionalTest"></include>
+  		</run>
+  	</groups>
+  
+    <classes>
+      <class name="tesngScripts.PatternDemo"/>
+      <class name="tesngScripts.EvenSumOddSum"/>
+      <class name="tesngScripts.FibonacciDemo"/>
+      <class name="tesngScripts.PrimeDemo"/>
+      <class name="tesngScripts.FactorialDemo"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
