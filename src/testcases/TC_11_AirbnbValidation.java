@@ -22,6 +22,7 @@ public class TC_11_AirbnbValidation {
 	
 	@BeforeClass
 	public void openBrowser() {
+		
 		WebDriverManager.chromedriver().setup();
 		
 		driver=new ChromeDriver();		
@@ -145,7 +146,7 @@ public class TC_11_AirbnbValidation {
 			int pricevalue=Integer.parseInt(price);
 			
 			if (pricevalue>=actual_minprice && pricevalue<=actual_maxprice) {
-				Reporter.log("Element price is beteen the range", true);
+				Reporter.log("Element price is within the range", true);
 			}else {
 				Reporter.log("Element price is not within the range", true);
 				throw new Exception();

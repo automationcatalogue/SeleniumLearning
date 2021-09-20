@@ -40,4 +40,6 @@ public class Constant {
 	
 	public static final int col_Email=2;
 	//public static final int col_Pwd=3;
+	
+	public static final int col_orderno=5;
 }

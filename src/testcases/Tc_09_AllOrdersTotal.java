@@ -45,7 +45,7 @@ static WebDriver driver;
 	
 	@Test
 	
-	public void re_Order() throws Exception{
+	public void allorders_total() throws Exception{
 		
 		driver.findElement(By.className("ico-login")).click();
 		Reporter.log("Login button is clicked", true);
@@ -69,8 +69,9 @@ static WebDriver driver;
 		driver.findElement(By.xpath("//ul[@class='list']/li[3]/a")).click();
 		Reporter.log("Orders selcted from the options", true);
 		
-		List<WebElement> totalorders = driver.findElements(By.xpath("//div[@class='section order-item']"));
-		int size=totalorders.size();
-		Reporter.log("Total number of orders placed are:" + size);
+		int totalorders = driver.findElements(By.xpath("//div[@class='order-list']/div")).size();
+		System.out.println("Total number of orders placed are:" + totalorders);
+		
+		List<WebElement> order_total = driver.findElements(By.xpath("//div[@class='order-list']/div/ul/li[3]"));
 	}
 }

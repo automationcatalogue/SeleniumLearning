@@ -1,5 +1,7 @@
 package testcases;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -8,6 +10,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import utilities.ExcelUtilities;
 
 public class Register {
@@ -15,16 +18,22 @@ public class Register {
 	static WebDriver driver;
 	
 	@BeforeClass
-	public void setup() {
+	public void setup() throws Exception {
 		String path=System.getProperty("user.dir");
 		Reporter.log("Path of the Project is :"+path, true);
 		
+		ExcelUtilities.setExcelFile(path+"\\TestData\\TestData.xlsx");
+	
 	}
 	
 	@BeforeMethod
 	public static void openBrowser(){
+				
+		 WebDriverManager.chromedriver().setup();
 
 		 driver=new ChromeDriver();
+	
+		 driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 
 		driver.get("http://demowebshop.tricentis.com");
 		System.out.println("Website loaded");

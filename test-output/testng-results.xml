@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
-=======
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
->>>>>>> branch 'main' of https://github.com/automationcatalogue/SeleniumLearning.git
   <reporter-output>
     <line>
-<<<<<<< HEAD
       <![CDATA[Path of the Project is :C:\Users\rehan\git\SeleniumLearning]]>
+    </line>
+    <line>
+      <![CDATA[Website loaded]]>
+    </line>
+    <line>
+      <![CDATA[Browser window maximized]]>
     </line>
     <line>
       <![CDATA[Login button is clicked]]>
@@ -28,57 +29,95 @@
       <![CDATA[Orders selcted from the options]]>
     </line>
     <line>
-      <![CDATA[Total number of orders placer are:34]]>
-=======
-      <![CDATA[Before Test Annotation in Factorial Demo]]>
+      <![CDATA[Order Number: 1015245]]>
     </line>
     <line>
-      <![CDATA[Cube of the Given number is :729]]>
+      <![CDATA[Order Number: 1015241]]>
     </line>
     <line>
-      <![CDATA[After Test Annotation in Factorial Demo]]>
->>>>>>> branch 'main' of https://github.com/automationcatalogue/SeleniumLearning.git
+      <![CDATA[Order Number: 1015229]]>
+    </line>
+    <line>
+      <![CDATA[Order Number: 1015227]]>
+    </line>
+    <line>
+      <![CDATA[Order Number: 1015218]]>
+    </line>
+    <line>
+      <![CDATA[Order Number: 1015215]]>
+    </line>
+    <line>
+      <![CDATA[Order Number: 1015210]]>
+    </line>
+    <line>
+      <![CDATA[Order Number: 997868]]>
+    </line>
+    <line>
+      <![CDATA[Order Number: 997042]]>
+    </line>
+    <line>
+      <![CDATA[Order Number: 997040]]>
+    </line>
+    <line>
+      <![CDATA[Order details button is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Re-Order button is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Terms of service check-box is checked]]>
+    </line>
+    <line>
+      <![CDATA[Checkout button is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Continue button is clicked agter saving billing information]]>
+    </line>
+    <line>
+      <![CDATA[Continue button is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Shipping method radio button is selected]]>
+    </line>
+    <line>
+      <![CDATA[Continue button clicked after selecting shipping method]]>
+    </line>
+    <line>
+      <![CDATA[Continue buton clicked after selecting payment method]]>
+    </line>
+    <line>
+      <![CDATA[Contine button clicked to save payment information]]>
+    </line>
+    <line>
+      <![CDATA[Confirm button is clicked to confirm order]]>
+    </line>
+    <line>
+      <![CDATA[Order number: 1015634]]>
     </line>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2021-09-16T18:40:35 EDT" name="Default suite" finished-at="2021-09-16T18:40:41 EDT" duration-ms="6812">
-=======
-  <suite started-at="2021-09-15T08:49:15 IST" name="Default suite" finished-at="2021-09-15T08:49:15 IST" duration-ms="31">
->>>>>>> branch 'main' of https://github.com/automationcatalogue/SeleniumLearning.git
+  <suite started-at="2021-09-19T22:12:26 EDT" name="Default suite" finished-at="2021-09-19T22:12:43 EDT" duration-ms="16200">
     <groups>
-      <group name="SanityTest">
-        <method signature="FactorialDemo.cube()[pri:0, instance:tesngScripts.FactorialDemo@20ccf40b]" name="cube" class="tesngScripts.FactorialDemo"/>
-      </group> <!-- SanityTest -->
-      <group name="RegressionTest">
-        <method signature="FactorialDemo.cube()[pri:0, instance:tesngScripts.FactorialDemo@20ccf40b]" name="cube" class="tesngScripts.FactorialDemo"/>
-        <method signature="FactorialDemo.factorial()[pri:0, instance:tesngScripts.FactorialDemo@20ccf40b]" name="factorial" class="tesngScripts.FactorialDemo"/>
-      </group> <!-- RegressionTest -->
     </groups>
-<<<<<<< HEAD
-    <test started-at="2021-09-16T18:40:35 EDT" name="Default test" finished-at="2021-09-16T18:40:41 EDT" duration-ms="6812">
-      <class name="testcases.Tc_09_AllOrdersTotal">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.Tc_09_AllOrdersTotal@a530d0a]" started-at="2021-09-16T18:40:35 EDT" name="setup" finished-at="2021-09-16T18:40:35 EDT" duration-ms="685" status="PASS">
-=======
-    <test started-at="2021-09-15T08:49:15 IST" name="Default test" finished-at="2021-09-15T08:49:15 IST" duration-ms="31">
-      <class name="tesngScripts.FactorialDemo">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:tesngScripts.FactorialDemo@20ccf40b]" started-at="2021-09-15T08:49:15 IST" name="beforeTest" finished-at="2021-09-15T08:49:15 IST" duration-ms="6" status="PASS">
->>>>>>> branch 'main' of https://github.com/automationcatalogue/SeleniumLearning.git
+    <test started-at="2021-09-19T22:12:26 EDT" name="Default test" finished-at="2021-09-19T22:12:43 EDT" duration-ms="16200">
+      <class name="testcases.TC_08_ReOrder">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC_08_ReOrder@a530d0a]" started-at="2021-09-19T22:12:26 EDT" name="setup" finished-at="2021-09-19T22:12:27 EDT" duration-ms="799" status="PASS">
           <reporter-output>
             <line>
-<<<<<<< HEAD
               <![CDATA[Path of the Project is :C:\Users\rehan\git\SeleniumLearning]]>
-=======
-              <![CDATA[Before Test Annotation in Factorial Demo]]>
->>>>>>> branch 'main' of https://github.com/automationcatalogue/SeleniumLearning.git
             </line>
           </reporter-output>
-<<<<<<< HEAD
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:testcases.Tc_09_AllOrdersTotal@a530d0a]" started-at="2021-09-16T18:40:35 EDT" name="openBrowser" finished-at="2021-09-16T18:40:39 EDT" duration-ms="3891" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:testcases.TC_08_ReOrder@a530d0a]" started-at="2021-09-19T22:12:27 EDT" name="openBrowser" finished-at="2021-09-19T22:12:33 EDT" duration-ms="5969" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Website loaded]]>
+            </line>
+            <line>
+              <![CDATA[Browser window maximized]]>
+            </line>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="re_Order()[pri:0, instance:testcases.Tc_09_AllOrdersTotal@a530d0a]" started-at="2021-09-16T18:40:39 EDT" name="re_Order" finished-at="2021-09-16T18:40:41 EDT" duration-ms="2196" status="PASS">
+        <test-method signature="re_Order()[pri:0, instance:testcases.TC_08_ReOrder@a530d0a]" started-at="2021-09-19T22:12:33 EDT" name="re_Order" finished-at="2021-09-19T22:12:43 EDT" duration-ms="9386" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Login button is clicked]]>
@@ -99,33 +138,74 @@
               <![CDATA[Orders selcted from the options]]>
             </line>
             <line>
-              <![CDATA[Total number of orders placer are:34]]>
+              <![CDATA[Order Number: 1015245]]>
+            </line>
+            <line>
+              <![CDATA[Order Number: 1015241]]>
+            </line>
+            <line>
+              <![CDATA[Order Number: 1015229]]>
+            </line>
+            <line>
+              <![CDATA[Order Number: 1015227]]>
+            </line>
+            <line>
+              <![CDATA[Order Number: 1015218]]>
+            </line>
+            <line>
+              <![CDATA[Order Number: 1015215]]>
+            </line>
+            <line>
+              <![CDATA[Order Number: 1015210]]>
+            </line>
+            <line>
+              <![CDATA[Order Number: 997868]]>
+            </line>
+            <line>
+              <![CDATA[Order Number: 997042]]>
+            </line>
+            <line>
+              <![CDATA[Order Number: 997040]]>
+            </line>
+            <line>
+              <![CDATA[Order details button is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Re-Order button is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Terms of service check-box is checked]]>
+            </line>
+            <line>
+              <![CDATA[Checkout button is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Continue button is clicked agter saving billing information]]>
+            </line>
+            <line>
+              <![CDATA[Continue button is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Shipping method radio button is selected]]>
+            </line>
+            <line>
+              <![CDATA[Continue button clicked after selecting shipping method]]>
+            </line>
+            <line>
+              <![CDATA[Continue buton clicked after selecting payment method]]>
+            </line>
+            <line>
+              <![CDATA[Contine button clicked to save payment information]]>
+            </line>
+            <line>
+              <![CDATA[Confirm button is clicked to confirm order]]>
+            </line>
+            <line>
+              <![CDATA[Order number: 1015634]]>
             </line>
           </reporter-output>
         </test-method> <!-- re_Order -->
-      </class> <!-- testcases.Tc_09_AllOrdersTotal -->
-=======
-        </test-method> <!-- beforeTest -->
-        <test-method signature="cube()[pri:0, instance:tesngScripts.FactorialDemo@20ccf40b]" started-at="2021-09-15T08:49:15 IST" name="cube" finished-at="2021-09-15T08:49:15 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Cube of the Given number is :729]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- cube -->
-        <test-method signature="factorial()[pri:0, instance:tesngScripts.FactorialDemo@20ccf40b]" started-at="2021-09-15T08:49:15 IST" name="factorial" finished-at="2021-09-15T08:49:15 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- factorial -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:tesngScripts.FactorialDemo@20ccf40b]" started-at="2021-09-15T08:49:15 IST" name="afterTest" finished-at="2021-09-15T08:49:15 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[After Test Annotation in Factorial Demo]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- tesngScripts.FactorialDemo -->
->>>>>>> branch 'main' of https://github.com/automationcatalogue/SeleniumLearning.git
+      </class> <!-- testcases.TC_08_ReOrder -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

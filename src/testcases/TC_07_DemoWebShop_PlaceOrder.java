@@ -13,7 +13,7 @@ public class TC_07_DemoWebShop_PlaceOrder {
 	
 	@Test
 	public void placeOrder_DemoWebshop() throws Exception {
-		Register.openBrowser();
+		Login.setup();
 		Login.login();
 		
 		Register.driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
@@ -34,7 +34,7 @@ public class TC_07_DemoWebShop_PlaceOrder {
 		Reporter.log("Added item to the cart",true);
 
 		Register.driver.findElement(By.xpath("//span[text()='Shopping cart']")).click();
-		Reporter.log("Selected shoppng cart",true);
+		Reporter.log("Selected shopping cart",true);
 
 		WebElement element_country = Register.driver.findElement(By.xpath("//select[@name='CountryId']"));
 		Select s1category = new Select(element_country);
@@ -106,9 +106,9 @@ public class TC_07_DemoWebShop_PlaceOrder {
 
 	}
 	
-	@AfterClass
-	public void afterClass() {
-		Register.driver.quit();
-	}
+//	@AfterClass
+//	public void afterClass() {
+//		Register.driver.quit();
+//	}
 		
 }

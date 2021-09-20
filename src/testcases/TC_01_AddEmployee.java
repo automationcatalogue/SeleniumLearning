@@ -37,6 +37,7 @@ public class TC_01_AddEmployee {
 	
 	@BeforeMethod
 	public void openBrowser() {
+		
 		WebDriverManager.chromedriver().setup();
 		
 		driver=new ChromeDriver();		

@@ -18,7 +18,7 @@ import utilities.ExcelUtilities;
 public class Login {
 	
 	@BeforeClass
-	public void setup() throws Exception{
+	public static void setup() throws Exception{
 		String path=System.getProperty("user.dir");
 		Reporter.log("Path of the Project is :"+path, true);
 		
@@ -27,17 +27,18 @@ public class Login {
 	
 	@Test
 	public static void login() throws Exception{
+		Register.openBrowser();
 		
 		Register.driver.findElement(By.className("ico-login")).click();
 		Reporter.log("Login button is clicked", true);
 		
-		String email=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_Email, "DemoWebShop");
+		String email=ExcelUtilities.getCellData(Constant.uRowNumber, Constant.col_Email, "DemoWebShop");
 		
-		Register.driver.findElement(By.id("Email")).sendKeys("email");
+		Register.driver.findElement(By.id("Email")).sendKeys(email);
 		Reporter.log("Email Id is entered",true);
 		
-		String password=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_Password, "DemoWebShop");
-		Register.driver.findElement(By.id("Password")).sendKeys("password");
+		String password=ExcelUtilities.getCellData(Constant.uRowNumber, Constant.col_Password, "DemoWebShop");
+		Register.driver.findElement(By.id("Password")).sendKeys(password);
 		Reporter.log("Entered password", true);
 		
 		Register.driver.findElement(By.xpath("//input[@value='Log in']")).click();
