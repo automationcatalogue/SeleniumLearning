@@ -11,11 +11,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utilities.Constant;
@@ -26,6 +30,7 @@ import utilities.Utility;
 public class TC_01_AddEmployee {
 	
 	static WebDriver driver;
+	static SoftAssert assertion;
 	
 	@BeforeClass
 	public void setup() throws Exception{
@@ -33,14 +38,14 @@ public class TC_01_AddEmployee {
 		Reporter.log("Path of the Project is :"+path, true);
 		
 		ExcelUtilities.setExcelFile(path+"\\TestData\\TestData.xlsx");
+		assertion = new SoftAssert();
 	}
 	
+	@Parameters({"browser"})
 	@BeforeMethod
-	public void openBrowser() {
-		
-		WebDriverManager.chromedriver().setup();
-		
-		driver=new ChromeDriver();		
+	public void openBrowser(@Optional("Chrome") String browser) {
+		Reporter.log("Browser Name from the TestNG.xml is :"+browser);
+		driver=Utility.getDriver(browser);
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 	}
 	
@@ -64,6 +69,9 @@ public class TC_01_AddEmployee {
 		
 		driver.findElement(By.id("btnLogin")).click();
 		Reporter.log("Login button is clicked",true);
+		
+		Assert.assertTrue(driver.findElement(By.xpath("//li[text()='Dashboard']")).isDisplayed());
+		Reporter.log("Home page is displayed", true);
 		
 		driver.findElement(By.xpath("//span[text()='PIM']")).click();
 		Reporter.log("Selected PIM from the available options",true);
@@ -232,11 +240,7 @@ public class TC_01_AddEmployee {
 		driver.findElement(By.xpath("//button[text()='Save']")).click();
 		Reporter.log("Save button is clicked", true);
 		
-		boolean personaldetails_tab=driver.findElement(By.xpath("(//div[@class='pim-container'])[2]")).isDisplayed();
-		
-		if (personaldetails_tab) {
-			Reporter.log("personal_details_page is displayed", true);
-		}
+		assertion.assertTrue(driver.findElement(By.xpath("(//div[@class='pim-container'])[2]")).isDisplayed(),"Personal Details page is not displayed");
 		
 		WebElement save_btn=driver.findElement(By.xpath("(//button[text()='save'])[1]"));		
 		
@@ -277,6 +281,7 @@ public class TC_01_AddEmployee {
 	public void tearDown() {
 		driver.quit();
 		Reporter.log("Browser is closed", true);
+		assertion.assertAll();
 	}
 }
 
