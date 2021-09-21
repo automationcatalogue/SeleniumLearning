@@ -3,12 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.TC_07_DemoWebShop_PlaceOrder">
+      <class name="testcases.TC_00_LoginOrangeHRM">
         <methods>
-          <include name="placeOrder_DemoWebshop"/>
-          <include name="afterClass"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="openBrowser"/>
+          <include name="login_OrangeHRM_DataProvider" invocation-numbers="1 2 3"/>
+          <include name="login_OrangeHRM_Parameterization"/>
         </methods>
-      </class> <!-- testcases.TC_07_DemoWebShop_PlaceOrder -->
+      </class> <!-- testcases.TC_00_LoginOrangeHRM -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

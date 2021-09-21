@@ -17,6 +17,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -31,6 +32,7 @@ public class TC_00_LoginOrangeHRM {
 	
 	static WebDriver driver;
 	static SoftAssert assertion;
+	
 	
 	@BeforeClass
 	public void setup() throws Exception{
@@ -50,8 +52,8 @@ public class TC_00_LoginOrangeHRM {
 	}
 	
 	@Parameters({"username","password"})
-	@Test
-	public void login_OrangeHRM(String username, String password) throws Exception {
+	@Test(enabled = true)
+	public void login_OrangeHRM_Parameterization(String username, String password) throws Exception {
 		
 		
 		driver.get("https://testseleniumcod-trials72.orangehrmlive.com");
@@ -75,8 +77,28 @@ public class TC_00_LoginOrangeHRM {
 
 	}
 	
-	@AfterMethod
-	public void logout() throws Exception {
+	@Test(dataProviderClass = utilities.DataProviders.class, dataProvider = "LoginData")
+	public void login_OrangeHRM_DataProvider(String username, String password) throws Exception {
+		
+		
+		driver.get("https://testseleniumcod-trials72.orangehrmlive.com");
+		Reporter.log("Orange HRM website is loaded", true);
+		driver.manage().window().maximize();
+		Reporter.log("Browser window is maximized", true);
+		
+	
+		driver.findElement(By.id("txtUsername")).sendKeys(username);
+		Reporter.log(username+" is entered as UserName in a text-box", true);
+		
+		driver.findElement(By.name("txtPassword")).sendKeys(password);
+		Reporter.log(password+" is entered as Password in a text-box", true);
+		
+		driver.findElement(By.id("btnLogin")).click();
+		Reporter.log("Login button is clicked",true);
+		
+		Assert.assertTrue(driver.findElement(By.xpath("//li[text()='Dashboard']")).isDisplayed());
+		Reporter.log("Home page is displayed", true);
+		
 		WebElement dropdown_logout = driver.findElement(By.xpath("//i[text()='keyboard_arrow_down']"));
 		((JavascriptExecutor)driver).executeScript("arguments[0].click();",dropdown_logout);
 		Reporter.log("Logout dropdown is clicked");
@@ -84,7 +106,10 @@ public class TC_00_LoginOrangeHRM {
 		String logout=ExcelUtilities.getCellData(Constant.uRowNumber, Constant.options, "OrangeHRM");
 		Utility.selection_dropdown(driver,"//ul[@id='user_menu']//li[3]/a",logout);
 		Reporter.log(logout+ " is selected from the dropdown",true);
+		
+
 	}
+	
 	
 	@AfterClass
 	public void tearDown() {

@@ -17,7 +17,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import utilities.ExcelUtilities;
 import utilities.Utility;
 
-public class Register {
+public class TC_05_DemoWebShop_Register {
 	
 	static WebDriver driver;
 	static SoftAssert assertion;
