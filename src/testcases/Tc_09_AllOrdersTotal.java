@@ -10,15 +10,20 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utilities.Constant;
 import utilities.ExcelUtilities;
+import utilities.Utility;
 
 public class Tc_09_AllOrdersTotal {
 
 static WebDriver driver;
+static SoftAssert assertion;
 	
 	@BeforeClass
 	public void setup() throws Exception{
@@ -26,13 +31,15 @@ static WebDriver driver;
 		Reporter.log("Path of the Project is :"+path, true);
 		
 		ExcelUtilities.setExcelFile(path+"\\TestData\\TestData.xlsx");
+		assertion = new SoftAssert();
 	}
 	
+	@Parameters({"browser"})
 	@BeforeMethod
-	public void openBrowser() {
-		WebDriverManager.chromedriver().setup();
+	public void openBrowser(@Optional("Chrome") String browser) {
 		
-		driver=new ChromeDriver();		
+		Reporter.log("Browser Name from the TestNG.xml is :"+browser);
+		driver=Utility.getDriver(browser);
 		
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		

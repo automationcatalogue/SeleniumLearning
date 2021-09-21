@@ -106,9 +106,9 @@ public class TC_07_DemoWebShop_PlaceOrder {
 
 	}
 	
-//	@AfterClass
-//	public void afterClass() {
-//		Register.driver.quit();
-//	}
+	@AfterClass
+	public void afterClass() {
+		Register.driver.quit();
+	}
 		
 }

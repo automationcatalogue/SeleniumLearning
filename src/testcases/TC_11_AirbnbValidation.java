@@ -12,20 +12,32 @@ import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import utilities.Utility;
 
 public class TC_11_AirbnbValidation {
 	
 	static WebDriver driver;
+	static SoftAssert assertion;
 	
 	@BeforeClass
-	public void openBrowser() {
-		
-		WebDriverManager.chromedriver().setup();
-		
-		driver=new ChromeDriver();		
+	public void setup() throws Exception{
+		String path=System.getProperty("user.dir");
+		Reporter.log("Path of the Project is :"+path, true);
+	
+		assertion = new SoftAssert();
+	}
+	
+	@Parameters({"browser"})
+	@BeforeMethod
+	public void openBrowser(@Optional("Chrome") String browser) {
+		Reporter.log("Browser Name from the TestNG.xml is :"+browser);
+		driver=Utility.getDriver(browser);
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 	}
 	

@@ -11,15 +11,21 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utilities.Constant;
 import utilities.ExcelUtilities;
+import utilities.Utility;
 
 public class TC_08_ReOrder {
 	 
 static WebDriver driver;
+static SoftAssert assertion;
+
 	
 	@BeforeClass
 	public void setup() throws Exception{
@@ -27,13 +33,14 @@ static WebDriver driver;
 		Reporter.log("Path of the Project is :"+path, true);
 		
 		ExcelUtilities.setExcelFile(path+"\\TestData\\TestData.xlsx");
+		assertion = new SoftAssert();
 	}
 	
+	@Parameters({"browser"})
 	@BeforeMethod
-	public void openBrowser() {
-		WebDriverManager.chromedriver().setup();
-		
-		driver=new ChromeDriver();		
+	public void openBrowser(@Optional("Chrome") String browser) {
+		Reporter.log("Browser Name from the TestNG.xml is :"+browser);
+		driver=Utility.getDriver(browser);
 		
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		
