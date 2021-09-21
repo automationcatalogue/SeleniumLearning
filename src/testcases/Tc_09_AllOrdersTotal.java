@@ -79,6 +79,18 @@ static SoftAssert assertion;
 		int totalorders = driver.findElements(By.xpath("//div[@class='order-list']/div")).size();
 		System.out.println("Total number of orders placed are:" + totalorders);
 		
-		List<WebElement> order_total = driver.findElements(By.xpath("//div[@class='order-list']/div/ul/li[3]"));
+		
+		List<WebElement> list_totalorders = driver.findElements(By.xpath("//div[@class='order-list']/div/ul/li[3]"));
+		int sum=0;
+		for(WebElement element_orderTotal:list_totalorders) {
+			String orderTotal=element_orderTotal.getText();
+			orderTotal=orderTotal.split(":")[1].trim().split("\\.")[0];
+			int total=Integer.parseInt(orderTotal);
+			sum=sum+total;
+		}
+		System.out.println("Sum of Total orders is :"+sum);
+		
+		List<WebElement> list_totalorders_daywise=driver.findElements(By.xpath("//div[@class='order-list']/div/ul/li[2]"));
+		
 	}
 }
