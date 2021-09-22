@@ -13,6 +13,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utilities.Constant;
@@ -22,6 +23,7 @@ import utilities.Utility;
 public class TC_02_ChangePassword {
 	
 static WebDriver driver;
+static SoftAssert assertion;
 	
 	@BeforeClass
 	public void setup() throws Exception{
@@ -29,6 +31,8 @@ static WebDriver driver;
 		Reporter.log("Path of the Project is :"+path, true);
 		
 		ExcelUtilities.setExcelFile(path+"\\TestData\\TestData.xlsx");
+		assertion = new SoftAssert();
+
 	}
 	
 	@BeforeMethod
@@ -52,10 +56,10 @@ static WebDriver driver;
 		String password = ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_Password, "OrangeHRM");
 		
 		driver.findElement(By.id("txtUsername")).sendKeys(userName);
-		Reporter.log(userName+" is entered as UserName in a text-box", true);
+		Reporter.log("userName is entered in the text-box", true);
 		
 		driver.findElement(By.name("txtPassword")).sendKeys(password);
-		Reporter.log(password+" is entered as Password in a text-box", true);
+		Reporter.log("password is entered in the text-box", true);
 		
 		driver.findElement(By.id("btnLogin")).click();
 		Reporter.log("Login button is clicked",true);
@@ -76,7 +80,7 @@ static WebDriver driver;
 		
 		driver.findElement(By.xpath("//label[@for='changepassword']")).click();
 		
-		String new_password = ExcelUtilities.getCellData(Constant.uRowNumber, Constant.col_Password, "OrangeHRM");
+		String new_password = ExcelUtilities.getCellData(Constant.RowNumber_three, Constant.col_Password, "OrangeHRM");
 		
 		driver.findElement(By.xpath("//input[@id='password']")).sendKeys(new_password);
 		Reporter.log("New password is entered ", true);
@@ -91,13 +95,13 @@ static WebDriver driver;
 		((JavascriptExecutor)driver).executeScript("arguments[0].click();",dropdown_logout);
 		Reporter.log("Logout dropdown is clicked");
 		
-		String logout=ExcelUtilities.getCellData(Constant.uRowNumber, Constant.options, "OrangeHRM");
+		String logout=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.options, "OrangeHRM");
 		Utility.selection_dropdown(driver,"//ul[@id='user_menu']//li[3]/a",logout);
 		Reporter.log(logout+ " is selected from the dropdown",true);
 		
 	
-		String newuserName=ExcelUtilities.getCellData(Constant.uRowNumber, Constant.col_UserName, "OrangeHRM");
-		String newpassword = ExcelUtilities.getCellData(Constant.uRowNumber, Constant.col_Password, "OrangeHRM");
+		String newuserName=ExcelUtilities.getCellData(Constant.RowNumber_three, Constant.col_UserName, "OrangeHRM");
+		String newpassword = ExcelUtilities.getCellData(Constant.RowNumber_three, Constant.col_Password, "OrangeHRM");
 		
 		driver.findElement(By.id("txtUsername")).sendKeys(newuserName);
 		Reporter.log(newuserName+" is entered as UserName in a text-box", true);
@@ -108,4 +112,10 @@ static WebDriver driver;
 		driver.findElement(By.id("btnLogin")).click();
 		Reporter.log("Login button is clicked",true);
 	}
-}
+	@AfterClass
+	public void afterClass() {
+		driver.quit();
+		Reporter.log("Browser is closed");
+		assertion.assertAll();
+	}
+}	

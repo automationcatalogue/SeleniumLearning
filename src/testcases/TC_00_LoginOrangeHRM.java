@@ -110,7 +110,6 @@ public class TC_00_LoginOrangeHRM {
 
 	}
 	
-	
 	@AfterClass
 	public void tearDown() {
 		driver.quit();

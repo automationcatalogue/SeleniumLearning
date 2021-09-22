@@ -8,15 +8,62 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+import utilities.Constant;
+import utilities.ExcelUtilities;
+import utilities.Utility;
 
 public class TC_07_DemoWebShop_PlaceOrder {
 	static WebDriver driver;
+	static SoftAssert assertion;
 	
+	@BeforeClass
+	public void setup() throws Exception{
+		String path=System.getProperty("user.dir");
+		Reporter.log("Path of the Project is :"+path, true);
+		
+		ExcelUtilities.setExcelFile(path+"\\TestData\\TestData.xlsx");
+		assertion = new SoftAssert();
+	}
+	
+	@Parameters({"browser"})
+	@BeforeMethod
+	public static void openBrowser(@Optional("Chrome") String browser) {
+		Reporter.log("Browser Name from the TestNG.xml is :"+browser);
+		driver=Utility.getDriver(browser);
+				
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+
+		driver.get("http://demowebshop.tricentis.com");
+		System.out.println("Website loaded");
+
+		driver.manage().window().maximize();
+		System.out.println("Browser window maximized");
+	}
+		
 	@Test
 	public void placeOrder_DemoWebshop() throws Exception {
 		
-		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		driver.findElement(By.className("ico-login")).click();
+		Reporter.log("Login button is clicked", true);
+		
+		String email=ExcelUtilities.getCellData(Constant.uRowNumber, Constant.col_Email, "DemoWebShop");
+		
+		driver.findElement(By.id("Email")).sendKeys(email);
+		Reporter.log("Email Id is entered",true);
+		
+		String password=ExcelUtilities.getCellData(Constant.uRowNumber, Constant.col_Password, "DemoWebShop");
+		driver.findElement(By.id("Password")).sendKeys(password);
+		Reporter.log("Entered password", true);
+		
+		driver.findElement(By.xpath("//input[@value='Log in']")).click();
+		Reporter.log("clicked on Login button", true);
 		
 		driver.findElement(By.xpath("(//ul[@class='top-menu']/li/a)[1]")).click();
 		Reporter.log("Selected Books from top menu",true);
@@ -57,9 +104,9 @@ public class TC_07_DemoWebShop_PlaceOrder {
 
 		if (!element_chekbox.isSelected()) {
 			element_chekbox.click();
-			Reporter.log("Check box is selected",true);
+			Reporter.log("Termsofservice Check-box is selected",true);
 		} else {
-			Reporter.log("Check box is already selected",true);
+			Reporter.log("Termsofservice Check-box is already selected",true);
 		}
 
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
@@ -71,16 +118,16 @@ public class TC_07_DemoWebShop_PlaceOrder {
 // s3category.selectByVisibleText("India");
 // System.out.println("India selected from the dropdown list");
 //
-// Register.driver.findElement(By.xpath("//input[@name='BillingNewAddress.City']")).sendKeys("Hydrabad");
+// Register.driver.findElement(By.xpath("//input[@name='BillingNewAddress.City']")).sendKeys("Hyderabad");
 // System.out.println("Entered city name");
 //
 // Register.driver.findElement(By.xpath("//input[@name='BillingNewAddress.Address1']")).sendKeys("5958");
 // System.out.println("Entered Adress1 details");
 //
-// Register.driver.findElement(By.xpath("//input[@name='BillingNewAddress.ZipPostalCode']")).sendKeys("500060");
+// Register.driver.findElement(By.xpath("//input[@name='BillingNewAddress.ZipPostalCode']")).sendKeys("500040");
 // System.out.println("Entered pincode number");
 //
-// Register.driver.findElement(By.xpath("//input[@name='BillingNewAddress.PhoneNumber']")).sendKeys("9121763760");
+// Register.driver.findElement(By.xpath("//input[@name='BillingNewAddress.PhoneNumber']")).sendKeys("123456789");
 // System.out.println("Entered phone number");
 
 		driver.findElement(By.xpath("//input[@onclick='Billing.save()']")).click();
@@ -105,10 +152,10 @@ public class TC_07_DemoWebShop_PlaceOrder {
 		Reporter.log(g, true);
 
 	}
-	
 	@AfterClass
 	public void afterClass() {
 		driver.quit();
+		Reporter.log("Browser is closed");
+		assertion.assertAll();
 	}
-		
 }

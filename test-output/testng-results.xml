@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning]]>
+      <![CDATA[Path of the Project is :C:\Users\rehan\git\SeleniumLearning]]>
     </line>
     <line>
       <![CDATA[Browser Name from the TestNG.xml is :Chrome]]>
@@ -26,19 +26,19 @@
       <![CDATA[Orders selcted from the options]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-09-21T21:53:56 IST" name="Default suite" finished-at="2021-09-21T21:54:03 IST" duration-ms="7090">
+  <suite started-at="2021-09-21T19:04:25 EDT" name="Default suite" finished-at="2021-09-21T19:04:34 EDT" duration-ms="8284">
     <groups>
     </groups>
-    <test started-at="2021-09-21T21:53:56 IST" name="Default test" finished-at="2021-09-21T21:54:03 IST" duration-ms="7090">
+    <test started-at="2021-09-21T19:04:25 EDT" name="Default test" finished-at="2021-09-21T19:04:34 EDT" duration-ms="8284">
       <class name="testcases.Tc_09_AllOrdersTotal">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.Tc_09_AllOrdersTotal@2fb3536e]" started-at="2021-09-21T21:53:56 IST" name="setup" finished-at="2021-09-21T21:53:57 IST" duration-ms="440" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.Tc_09_AllOrdersTotal@1da2cb77]" started-at="2021-09-21T19:04:25 EDT" name="setup" finished-at="2021-09-21T19:04:26 EDT" duration-ms="777" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning]]>
+              <![CDATA[Path of the Project is :C:\Users\rehan\git\SeleniumLearning]]>
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.Tc_09_AllOrdersTotal@2fb3536e]" started-at="2021-09-21T21:53:57 IST" name="openBrowser" finished-at="2021-09-21T21:54:00 IST" duration-ms="3884" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.Tc_09_AllOrdersTotal@1da2cb77]" started-at="2021-09-21T19:04:26 EDT" name="openBrowser" finished-at="2021-09-21T19:04:30 EDT" duration-ms="4108" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,7 +52,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="allorders_total()[pri:0, instance:testcases.Tc_09_AllOrdersTotal@2fb3536e]" started-at="2021-09-21T21:54:00 IST" name="allorders_total" finished-at="2021-09-21T21:54:03 IST" duration-ms="2743" status="PASS">
+        <test-method signature="allorders_total()[pri:0, instance:testcases.Tc_09_AllOrdersTotal@1da2cb77]" started-at="2021-09-21T19:04:30 EDT" name="allorders_total" finished-at="2021-09-21T19:04:34 EDT" duration-ms="3359" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Login button is clicked]]>

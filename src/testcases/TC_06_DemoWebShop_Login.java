@@ -9,11 +9,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Reporter;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import utilities.Constant;
 import utilities.ExcelUtilities;
@@ -23,6 +25,7 @@ import utilities.Utility;
 public class TC_06_DemoWebShop_Login {
 	
 	static WebDriver driver;
+	static SoftAssert assertion;
 	
 	@BeforeClass
 	public static void setup() throws Exception{
@@ -67,5 +70,10 @@ public class TC_06_DemoWebShop_Login {
 		Reporter.log("clicked on Login button", true);
 		
 	}
-
+	@AfterClass
+	public void afterClass() {
+		driver.quit();
+		Reporter.log("Browser is closed");
+		assertion.assertAll();
+	}
 }

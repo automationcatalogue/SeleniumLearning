@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Reporter;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
@@ -135,5 +136,10 @@ static SoftAssert assertion;
     	 
     	String order_confirmation= driver.findElement(By.xpath("//ul[@class='details']/li[1]")).getText();
     	Reporter.log(order_confirmation,true);
+	}
+	@AfterClass
+	public void close_browser() {
+		driver.quit();
+		assertion.assertAll();
 	}
 }

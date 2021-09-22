@@ -1,5 +1,6 @@
 package testcases;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -91,6 +92,16 @@ static SoftAssert assertion;
 		System.out.println("Sum of Total orders is :"+sum);
 		
 		List<WebElement> list_totalorders_daywise=driver.findElements(By.xpath("//div[@class='order-list']/div/ul/li[2]"));
+		for (WebElement daywise_list:list_totalorders_daywise) {
+			String daywise_ordervalue=daywise_list.getText().split(" ")[2];
+			//System.out.println(daywise_ordervalue);
+			
+			List<String> Totalorders_daywise= new ArrayList<String>();
+			Totalorders_daywise.add(daywise_ordervalue);
+			System.out.println(Totalorders_daywise);
+		
+			
+		}
 		
 	}
 }

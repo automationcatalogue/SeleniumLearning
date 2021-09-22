@@ -166,9 +166,10 @@ public class TC_11_AirbnbValidation {
 		}
 	}
 	
-//	@AfterClass
-//	public void afterClass() {
-//		driver.quit();
-//	}
+	@AfterClass
+	public void close_browser() {
+		driver.quit();
+		assertion.assertAll();
+	}
 	
 }

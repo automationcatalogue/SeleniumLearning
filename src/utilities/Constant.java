@@ -5,6 +5,10 @@ public class Constant {
 	
 	public static final int iRowNumber=1;
 	public static final int uRowNumber=2;
+	public static final int RowNumber_three=3;
+	public static final int RowNumber_four=4;
+	public static final int RowNumber_five=5;
+	public static final int RowNumber_six=6;
 
 	
 	public static final String Data_Location="Singapore Regional HQ";
@@ -42,4 +46,13 @@ public class Constant {
 	//public static final int col_Pwd=3;
 	
 	public static final int col_orderno=8;
+	public static final int col_email=2;
+	public static final int col_password=3;
+	public static final int col_Firstname=5;
+	public static final int col_Lastname=6;
+	public static final int col_gender=7;
+	public static final int col_options=9;
+
+
+	
 }
