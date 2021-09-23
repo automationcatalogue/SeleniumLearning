@@ -49,7 +49,7 @@ public class TC_01_AddEmployee {
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 	}
 	
-	@Test()
+	@Test
 	public void add_Employee() throws Exception {
 		
 		

@@ -21,7 +21,7 @@ import utilities.Constant;
 import utilities.ExcelUtilities;
 import utilities.Utility;
 
-public class Tc_09_AllOrdersTotal {
+public class TC_09_AllOrdersTotal {
 
 static WebDriver driver;
 static SoftAssert assertion;

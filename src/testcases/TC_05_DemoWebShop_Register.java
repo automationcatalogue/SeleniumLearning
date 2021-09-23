@@ -17,19 +17,22 @@ import org.testng.asserts.SoftAssert;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utilities.Constant;
 import utilities.ExcelUtilities;
+import utilities.RandomGenerator;
 import utilities.Utility;
 
 public class TC_05_DemoWebShop_Register {
 	
 	static WebDriver driver;
 	static SoftAssert assertion;
+	static String excelPath;
 	
 	@BeforeClass
 	public void setup() throws Exception {
 		String path=System.getProperty("user.dir");
 		Reporter.log("Path of the Project is :"+path, true);
 		
-		ExcelUtilities.setExcelFile(path+"\\TestData\\TestData.xlsx");
+		excelPath=path+"\\TestData\\TestData.xlsx";
+		ExcelUtilities.setExcelFile(excelPath);
 		assertion = new SoftAssert();
 	
 	}
@@ -59,16 +62,19 @@ public class TC_05_DemoWebShop_Register {
 		driver.findElement(By.xpath("//input[@id='gender-female']")).click();
 		System.out.println("Gender selected");
 		
-		String firstname = ExcelUtilities.getCellData(Constant.iRowNumber,Constant.col_Firstname, "DemoWebShop");
+		String firstname =RandomGenerator.randomAlphabet(5, 7);
 		driver.findElement(By.name("FirstName")).sendKeys(firstname);
+		ExcelUtilities.setCellData(firstname, Constant.iRowNumber, Constant.col_Firstname, "DemoWebShop", excelPath);
 		System.out.println("First-name entered");
 
-		String lastname = ExcelUtilities.getCellData(Constant.iRowNumber,Constant.col_Lastname, "DemoWebShop");
+		String lastname =RandomGenerator.randomAlphabet(5, 7);
 		driver.findElement(By.id("LastName")).sendKeys(lastname);
+		ExcelUtilities.setCellData(lastname, Constant.iRowNumber, Constant.col_Lastname, "DemoWebShop", excelPath);
 		System.out.println("Last name is entered");
 				
-		String Email = ExcelUtilities.getCellData(Constant.iRowNumber,Constant.col_email, "DemoWebShop");
+		String Email =RandomGenerator.randomAlphabet(8,10)+"@gmail.com";
 		driver.findElement(By.id("Email")).sendKeys(Email);
+		ExcelUtilities.setCellData(Email, Constant.iRowNumber, Constant.col_email, "DemoWebShop", excelPath);
 		System.out.println("Email id is entered in the text-box");
 
 		String Password = ExcelUtilities.getCellData(Constant.iRowNumber,Constant.col_password, "DemoWebShop");
@@ -80,8 +86,8 @@ public class TC_05_DemoWebShop_Register {
 
 		driver.findElement(By.id("register-button")).click();
 		System.out.println("Register button selected");
-
-		//driver.findElement(By.xpath("//input[@value='Continue']")).click();
+		
+		Thread.sleep(4000);
 		
 		driver.findElement(By.xpath("//a[text()='Log out']")).click();
 		System.out.println("Successfully logged out post registration");

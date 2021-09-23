@@ -33,6 +33,7 @@ public class TC_06_DemoWebShop_Login {
 		Reporter.log("Path of the Project is :"+path, true);
 		
 		ExcelUtilities.setExcelFile(path+"\\TestData\\TestData.xlsx");
+		assertion= new SoftAssert();
 	}
 	
 	@Parameters({"browser"})
@@ -68,6 +69,8 @@ public class TC_06_DemoWebShop_Login {
 		
 		driver.findElement(By.xpath("//input[@value='Log in']")).click();
 		Reporter.log("clicked on Login button", true);
+		
+		Thread.sleep(5000);
 		
 	}
 	@AfterClass

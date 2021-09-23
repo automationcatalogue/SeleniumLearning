@@ -7,6 +7,7 @@
         <methods>
           <include name="change_password"/>
           <include name="setup"/>
+          <include name="afterClass"/>
           <include name="openBrowser"/>
         </methods>
       </class> <!-- testcases.TC_02_ChangePassword -->

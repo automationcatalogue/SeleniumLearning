@@ -88,15 +88,19 @@ static SoftAssert assertion;
 		driver.findElement(By.xpath("//input[@id='confirmpassword']")).sendKeys(new_password);
 		Reporter.log("Confirm password is entered ", true);
 		
-		driver.findElement(By.xpath("//button[text()='Save']")).click();
-		Reporter.log("Save button is clicked");
+		Thread.sleep(3000);
+		
+		WebElement element_saveBtn=driver.findElement(By.xpath("//button[text()='Save']"));
+		((JavascriptExecutor)driver).executeScript("arguments[0].click();", element_saveBtn);
+		Reporter.log("Save button is clicked", true);
 		
 		WebElement dropdown_logout = driver.findElement(By.xpath("//i[text()='keyboard_arrow_down']"));
 		((JavascriptExecutor)driver).executeScript("arguments[0].click();",dropdown_logout);
-		Reporter.log("Logout dropdown is clicked");
+		Reporter.log("Logout dropdown is clicked", true);
 		
 		String logout=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.options, "OrangeHRM");
-		Utility.selection_dropdown(driver,"//ul[@id='user_menu']//li[3]/a",logout);
+		WebElement element_logoutBtn=driver.findElement(By.xpath("//ul[@id='user_menu']//li[3]/a"));
+		((JavascriptExecutor)driver).executeScript("arguments[0].click();", element_logoutBtn);
 		Reporter.log(logout+ " is selected from the dropdown",true);
 		
 	
@@ -114,7 +118,7 @@ static SoftAssert assertion;
 	}
 	@AfterClass
 	public void afterClass() {
-		driver.quit();
+		//driver.quit();
 		Reporter.log("Browser is closed");
 		assertion.assertAll();
 	}

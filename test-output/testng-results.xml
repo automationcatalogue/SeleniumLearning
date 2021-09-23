@@ -2,79 +2,142 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Path of the Project is :C:\Users\rehan\git\SeleniumLearning]]>
+      <![CDATA[Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning]]>
     </line>
     <line>
-      <![CDATA[Browser Name from the TestNG.xml is :Chrome]]>
+      <![CDATA[Orange HRM website is loaded]]>
+    </line>
+    <line>
+      <![CDATA[Browser window is maximized]]>
+    </line>
+    <line>
+      <![CDATA[userName is entered in the text-box]]>
+    </line>
+    <line>
+      <![CDATA[password is entered in the text-box]]>
     </line>
     <line>
       <![CDATA[Login button is clicked]]>
     </line>
     <line>
-      <![CDATA[Email Id is entered]]>
+      <![CDATA[Admin menu is clicked]]>
     </line>
     <line>
-      <![CDATA[Entered password]]>
+      <![CDATA[User Management option is clicked]]>
     </line>
     <line>
-      <![CDATA[clicked on Login button]]>
+      <![CDATA[Useres option is clicked]]>
     </line>
     <line>
-      <![CDATA[Clicked on email name]]>
+      <![CDATA[Edit user option is clicked]]>
     </line>
     <line>
-      <![CDATA[Orders selcted from the options]]>
+      <![CDATA[New password is entered ]]>
+    </line>
+    <line>
+      <![CDATA[Confirm password is entered ]]>
+    </line>
+    <line>
+      <![CDATA[Save button is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Logout dropdown is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Logout is selected from the dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Adella is entered as UserName in a text-box]]>
+    </line>
+    <line>
+      <![CDATA[abcd@123 is entered as Password in a text-box]]>
+    </line>
+    <line>
+      <![CDATA[Login button is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Browser is closed]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-09-21T19:04:25 EDT" name="Default suite" finished-at="2021-09-21T19:04:34 EDT" duration-ms="8284">
+  <suite started-at="2021-09-23T08:45:42 IST" name="Default suite" finished-at="2021-09-23T08:46:18 IST" duration-ms="36309">
     <groups>
     </groups>
-    <test started-at="2021-09-21T19:04:25 EDT" name="Default test" finished-at="2021-09-21T19:04:34 EDT" duration-ms="8284">
-      <class name="testcases.Tc_09_AllOrdersTotal">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.Tc_09_AllOrdersTotal@1da2cb77]" started-at="2021-09-21T19:04:25 EDT" name="setup" finished-at="2021-09-21T19:04:26 EDT" duration-ms="777" status="PASS">
+    <test started-at="2021-09-23T08:45:42 IST" name="Default test" finished-at="2021-09-23T08:46:18 IST" duration-ms="36309">
+      <class name="testcases.TC_02_ChangePassword">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC_02_ChangePassword@3b6ddd1d]" started-at="2021-09-23T08:45:42 IST" name="setup" finished-at="2021-09-23T08:45:43 IST" duration-ms="437" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Path of the Project is :C:\Users\rehan\git\SeleniumLearning]]>
+              <![CDATA[Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning]]>
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.Tc_09_AllOrdersTotal@1da2cb77]" started-at="2021-09-21T19:04:26 EDT" name="openBrowser" finished-at="2021-09-21T19:04:30 EDT" duration-ms="4108" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:testcases.TC_02_ChangePassword@3b6ddd1d]" started-at="2021-09-23T08:45:43 IST" name="openBrowser" finished-at="2021-09-23T08:45:44 IST" duration-ms="1081" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[Browser Name from the TestNG.xml is :Chrome]]>
-            </line>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="allorders_total()[pri:0, instance:testcases.Tc_09_AllOrdersTotal@1da2cb77]" started-at="2021-09-21T19:04:30 EDT" name="allorders_total" finished-at="2021-09-21T19:04:34 EDT" duration-ms="3359" status="PASS">
+        <test-method signature="change_password()[pri:0, instance:testcases.TC_02_ChangePassword@3b6ddd1d]" started-at="2021-09-23T08:45:44 IST" name="change_password" finished-at="2021-09-23T08:46:18 IST" duration-ms="34762" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Orange HRM website is loaded]]>
+            </line>
+            <line>
+              <![CDATA[Browser window is maximized]]>
+            </line>
+            <line>
+              <![CDATA[userName is entered in the text-box]]>
+            </line>
+            <line>
+              <![CDATA[password is entered in the text-box]]>
+            </line>
             <line>
               <![CDATA[Login button is clicked]]>
             </line>
             <line>
-              <![CDATA[Email Id is entered]]>
+              <![CDATA[Admin menu is clicked]]>
             </line>
             <line>
-              <![CDATA[Entered password]]>
+              <![CDATA[User Management option is clicked]]>
             </line>
             <line>
-              <![CDATA[clicked on Login button]]>
+              <![CDATA[Useres option is clicked]]>
             </line>
             <line>
-              <![CDATA[Clicked on email name]]>
+              <![CDATA[Edit user option is clicked]]>
             </line>
             <line>
-              <![CDATA[Orders selcted from the options]]>
+              <![CDATA[New password is entered ]]>
+            </line>
+            <line>
+              <![CDATA[Confirm password is entered ]]>
+            </line>
+            <line>
+              <![CDATA[Save button is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Logout dropdown is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Logout is selected from the dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Adella is entered as UserName in a text-box]]>
+            </line>
+            <line>
+              <![CDATA[abcd@123 is entered as Password in a text-box]]>
+            </line>
+            <line>
+              <![CDATA[Login button is clicked]]>
             </line>
           </reporter-output>
-        </test-method> <!-- allorders_total -->
-      </class> <!-- testcases.Tc_09_AllOrdersTotal -->
+        </test-method> <!-- change_password -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testcases.TC_02_ChangePassword@3b6ddd1d]" started-at="2021-09-23T08:46:18 IST" name="afterClass" finished-at="2021-09-23T08:46:18 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser is closed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testcases.TC_02_ChangePassword -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
