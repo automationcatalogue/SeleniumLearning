@@ -2,7 +2,7 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Path of the Project is :C:\Users\rehan\git\SeleniumLearning]]>
+      <![CDATA[Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning]]>
     </line>
     <line>
       <![CDATA[Browser Name from the TestNG.xml is :Chrome]]>
@@ -86,25 +86,67 @@
       <![CDATA[Employee details page is displayed]]>
     </line>
     <line>
+      <![CDATA[StaleElementReferenceException occured, retrying for same element...!!!]]>
+    </line>
+    <line>
       <![CDATA[Region drop-down is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Region-2 is selcted from the dropdown]]>
+    </line>
+    <line>
+      <![CDATA[FTE drop-down is clicked]]>
+    </line>
+    <line>
+      <![CDATA[0.5 is selected from the dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Temporary department drop-down is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Sub unit-3 is selected  from the dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Save button is clicked]]>
+    </line>
+    <line>
+      <![CDATA[save buttonn is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Food selection radio button is clicked]]>
+    </line>
+    <line>
+      <![CDATA[save button is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Emloyee list is seleced]]>
+    </line>
+    <line>
+      <![CDATA[Jinny and Georgia is selected as employee full name]]>
+    </line>
+    <line>
+      <![CDATA[Employee name entered in search tab]]>
+    </line>
+    <line>
+      <![CDATA[Employee selected from the dropdown]]>
     </line>
     <line>
       <![CDATA[Browser is closed]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-09-24T11:39:39 EDT" name="Default suite" finished-at="2021-09-24T11:40:09 EDT" duration-ms="30150">
+  <suite started-at="2021-09-24T23:22:07 IST" name="Default suite" finished-at="2021-09-24T23:23:19 IST" duration-ms="72505">
     <groups>
     </groups>
-    <test started-at="2021-09-24T11:39:39 EDT" name="Default test" finished-at="2021-09-24T11:40:09 EDT" duration-ms="30150">
+    <test started-at="2021-09-24T23:22:07 IST" name="Default test" finished-at="2021-09-24T23:23:19 IST" duration-ms="72505">
       <class name="testcases.TC_01_AddEmployee">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC_01_AddEmployee@2f217633]" started-at="2021-09-24T11:39:39 EDT" name="setup" finished-at="2021-09-24T11:39:40 EDT" duration-ms="1041" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC_01_AddEmployee@47987356]" started-at="2021-09-24T23:22:07 IST" name="setup" finished-at="2021-09-24T23:22:07 IST" duration-ms="397" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Path of the Project is :C:\Users\rehan\git\SeleniumLearning]]>
+              <![CDATA[Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning]]>
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_01_AddEmployee@2f217633]" started-at="2021-09-24T11:39:40 EDT" name="openBrowser" finished-at="2021-09-24T11:39:42 EDT" duration-ms="2062" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_01_AddEmployee@47987356]" started-at="2021-09-24T23:22:07 IST" name="openBrowser" finished-at="2021-09-24T23:22:08 IST" duration-ms="1117" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -118,25 +160,29 @@
             </line>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="add_Employee()[pri:0, instance:testcases.TC_01_AddEmployee@2f217633]" started-at="2021-09-24T11:39:42 EDT" name="add_Employee" finished-at="2021-09-24T11:40:09 EDT" duration-ms="26746" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="add_Employee()[pri:0, instance:testcases.TC_01_AddEmployee@47987356]" started-at="2021-09-24T23:22:08 IST" name="add_Employee" finished-at="2021-09-24T23:23:19 IST" duration-ms="70967" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element click intercepted: Element <span>...</span> is not clickable at point (450, 431). Other element would receive the click: <input type="text" class="select-dropdown" readonly="true" data-activates="select-options-c3c8e28f-d337-37f3-a7e3-80b5d11b4440" value="-- Select --">
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//td[text()='0157']"}
   (Session info: chrome=93.0.4577.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'LAPTOP-NK2I20DO', ip: '192.168.0.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+System info: host: 'DESKTOP-807AG9O', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\rehan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56653}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0eca4e2d9619432f9d1a6578099e8a02]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\AARADH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53114}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 14e3aa18f14d79290b24d5ed4df2054d
+*** Element info: {Using=xpath, value=//td[text()='0157']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span>...</span> is not clickable at point (450, 431). Other element would receive the click: <input type="text" class="select-dropdown" readonly="true" data-activates="select-options-c3c8e28f-d337-37f3-a7e3-80b5d11b4440" value="-- Select --">
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[text()='0157']"}
   (Session info: chrome=93.0.4577.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'LAPTOP-NK2I20DO', ip: '192.168.0.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+System info: host: 'DESKTOP-807AG9O', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\rehan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56653}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0eca4e2d9619432f9d1a6578099e8a02
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\AARADH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53114}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 14e3aa18f14d79290b24d5ed4df2054d
+*** Element info: {Using=xpath, value=//td[text()='0157']}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -148,10 +194,11 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at utilities.Utility.selection_dropdown(Utility.java:26)
-at testcases.TC_01_AddEmployee.add_Employee(TC_01_AddEmployee.java:219)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at testcases.TC_01_AddEmployee.add_Employee(TC_01_AddEmployee.java:271)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -182,7 +229,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
               <![CDATA[Orange HRM website is loaded]]>
@@ -263,11 +310,53 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               <![CDATA[Employee details page is displayed]]>
             </line>
             <line>
+              <![CDATA[StaleElementReferenceException occured, retrying for same element...!!!]]>
+            </line>
+            <line>
               <![CDATA[Region drop-down is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Region-2 is selcted from the dropdown]]>
+            </line>
+            <line>
+              <![CDATA[FTE drop-down is clicked]]>
+            </line>
+            <line>
+              <![CDATA[0.5 is selected from the dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Temporary department drop-down is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Sub unit-3 is selected  from the dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Save button is clicked]]>
+            </line>
+            <line>
+              <![CDATA[save buttonn is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Food selection radio button is clicked]]>
+            </line>
+            <line>
+              <![CDATA[save button is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Emloyee list is seleced]]>
+            </line>
+            <line>
+              <![CDATA[Jinny and Georgia is selected as employee full name]]>
+            </line>
+            <line>
+              <![CDATA[Employee name entered in search tab]]>
+            </line>
+            <line>
+              <![CDATA[Employee selected from the dropdown]]>
             </line>
           </reporter-output>
         </test-method> <!-- add_Employee -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_01_AddEmployee@2f217633]" started-at="2021-09-24T11:40:09 EDT" name="tearDown" finished-at="2021-09-24T11:40:09 EDT" duration-ms="244" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_01_AddEmployee@47987356]" started-at="2021-09-24T23:23:19 IST" name="tearDown" finished-at="2021-09-24T23:23:19 IST" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser is closed]]>

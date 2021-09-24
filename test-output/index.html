@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\rehan\AppData\Local\Temp\testng-eclipse-1567578695\testng-customsuite.xml</span>
+                    <span>C:\Users\AaradhyaVashisht\AppData\Local\Temp\testng-eclipse--626517950\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -130,13 +130,15 @@
                   <a name="add_Employee">
                   </a> <!-- add_Employee -->
                   <span class="method-name">add_Employee</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span&gt;...&lt;/span&gt; is not clickable at point (450, 431). Other element would receive the click: &lt;input type=&quot;text&quot; class=&quot;select-dropdown&quot; readonly=&quot;true&quot; data-activates=&quot;select-options-c3c8e28f-d337-37f3-a7e3-80b5d11b4440&quot; value=&quot;-- Select --&quot;&gt;
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[text()=&apos;0157&apos;]&quot;}
   (Session info: chrome=93.0.4577.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
-System info: host: &apos;LAPTOP-NK2I20DO&apos;, ip: &apos;192.168.0.26&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+System info: host: &apos;DESKTOP-807AG9O&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\rehan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56653}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0eca4e2d9619432f9d1a6578099e8a02
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\AARADH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53114}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 14e3aa18f14d79290b24d5ed4df2054d
+*** Element info: {Using=xpath, value=//td[text()=&apos;0157&apos;]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -148,10 +150,11 @@ Session ID: 0eca4e2d9619432f9d1a6578099e8a02
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at utilities.Utility.selection_dropdown(Utility.java:26)
-	at testcases.TC_01_AddEmployee.add_Employee(TC_01_AddEmployee.java:219)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at testcases.TC_01_AddEmployee.add_Employee(TC_01_AddEmployee.java:271)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -189,7 +192,7 @@ Session ID: 0eca4e2d9619432f9d1a6578099e8a02
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\rehan\AppData\Local\Temp\testng-eclipse-1567578695\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\AaradhyaVashisht\AppData\Local\Temp\testng-eclipse--626517950\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -242,12 +245,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'add_Employee')
 data.setCell(0, 2, 'testcases.TC_01_AddEmployee')
-data.setCell(0, 3, 26746);
+data.setCell(0, 3, 70967);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 26 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -287,7 +290,21 @@ return data;
                 <span class="reporter-method-output">Data entered in hobbies field</span>
                 <span class="reporter-method-output">Next button is clicked</span>
                 <span class="reporter-method-output">Employee details page is displayed</span>
+                <span class="reporter-method-output">StaleElementReferenceException occured, retrying for same element...!!!</span>
                 <span class="reporter-method-output">Region drop-down is clicked</span>
+                <span class="reporter-method-output">Region-2 is selcted from the dropdown</span>
+                <span class="reporter-method-output">FTE drop-down is clicked</span>
+                <span class="reporter-method-output">0.5 is selected from the dropdown</span>
+                <span class="reporter-method-output">Temporary department drop-down is clicked</span>
+                <span class="reporter-method-output">Sub unit-3 is selected  from the dropdown</span>
+                <span class="reporter-method-output">Save button is clicked</span>
+                <span class="reporter-method-output">save buttonn is clicked</span>
+                <span class="reporter-method-output">Food selection radio button is clicked</span>
+                <span class="reporter-method-output">save button is clicked</span>
+                <span class="reporter-method-output">Emloyee list is seleced</span>
+                <span class="reporter-method-output">Jinny and Georgia is selected as employee full name</span>
+                <span class="reporter-method-output">Employee name entered in search tab</span>
+                <span class="reporter-method-output">Employee selected from the dropdown</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -312,17 +329,17 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">openBrowser(Chrome)</span>
-                <span class="method-start">1056 ms</span>
+                <span class="method-start">402 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">add_Employee</span>
-                <span class="method-start">3119 ms</span>
+                <span class="method-start">1520 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">29873 ms</span>
+                <span class="method-start">72490 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,8 +1,13 @@
 package utilities;
 
+import java.time.Duration;
 import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.concurrent.TimeUnit;
+import java.util.function.Function;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,6 +15,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.opera.OperaDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -23,7 +32,7 @@ public class Utility {
 			String actualData=eachElement.getText();
 			
 			if (actualData.equalsIgnoreCase(expectedData)) {
-				eachElement.click();
+				((JavascriptExecutor)driver).executeScript("arguments[0].click();", eachElement);
 				System.out.println(actualData + " Is selected from the dropdown");
 				break;
 			}
@@ -53,7 +62,8 @@ public class Utility {
 		
 		for(int attempts = 0;attempts<2;attempts++) {
 			try {
-					driver.findElement(by).click();
+					//driver.findElement(by).click();
+					((JavascriptExecutor)driver).executeScript("arguments[0].click();", driver.findElement(by));
 		            result = true;
 		            break;
 			} catch(StaleElementReferenceException e) {
@@ -81,5 +91,29 @@ public class Utility {
 		}
 		return driver;
 	}
+	
+	public static void waitForPageLoad_sample(WebDriver driver) {
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(30)).pollingEvery(Duration.ofSeconds(5)).ignoring(NoSuchElementException.class);
+			       
+		wait.until(new Function<WebDriver, Boolean>() {
+		     public Boolean apply(WebDriver driver) {
+		       return ((JavascriptExecutor)driver).executeScript("return document.readyState").toString().equalsIgnoreCase("complete");
+		     }
+		});
+	}
+	
+	public static void waitForPageLoad(WebDriver driver) throws Exception{
+		ExpectedCondition<Boolean> condition = new ExpectedCondition<Boolean>() {
+			public Boolean apply(WebDriver driver) {
+				return ((JavascriptExecutor)driver).executeScript("return document.readyState").toString().equalsIgnoreCase("complete");
+			}
+		};
+		
+		Thread.sleep(1000);
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(condition);
+	}
+	
+	
  
 }

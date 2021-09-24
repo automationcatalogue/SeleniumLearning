@@ -51,7 +51,7 @@ public class TC_01_AddEmployee {
 	
 	@Test
 	public void add_Employee() throws Exception {
-		
+		JavascriptExecutor js = ((JavascriptExecutor)driver);
 		
 		driver.get("https://testseleniumcod-trials72.orangehrmlive.com");
 		Reporter.log("Orange HRM website is loaded", true);
@@ -203,37 +203,32 @@ public class TC_01_AddEmployee {
 		driver.findElement(By.xpath("//button[text()='Next']")).click();
 		Reporter.log("Next button is clicked",true);
 		
-		WebElement element_EmployeeDetailsTab=driver.findElement(By.id("employement_details_tab"));
-		wait.until(ExpectedConditions.visibilityOf(element_EmployeeDetailsTab));
+		Utility.waitForPageLoad(driver);
 		Reporter.log("Employee details page is displayed",true);
+				
 		
-		
-		((JavascriptExecutor)driver).executeScript("window.scrollBy(0,document.body.height)");
+		js.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(By.xpath("//button[text()='Save']")));
 		Thread.sleep(1000);
-		//Utility.retryClick(driver, By.xpath("//label[contains(text(),'Region')]/..//following-sibling::input[1]"));
-		((JavascriptExecutor)driver).executeScript("arguments[0].click();", driver.findElement(By.xpath("//label[contains(text(),'Region')]/..//following-sibling::input[1]")));
+		Utility.retryClick(driver, By.xpath("//label[contains(text(),'Region')]/..//following-sibling::input[1]"));
 		Reporter.log("Region drop-down is clicked", true);
-		
+		Thread.sleep(1000);
 		String Region=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_Region, "OrangeHRM");
-
 		Utility.selection_dropdown(driver,"//div[@id='9_inputfileddiv']/div/ul/li/span",Region);
 		Reporter.log(Region+ " is selcted from the dropdown", true);
+		Thread.sleep(1000);
 		
-		WebElement element_FTE_dd=driver.findElement(By.xpath("//div[@id='10_inputfileddiv']/div/input"));
-		((JavascriptExecutor)driver).executeScript("arguments[0].click();", element_FTE_dd);
-		Reporter.log("FTE drop-down is clicked",true);
+		js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//label[contains(text(),'FTE')]/..//following-sibling::input[1]")));
+		Reporter.log("FTE drop-down is clicked", true);
 		
 		String FTE=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_FTE, "OrangeHRM");
-
 		Utility.selection_dropdown(driver,"//div[@id='10_inputfileddiv']/div/ul/li/span",FTE);
 		Reporter.log(FTE+ " is selected from the dropdown",true);
+		Thread.sleep(1000);
 		
-		WebElement element_tempdept_dd=driver.findElement(By.xpath("//div[@id='11_inputfileddiv']/div/input"));
-		((JavascriptExecutor)driver).executeScript("arguments[0].click();", element_tempdept_dd);
+		js.executeScript("arguments[0].click();", driver.findElement(By.xpath("//label[contains(text(),'Temporary')]/..//following-sibling::input[1]")));
 		Reporter.log("Temporary department drop-down is clicked",true);
-		
+		Thread.sleep(1000);
 		String TempDep=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_TempDepartment, "OrangeHRM");
-
 		Utility.selection_dropdown(driver,"//div[@id='11_inputfileddiv']/div/ul/li/span", TempDep);
 		Reporter.log(TempDep+ " is selected  from the dropdown", true);
 		
