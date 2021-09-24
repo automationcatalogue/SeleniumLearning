@@ -8,49 +8,103 @@
       <![CDATA[Browser Name from the TestNG.xml is :Chrome]]>
     </line>
     <line>
-      <![CDATA[Airbnb website is loaded]]>
+      <![CDATA[Orange HRM website is loaded]]>
     </line>
     <line>
       <![CDATA[Browser window is maximized]]>
     </line>
     <line>
-      <![CDATA[Accepted the cookies]]>
+      <![CDATA[Admin is entered as UserName in a text-box]]>
     </line>
     <line>
-      <![CDATA[Location is clicked ]]>
+      <![CDATA[Admin@123 is entered as Password in a text-box]]>
     </line>
     <line>
-      <![CDATA[I’m flexible button is clicked]]>
+      <![CDATA[Login button is clicked]]>
     </line>
     <line>
-      <![CDATA[Search results are displayed]]>
+      <![CDATA[Home page is displayed]]>
     </line>
     <line>
-      <![CDATA[Guests dropdown is clicked]]>
+      <![CDATA[Selected PIM from the available options]]>
     </line>
     <line>
-      <![CDATA[No of adults selected from filter : 2]]>
+      <![CDATA[Selected add employee option]]>
     </line>
     <line>
-      <![CDATA[Saved selection]]>
+      <![CDATA[Add Employee modal exists ]]>
     </line>
     <line>
-      <![CDATA[Filters button is clicked]]>
+      <![CDATA[Jinny is enered as first name in the text-box]]>
+    </line>
+    <line>
+      <![CDATA[and is enered as middle name in the text-box]]>
+    </line>
+    <line>
+      <![CDATA[Georgiais enered as  nalastme in the text-box]]>
+    </line>
+    <line>
+      <![CDATA[Location dropdown button is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Number of locations available:28]]>
+    </line>
+    <line>
+      <![CDATA[Next button is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Personal details page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Entered data in other Id field]]>
+    </line>
+    <line>
+      <![CDATA[Nationality drop-down is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Australian is selected as nationality of the employee]]>
+    </line>
+    <line>
+      <![CDATA[Option under marital status are 4]]>
+    </line>
+    <line>
+      <![CDATA[marital status drop-down is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Gender drop-down is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Gender is selcted as :Male]]>
+    </line>
+    <line>
+      <![CDATA[Data entered in hobbies field]]>
+    </line>
+    <line>
+      <![CDATA[Next button is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Employee details page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Region drop-down is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Browser is closed]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-09-23T21:09:01 EDT" name="Default suite" finished-at="2021-09-23T21:09:13 EDT" duration-ms="11368">
+  <suite started-at="2021-09-24T11:39:39 EDT" name="Default suite" finished-at="2021-09-24T11:40:09 EDT" duration-ms="30150">
     <groups>
     </groups>
-    <test started-at="2021-09-23T21:09:01 EDT" name="Default test" finished-at="2021-09-23T21:09:13 EDT" duration-ms="11368">
-      <class name="testcases.TC_11_AirbnbValidation">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC_11_AirbnbValidation@2f217633]" started-at="2021-09-23T21:09:01 EDT" name="setup" finished-at="2021-09-23T21:09:01 EDT" duration-ms="12" status="PASS">
+    <test started-at="2021-09-24T11:39:39 EDT" name="Default test" finished-at="2021-09-24T11:40:09 EDT" duration-ms="30150">
+      <class name="testcases.TC_01_AddEmployee">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC_01_AddEmployee@2f217633]" started-at="2021-09-24T11:39:39 EDT" name="setup" finished-at="2021-09-24T11:39:40 EDT" duration-ms="1041" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Path of the Project is :C:\Users\rehan\git\SeleniumLearning]]>
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_11_AirbnbValidation@2f217633]" started-at="2021-09-23T21:09:01 EDT" name="openBrowser" finished-at="2021-09-23T21:09:03 EDT" duration-ms="1599" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_01_AddEmployee@2f217633]" started-at="2021-09-24T11:39:40 EDT" name="openBrowser" finished-at="2021-09-24T11:39:42 EDT" duration-ms="2062" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -64,25 +118,25 @@
             </line>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="priceRangeFilter()[pri:0, instance:testcases.TC_11_AirbnbValidation@2f217633]" started-at="2021-09-23T21:09:03 EDT" name="priceRangeFilter" finished-at="2021-09-23T21:09:13 EDT" duration-ms="9497" status="FAIL">
+        <test-method signature="add_Employee()[pri:0, instance:testcases.TC_01_AddEmployee@2f217633]" started-at="2021-09-24T11:39:42 EDT" name="add_Employee" finished-at="2021-09-24T11:40:09 EDT" duration-ms="26746" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element click intercepted: Element <input name="Entire place" aria-labelledby="filterItem-room_type-checkbox-room_types-Entire_home_apt-row-title" aria-describedby="filterItem-room_type-checkbox-room_types-Entire_home_apt-row-subtitle" id="filterItem-room_type-checkbox-room_types-Entire_home_apt-row-checkbox" class="_19t2uhr" type="checkbox"> is not clickable at point (436, 312). Other element would receive the click: <div class="_7ytxmo">...</div>
+              <![CDATA[element click intercepted: Element <span>...</span> is not clickable at point (450, 431). Other element would receive the click: <input type="text" class="select-dropdown" readonly="true" data-activates="select-options-c3c8e28f-d337-37f3-a7e3-80b5d11b4440" value="-- Select --">
   (Session info: chrome=93.0.4577.82)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'LAPTOP-NK2I20DO', ip: '192.168.0.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\rehan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55572}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bf161d076235778d868a80e0446c7f86]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\rehan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56653}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0eca4e2d9619432f9d1a6578099e8a02]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input name="Entire place" aria-labelledby="filterItem-room_type-checkbox-room_types-Entire_home_apt-row-title" aria-describedby="filterItem-room_type-checkbox-room_types-Entire_home_apt-row-subtitle" id="filterItem-room_type-checkbox-room_types-Entire_home_apt-row-checkbox" class="_19t2uhr" type="checkbox"> is not clickable at point (436, 312). Other element would receive the click: <div class="_7ytxmo">...</div>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span>...</span> is not clickable at point (450, 431). Other element would receive the click: <input type="text" class="select-dropdown" readonly="true" data-activates="select-options-c3c8e28f-d337-37f3-a7e3-80b5d11b4440" value="-- Select --">
   (Session info: chrome=93.0.4577.82)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'LAPTOP-NK2I20DO', ip: '192.168.0.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\rehan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55572}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bf161d076235778d868a80e0446c7f86
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\rehan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56653}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0eca4e2d9619432f9d1a6578099e8a02
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -96,7 +150,8 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at testcases.TC_11_AirbnbValidation.priceRangeFilter(TC_11_AirbnbValidation.java:82)
+at utilities.Utility.selection_dropdown(Utility.java:26)
+at testcases.TC_01_AddEmployee.add_Employee(TC_01_AddEmployee.java:219)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -130,42 +185,96 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
             <line>
-              <![CDATA[Airbnb website is loaded]]>
+              <![CDATA[Orange HRM website is loaded]]>
             </line>
             <line>
               <![CDATA[Browser window is maximized]]>
             </line>
             <line>
-              <![CDATA[Accepted the cookies]]>
+              <![CDATA[Admin is entered as UserName in a text-box]]>
             </line>
             <line>
-              <![CDATA[Location is clicked ]]>
+              <![CDATA[Admin@123 is entered as Password in a text-box]]>
             </line>
             <line>
-              <![CDATA[I’m flexible button is clicked]]>
+              <![CDATA[Login button is clicked]]>
             </line>
             <line>
-              <![CDATA[Search results are displayed]]>
+              <![CDATA[Home page is displayed]]>
             </line>
             <line>
-              <![CDATA[Guests dropdown is clicked]]>
+              <![CDATA[Selected PIM from the available options]]>
             </line>
             <line>
-              <![CDATA[No of adults selected from filter : 2]]>
+              <![CDATA[Selected add employee option]]>
             </line>
             <line>
-              <![CDATA[Saved selection]]>
+              <![CDATA[Add Employee modal exists ]]>
             </line>
             <line>
-              <![CDATA[Filters button is clicked]]>
+              <![CDATA[Jinny is enered as first name in the text-box]]>
+            </line>
+            <line>
+              <![CDATA[and is enered as middle name in the text-box]]>
+            </line>
+            <line>
+              <![CDATA[Georgiais enered as  nalastme in the text-box]]>
+            </line>
+            <line>
+              <![CDATA[Location dropdown button is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Number of locations available:28]]>
+            </line>
+            <line>
+              <![CDATA[Next button is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Personal details page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Entered data in other Id field]]>
+            </line>
+            <line>
+              <![CDATA[Nationality drop-down is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Australian is selected as nationality of the employee]]>
+            </line>
+            <line>
+              <![CDATA[Option under marital status are 4]]>
+            </line>
+            <line>
+              <![CDATA[marital status drop-down is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Gender drop-down is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Gender is selcted as :Male]]>
+            </line>
+            <line>
+              <![CDATA[Data entered in hobbies field]]>
+            </line>
+            <line>
+              <![CDATA[Next button is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Employee details page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Region drop-down is clicked]]>
             </line>
           </reporter-output>
-        </test-method> <!-- priceRangeFilter -->
-        <test-method is-config="true" signature="close_browser()[pri:0, instance:testcases.TC_11_AirbnbValidation@2f217633]" started-at="2021-09-23T21:09:13 EDT" name="close_browser" finished-at="2021-09-23T21:09:13 EDT" duration-ms="219" status="PASS">
+        </test-method> <!-- add_Employee -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_01_AddEmployee@2f217633]" started-at="2021-09-24T11:40:09 EDT" name="tearDown" finished-at="2021-09-24T11:40:09 EDT" duration-ms="244" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Browser is closed]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- close_browser -->
-      </class> <!-- testcases.TC_11_AirbnbValidation -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.TC_01_AddEmployee -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

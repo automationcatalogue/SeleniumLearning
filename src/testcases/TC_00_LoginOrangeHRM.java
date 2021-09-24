@@ -53,7 +53,7 @@ public class TC_00_LoginOrangeHRM {
 	
 	@Parameters({"username","password"})
 	@Test(enabled = true)
-	public void login_OrangeHRM_Parameterization(String username, String password) throws Exception {
+	public void login_OrangeHRM_Parameterization(@Optional("Admin")String username, @Optional("Admin@123")String password) throws Exception {
 		
 		
 		driver.get("https://testseleniumcod-trials72.orangehrmlive.com");
@@ -77,7 +77,7 @@ public class TC_00_LoginOrangeHRM {
 
 	}
 	
-	@Test(dataProviderClass = utilities.DataProviders.class, dataProvider = "LoginData")
+	@Test(dataProviderClass = utilities.DataProviders.class, dataProvider = "LoginData", enabled=true) 
 	public void login_OrangeHRM_DataProvider(String username, String password) throws Exception {
 		
 		
@@ -107,9 +107,11 @@ public class TC_00_LoginOrangeHRM {
 		WebElement element_logoutBtn=driver.findElement(By.xpath("//ul[@id='user_menu']//li[3]/a"));
 		((JavascriptExecutor)driver).executeScript("arguments[0].click();", element_logoutBtn);
 		Reporter.log("Successfully logged out of the browser", true);
+		
+		Thread.sleep(2000);
 	}
 	
-	@AfterClass
+	@AfterMethod
 	public void tearDown() {
 		driver.quit();
 		Reporter.log("Browser is closed", true);

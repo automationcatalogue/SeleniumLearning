@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\rehan\AppData\Local\Temp\testng-eclipse--1500288920\testng-customsuite.xml</span>
+                    <span>C:\Users\rehan\AppData\Local\Temp\testng-eclipse-1567578695\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testcases.TC_11_AirbnbValidation" class="method navigator-link" hash-for-method="priceRangeFilter">priceRangeFilter</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.TC_01_AddEmployee" class="method navigator-link" hash-for-method="add_Employee">add_Employee</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -122,21 +122,21 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testcases.TC_11_AirbnbValidation</span>
+              <span class="class-name">testcases.TC_01_AddEmployee</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="priceRangeFilter">
-                  </a> <!-- priceRangeFilter -->
-                  <span class="method-name">priceRangeFilter</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input name=&quot;Entire place&quot; aria-labelledby=&quot;filterItem-room_type-checkbox-room_types-Entire_home_apt-row-title&quot; aria-describedby=&quot;filterItem-room_type-checkbox-room_types-Entire_home_apt-row-subtitle&quot; id=&quot;filterItem-room_type-checkbox-room_types-Entire_home_apt-row-checkbox&quot; class=&quot;_19t2uhr&quot; type=&quot;checkbox&quot;&gt; is not clickable at point (436, 312). Other element would receive the click: &lt;div class=&quot;_7ytxmo&quot;&gt;...&lt;/div&gt;
+                  <a name="add_Employee">
+                  </a> <!-- add_Employee -->
+                  <span class="method-name">add_Employee</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span&gt;...&lt;/span&gt; is not clickable at point (450, 431). Other element would receive the click: &lt;input type=&quot;text&quot; class=&quot;select-dropdown&quot; readonly=&quot;true&quot; data-activates=&quot;select-options-c3c8e28f-d337-37f3-a7e3-80b5d11b4440&quot; value=&quot;-- Select --&quot;&gt;
   (Session info: chrome=93.0.4577.82)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
 System info: host: &apos;LAPTOP-NK2I20DO&apos;, ip: &apos;192.168.0.26&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\rehan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55572}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: bf161d076235778d868a80e0446c7f86
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\rehan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56653}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0eca4e2d9619432f9d1a6578099e8a02
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -150,7 +150,8 @@ Session ID: bf161d076235778d868a80e0446c7f86
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at testcases.TC_11_AirbnbValidation.priceRangeFilter(TC_11_AirbnbValidation.java:82)
+	at utilities.Utility.selection_dropdown(Utility.java:26)
+	at testcases.TC_01_AddEmployee.add_Employee(TC_01_AddEmployee.java:219)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -188,7 +189,7 @@ Session ID: bf161d076235778d868a80e0446c7f86
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\rehan\AppData\Local\Temp\testng-eclipse--1500288920\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\rehan\AppData\Local\Temp\testng-eclipse-1567578695\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -197,7 +198,7 @@ Session ID: bf161d076235778d868a80e0446c7f86
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testcases.TC_11_AirbnbValidation&quot;/&gt;
+      &lt;class name=&quot;testcases.TC_01_AddEmployee&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -239,14 +240,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'priceRangeFilter')
-data.setCell(0, 2, 'testcases.TC_11_AirbnbValidation')
-data.setCell(0, 3, 9497);
+data.setCell(0, 1, 'add_Employee')
+data.setCell(0, 2, 'testcases.TC_01_AddEmployee')
+data.setCell(0, 3, 26746);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 26 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -258,18 +259,35 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">priceRangeFilter</span>
+              <span class="reporter-method-name">add_Employee</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Airbnb website is loaded</span>
+                <span class="reporter-method-output">Orange HRM website is loaded</span>
                 <span class="reporter-method-output">Browser window is maximized</span>
-                <span class="reporter-method-output">Accepted the cookies</span>
-                <span class="reporter-method-output">Location is clicked </span>
-                <span class="reporter-method-output">I’m flexible button is clicked</span>
-                <span class="reporter-method-output">Search results are displayed</span>
-                <span class="reporter-method-output">Guests dropdown is clicked</span>
-                <span class="reporter-method-output">No of adults selected from filter : 2</span>
-                <span class="reporter-method-output">Saved selection</span>
-                <span class="reporter-method-output">Filters button is clicked</span>
+                <span class="reporter-method-output">Admin is entered as UserName in a text-box</span>
+                <span class="reporter-method-output">Admin@123 is entered as Password in a text-box</span>
+                <span class="reporter-method-output">Login button is clicked</span>
+                <span class="reporter-method-output">Home page is displayed</span>
+                <span class="reporter-method-output">Selected PIM from the available options</span>
+                <span class="reporter-method-output">Selected add employee option</span>
+                <span class="reporter-method-output">Add Employee modal exists </span>
+                <span class="reporter-method-output">Jinny is enered as first name in the text-box</span>
+                <span class="reporter-method-output">and is enered as middle name in the text-box</span>
+                <span class="reporter-method-output">Georgiais enered as  nalastme in the text-box</span>
+                <span class="reporter-method-output">Location dropdown button is clicked</span>
+                <span class="reporter-method-output">Number of locations available:28</span>
+                <span class="reporter-method-output">Next button is clicked</span>
+                <span class="reporter-method-output">Personal details page is displayed</span>
+                <span class="reporter-method-output">Entered data in other Id field</span>
+                <span class="reporter-method-output">Nationality drop-down is clicked</span>
+                <span class="reporter-method-output">Australian is selected as nationality of the employee</span>
+                <span class="reporter-method-output">Option under marital status are 4</span>
+                <span class="reporter-method-output">marital status drop-down is clicked</span>
+                <span class="reporter-method-output">Gender drop-down is clicked</span>
+                <span class="reporter-method-output">Gender is selcted as :Male</span>
+                <span class="reporter-method-output">Data entered in hobbies field</span>
+                <span class="reporter-method-output">Next button is clicked</span>
+                <span class="reporter-method-output">Employee details page is displayed</span>
+                <span class="reporter-method-output">Region drop-down is clicked</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -287,24 +305,24 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.TC_11_AirbnbValidation</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcases.TC_01_AddEmployee</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">openBrowser(Chrome)</span>
-                <span class="method-start">23 ms</span>
+                <span class="method-start">1056 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">priceRangeFilter</span>
-                <span class="method-start">1623 ms</span>
+                <span class="method-name">add_Employee</span>
+                <span class="method-start">3119 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
-                <span class="method-name">close_browser</span>
-                <span class="method-start">11127 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">29873 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
