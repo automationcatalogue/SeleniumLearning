@@ -1,143 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning]]>
+      <![CDATA[Path of the Project is :C:\Users\rehan\git\SeleniumLearning]]>
     </line>
     <line>
-      <![CDATA[Orange HRM website is loaded]]>
+      <![CDATA[Browser Name from the TestNG.xml is :Chrome]]>
+    </line>
+    <line>
+      <![CDATA[Airbnb website is loaded]]>
     </line>
     <line>
       <![CDATA[Browser window is maximized]]>
     </line>
     <line>
-      <![CDATA[userName is entered in the text-box]]>
+      <![CDATA[Accepted the cookies]]>
     </line>
     <line>
-      <![CDATA[password is entered in the text-box]]>
+      <![CDATA[Location is clicked ]]>
     </line>
     <line>
-      <![CDATA[Login button is clicked]]>
+      <![CDATA[I’m flexible button is clicked]]>
     </line>
     <line>
-      <![CDATA[Admin menu is clicked]]>
+      <![CDATA[Search results are displayed]]>
     </line>
     <line>
-      <![CDATA[User Management option is clicked]]>
+      <![CDATA[Guests dropdown is clicked]]>
     </line>
     <line>
-      <![CDATA[Useres option is clicked]]>
+      <![CDATA[No of adults selected from filter : 2]]>
     </line>
     <line>
-      <![CDATA[Edit user option is clicked]]>
+      <![CDATA[Saved selection]]>
     </line>
     <line>
-      <![CDATA[New password is entered ]]>
-    </line>
-    <line>
-      <![CDATA[Confirm password is entered ]]>
-    </line>
-    <line>
-      <![CDATA[Save button is clicked]]>
-    </line>
-    <line>
-      <![CDATA[Logout dropdown is clicked]]>
-    </line>
-    <line>
-      <![CDATA[Logout is selected from the dropdown]]>
-    </line>
-    <line>
-      <![CDATA[Adella is entered as UserName in a text-box]]>
-    </line>
-    <line>
-      <![CDATA[abcd@123 is entered as Password in a text-box]]>
-    </line>
-    <line>
-      <![CDATA[Login button is clicked]]>
-    </line>
-    <line>
-      <![CDATA[Browser is closed]]>
+      <![CDATA[Filters button is clicked]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-09-23T08:45:42 IST" name="Default suite" finished-at="2021-09-23T08:46:18 IST" duration-ms="36309">
+  <suite started-at="2021-09-23T21:09:01 EDT" name="Default suite" finished-at="2021-09-23T21:09:13 EDT" duration-ms="11368">
     <groups>
     </groups>
-    <test started-at="2021-09-23T08:45:42 IST" name="Default test" finished-at="2021-09-23T08:46:18 IST" duration-ms="36309">
-      <class name="testcases.TC_02_ChangePassword">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC_02_ChangePassword@3b6ddd1d]" started-at="2021-09-23T08:45:42 IST" name="setup" finished-at="2021-09-23T08:45:43 IST" duration-ms="437" status="PASS">
+    <test started-at="2021-09-23T21:09:01 EDT" name="Default test" finished-at="2021-09-23T21:09:13 EDT" duration-ms="11368">
+      <class name="testcases.TC_11_AirbnbValidation">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC_11_AirbnbValidation@2f217633]" started-at="2021-09-23T21:09:01 EDT" name="setup" finished-at="2021-09-23T21:09:01 EDT" duration-ms="12" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning]]>
+              <![CDATA[Path of the Project is :C:\Users\rehan\git\SeleniumLearning]]>
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:testcases.TC_02_ChangePassword@3b6ddd1d]" started-at="2021-09-23T08:45:43 IST" name="openBrowser" finished-at="2021-09-23T08:45:44 IST" duration-ms="1081" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="change_password()[pri:0, instance:testcases.TC_02_ChangePassword@3b6ddd1d]" started-at="2021-09-23T08:45:44 IST" name="change_password" finished-at="2021-09-23T08:46:18 IST" duration-ms="34762" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_11_AirbnbValidation@2f217633]" started-at="2021-09-23T21:09:01 EDT" name="openBrowser" finished-at="2021-09-23T21:09:03 EDT" duration-ms="1599" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
-              <![CDATA[Orange HRM website is loaded]]>
+              <![CDATA[Browser Name from the TestNG.xml is :Chrome]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="priceRangeFilter()[pri:0, instance:testcases.TC_11_AirbnbValidation@2f217633]" started-at="2021-09-23T21:09:03 EDT" name="priceRangeFilter" finished-at="2021-09-23T21:09:13 EDT" duration-ms="9497" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <input name="Entire place" aria-labelledby="filterItem-room_type-checkbox-room_types-Entire_home_apt-row-title" aria-describedby="filterItem-room_type-checkbox-room_types-Entire_home_apt-row-subtitle" id="filterItem-room_type-checkbox-room_types-Entire_home_apt-row-checkbox" class="_19t2uhr" type="checkbox"> is not clickable at point (436, 312). Other element would receive the click: <div class="_7ytxmo">...</div>
+  (Session info: chrome=93.0.4577.82)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'LAPTOP-NK2I20DO', ip: '192.168.0.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\rehan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55572}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bf161d076235778d868a80e0446c7f86]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input name="Entire place" aria-labelledby="filterItem-room_type-checkbox-room_types-Entire_home_apt-row-title" aria-describedby="filterItem-room_type-checkbox-room_types-Entire_home_apt-row-subtitle" id="filterItem-room_type-checkbox-room_types-Entire_home_apt-row-checkbox" class="_19t2uhr" type="checkbox"> is not clickable at point (436, 312). Other element would receive the click: <div class="_7ytxmo">...</div>
+  (Session info: chrome=93.0.4577.82)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'LAPTOP-NK2I20DO', ip: '192.168.0.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\rehan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55572}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bf161d076235778d868a80e0446c7f86
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at testcases.TC_11_AirbnbValidation.priceRangeFilter(TC_11_AirbnbValidation.java:82)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Airbnb website is loaded]]>
             </line>
             <line>
               <![CDATA[Browser window is maximized]]>
             </line>
             <line>
-              <![CDATA[userName is entered in the text-box]]>
+              <![CDATA[Accepted the cookies]]>
             </line>
             <line>
-              <![CDATA[password is entered in the text-box]]>
+              <![CDATA[Location is clicked ]]>
             </line>
             <line>
-              <![CDATA[Login button is clicked]]>
+              <![CDATA[I’m flexible button is clicked]]>
             </line>
             <line>
-              <![CDATA[Admin menu is clicked]]>
+              <![CDATA[Search results are displayed]]>
             </line>
             <line>
-              <![CDATA[User Management option is clicked]]>
+              <![CDATA[Guests dropdown is clicked]]>
             </line>
             <line>
-              <![CDATA[Useres option is clicked]]>
+              <![CDATA[No of adults selected from filter : 2]]>
             </line>
             <line>
-              <![CDATA[Edit user option is clicked]]>
+              <![CDATA[Saved selection]]>
             </line>
             <line>
-              <![CDATA[New password is entered ]]>
-            </line>
-            <line>
-              <![CDATA[Confirm password is entered ]]>
-            </line>
-            <line>
-              <![CDATA[Save button is clicked]]>
-            </line>
-            <line>
-              <![CDATA[Logout dropdown is clicked]]>
-            </line>
-            <line>
-              <![CDATA[Logout is selected from the dropdown]]>
-            </line>
-            <line>
-              <![CDATA[Adella is entered as UserName in a text-box]]>
-            </line>
-            <line>
-              <![CDATA[abcd@123 is entered as Password in a text-box]]>
-            </line>
-            <line>
-              <![CDATA[Login button is clicked]]>
+              <![CDATA[Filters button is clicked]]>
             </line>
           </reporter-output>
-        </test-method> <!-- change_password -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testcases.TC_02_ChangePassword@3b6ddd1d]" started-at="2021-09-23T08:46:18 IST" name="afterClass" finished-at="2021-09-23T08:46:18 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- priceRangeFilter -->
+        <test-method is-config="true" signature="close_browser()[pri:0, instance:testcases.TC_11_AirbnbValidation@2f217633]" started-at="2021-09-23T21:09:13 EDT" name="close_browser" finished-at="2021-09-23T21:09:13 EDT" duration-ms="219" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[Browser is closed]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- testcases.TC_02_ChangePassword -->
+        </test-method> <!-- close_browser -->
+      </class> <!-- testcases.TC_11_AirbnbValidation -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

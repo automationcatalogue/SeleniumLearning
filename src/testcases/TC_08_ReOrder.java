@@ -40,16 +40,16 @@ static SoftAssert assertion;
 	@Parameters({"browser"})
 	@BeforeMethod
 	public void openBrowser(@Optional("Chrome") String browser) {
-		Reporter.log("Browser Name from the TestNG.xml is :"+browser);
+		Reporter.log("Browser Name from the TestNG.xml is :"+browser, true);
 		driver=Utility.getDriver(browser);
 		
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		
 		driver.get("http://demowebshop.tricentis.com");
-		Reporter.log("Website loaded");
+		Reporter.log("Website is successfully loaded", true);
 
 		driver.manage().window().maximize();
-		Reporter.log("Browser window maximized");
+		Reporter.log("Browser window maximized", true);
 	}
 	
 	@Test
@@ -136,10 +136,17 @@ static SoftAssert assertion;
     	 
     	String order_confirmation= driver.findElement(By.xpath("//ul[@class='details']/li[1]")).getText();
     	Reporter.log(order_confirmation,true);
+    	
+    	Thread.sleep(3000);
+		
+		driver.findElement(By.xpath("//a[text()='Log out']")).click();
+		Reporter.log("Successfully logged out of the browser", true);
 	}
+	
 	@AfterClass
 	public void close_browser() {
 		driver.quit();
+		Reporter.log("Browser is successfully closed", true);
 		assertion.assertAll();
 	}
 }

@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Reporter;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
@@ -39,16 +40,16 @@ static SoftAssert assertion;
 	@BeforeMethod
 	public void openBrowser(@Optional("Chrome") String browser) {
 		
-		Reporter.log("Browser Name from the TestNG.xml is :"+browser);
+		Reporter.log("Browser Name from the TestNG.xml is :"+browser, true);
 		driver=Utility.getDriver(browser);
 		
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		
 		driver.get("http://demowebshop.tricentis.com");
-		System.out.println("Website loaded");
+		Reporter.log("Website is successfully loaded", true);
 
 		driver.manage().window().maximize();
-		System.out.println("Browser window maximized");
+		Reporter.log("Browser window maximized", true);
 	}
 	
 	@Test
@@ -78,7 +79,7 @@ static SoftAssert assertion;
 		Reporter.log("Orders selcted from the options", true);
 		
 		int totalorders = driver.findElements(By.xpath("//div[@class='order-list']/div")).size();
-		System.out.println("Total number of orders placed are:" + totalorders);
+		Reporter.log("Total number of orders placed are:" + totalorders, true);
 		
 		
 		List<WebElement> list_totalorders = driver.findElements(By.xpath("//div[@class='order-list']/div/ul/li[3]"));
@@ -89,7 +90,7 @@ static SoftAssert assertion;
 			int total=Integer.parseInt(orderTotal);
 			sum=sum+total;
 		}
-		System.out.println("Sum of Total orders is :"+sum);
+		Reporter.log("Sum of Total orders is :"+sum , true);
 		
 		List<WebElement> list_totalorders_daywise=driver.findElements(By.xpath("//div[@class='order-list']/div/ul/li[2]"));
 		for (WebElement daywise_list:list_totalorders_daywise) {
@@ -104,4 +105,11 @@ static SoftAssert assertion;
 		}
 		
 	}
+	@AfterClass
+	public void close_browser() {
+		//driver.quit();
+		Reporter.log("Browser is successfully closed", true);
+		assertion.assertAll();
+  }
 }
+	

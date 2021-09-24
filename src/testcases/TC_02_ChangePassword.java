@@ -80,7 +80,7 @@ static SoftAssert assertion;
 		
 		driver.findElement(By.xpath("//label[@for='changepassword']")).click();
 		
-		String new_password = ExcelUtilities.getCellData(Constant.RowNumber_three, Constant.col_Password, "OrangeHRM");
+		String new_password = ExcelUtilities.getCellData(Constant.uRowNumber, Constant.col_Password, "OrangeHRM");
 		
 		driver.findElement(By.xpath("//input[@id='password']")).sendKeys(new_password);
 		Reporter.log("New password is entered ", true);
@@ -104,8 +104,8 @@ static SoftAssert assertion;
 		Reporter.log(logout+ " is selected from the dropdown",true);
 		
 	
-		String newuserName=ExcelUtilities.getCellData(Constant.RowNumber_three, Constant.col_UserName, "OrangeHRM");
-		String newpassword = ExcelUtilities.getCellData(Constant.RowNumber_three, Constant.col_Password, "OrangeHRM");
+		String newuserName=ExcelUtilities.getCellData(Constant.uRowNumber, Constant.col_UserName, "OrangeHRM");
+		String newpassword = ExcelUtilities.getCellData(Constant.uRowNumber, Constant.col_Password, "OrangeHRM");
 		
 		driver.findElement(By.id("txtUsername")).sendKeys(newuserName);
 		Reporter.log(newuserName+" is entered as UserName in a text-box", true);
@@ -115,10 +115,23 @@ static SoftAssert assertion;
 		
 		driver.findElement(By.id("btnLogin")).click();
 		Reporter.log("Login button is clicked",true);
+		
+		Thread.sleep(4000);
+		
+		WebElement dropdown_logout1 = driver.findElement(By.xpath("//i[text()='keyboard_arrow_down']"));
+		((JavascriptExecutor)driver).executeScript("arguments[0].click();",dropdown_logout1);
+		Reporter.log("Logout dropdown is clicked", true);
+		
+		String logout1=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.options, "OrangeHRM");
+		WebElement element_logoutBtn1=driver.findElement(By.xpath("//ul[@id='user_menu']//li[3]/a"));
+		((JavascriptExecutor)driver).executeScript("arguments[0].click();", element_logoutBtn1);
+		Reporter.log("Successfully logged out of the website",true);
+		
+		
 	}
 	@AfterClass
 	public void afterClass() {
-		//driver.quit();
+		driver.quit();
 		Reporter.log("Browser is closed");
 		assertion.assertAll();
 	}

@@ -35,16 +35,16 @@ public class TC_07_DemoWebShop_PlaceOrder {
 	@Parameters({"browser"})
 	@BeforeMethod
 	public static void openBrowser(@Optional("Chrome") String browser) {
-		Reporter.log("Browser Name from the TestNG.xml is :"+browser);
+		Reporter.log("Browser Name from the TestNG.xml is :"+browser, true);
 		driver=Utility.getDriver(browser);
 				
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 
 		driver.get("http://demowebshop.tricentis.com");
-		System.out.println("Website loaded");
+		Reporter.log("Website is loaded", true);
 
 		driver.manage().window().maximize();
-		System.out.println("Browser window maximized");
+		Reporter.log("Browser window maximized", true);
 	}
 		
 	@Test
@@ -150,12 +150,17 @@ public class TC_07_DemoWebShop_PlaceOrder {
 
 		String g = driver.findElement(By.xpath("//ul[@class='details']/li")).getText();
 		Reporter.log(g, true);
+		
+		Thread.sleep(3000);
+		
+		driver.findElement(By.xpath("//a[text()='Log out']")).click();
+		Reporter.log("Successfully logged out of the browser", true);
 
 	}
 	@AfterClass
 	public void afterClass() {
 		driver.quit();
-		Reporter.log("Browser is closed");
+		Reporter.log("Browser is closed", true);
 		assertion.assertAll();
 	}
 }
