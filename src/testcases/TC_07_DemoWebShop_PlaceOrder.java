@@ -54,7 +54,6 @@ public class TC_07_DemoWebShop_PlaceOrder {
 		Reporter.log("Login button is clicked", true);
 		
 		String email=ExcelUtilities.getCellData(Constant.uRowNumber, Constant.col_Email, "DemoWebShop");
-		
 		driver.findElement(By.id("Email")).sendKeys(email);
 		Reporter.log("Email Id is entered",true);
 		

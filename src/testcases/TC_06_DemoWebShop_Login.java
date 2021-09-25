@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
@@ -51,18 +52,17 @@ public class TC_06_DemoWebShop_Login {
 		Reporter.log("Browser window maximized", true);
 	}
 	
-	@Test
-	public static void login() throws Exception{
+	@Test(dataProviderClass = utilities.DataProvider_DemoWebShop_Login.class, dataProvider = "LoginData1") 
+	public static void login_DemoWebShop_DataProvider(String email, String password) throws Exception{
 		
 		
 		driver.findElement(By.className("ico-login")).click();
 		Reporter.log("Login button is clicked", true);
 		
-		String email=ExcelUtilities.getCellData(Constant.uRowNumber, Constant.col_Email, "DemoWebShop");
+		
 		driver.findElement(By.id("Email")).sendKeys(email);
 		Reporter.log("Email Id is entered",true);
 		
-		String password=ExcelUtilities.getCellData(Constant.uRowNumber, Constant.col_Password, "DemoWebShop");
 		driver.findElement(By.id("Password")).sendKeys(password);
 		Reporter.log("Entered password", true);
 		
@@ -75,7 +75,7 @@ public class TC_06_DemoWebShop_Login {
   }
 	
 	
-	@AfterClass
+	@AfterMethod
 	public void afterClass() {
 		driver.quit();
 		Reporter.log("Browser is closed", true);

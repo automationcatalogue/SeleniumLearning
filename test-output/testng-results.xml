@@ -1,152 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning]]>
+      <![CDATA[Path of the Project is :C:\Users\rehan\git\SeleniumLearning]]>
     </line>
     <line>
       <![CDATA[Browser Name from the TestNG.xml is :Chrome]]>
     </line>
     <line>
-      <![CDATA[Orange HRM website is loaded]]>
+      <![CDATA[Website is loaded]]>
     </line>
     <line>
-      <![CDATA[Browser window is maximized]]>
-    </line>
-    <line>
-      <![CDATA[Admin is entered as UserName in a text-box]]>
-    </line>
-    <line>
-      <![CDATA[Admin@123 is entered as Password in a text-box]]>
+      <![CDATA[Browser window maximized]]>
     </line>
     <line>
       <![CDATA[Login button is clicked]]>
     </line>
     <line>
-      <![CDATA[Home page is displayed]]>
+      <![CDATA[Email Id is entered]]>
     </line>
     <line>
-      <![CDATA[Selected PIM from the available options]]>
+      <![CDATA[Entered password]]>
     </line>
     <line>
-      <![CDATA[Selected add employee option]]>
+      <![CDATA[clicked on Login button]]>
     </line>
     <line>
-      <![CDATA[Add Employee modal exists ]]>
+      <![CDATA[Successfully logged out of the browser]]>
     </line>
     <line>
-      <![CDATA[Jinny is enered as first name in the text-box]]>
+      <![CDATA[Browser is closed]]>
     </line>
     <line>
-      <![CDATA[and is enered as middle name in the text-box]]>
+      <![CDATA[Browser Name from the TestNG.xml is :Chrome]]>
     </line>
     <line>
-      <![CDATA[Georgiais enered as  nalastme in the text-box]]>
+      <![CDATA[Website is loaded]]>
     </line>
     <line>
-      <![CDATA[Location dropdown button is clicked]]>
+      <![CDATA[Browser window maximized]]>
     </line>
     <line>
-      <![CDATA[Number of locations available:28]]>
+      <![CDATA[Login button is clicked]]>
     </line>
     <line>
-      <![CDATA[Next button is clicked]]>
+      <![CDATA[Email Id is entered]]>
     </line>
     <line>
-      <![CDATA[Personal details page is displayed]]>
+      <![CDATA[Entered password]]>
     </line>
     <line>
-      <![CDATA[Entered data in other Id field]]>
+      <![CDATA[clicked on Login button]]>
     </line>
     <line>
-      <![CDATA[Nationality drop-down is clicked]]>
+      <![CDATA[Successfully logged out of the browser]]>
     </line>
     <line>
-      <![CDATA[Australian is selected as nationality of the employee]]>
+      <![CDATA[Browser is closed]]>
     </line>
     <line>
-      <![CDATA[Option under marital status are 4]]>
+      <![CDATA[Browser Name from the TestNG.xml is :Chrome]]>
     </line>
     <line>
-      <![CDATA[marital status drop-down is clicked]]>
+      <![CDATA[Website is loaded]]>
     </line>
     <line>
-      <![CDATA[Gender drop-down is clicked]]>
+      <![CDATA[Browser window maximized]]>
     </line>
     <line>
-      <![CDATA[Gender is selcted as :Male]]>
+      <![CDATA[Login button is clicked]]>
     </line>
     <line>
-      <![CDATA[Data entered in hobbies field]]>
+      <![CDATA[Email Id is entered]]>
     </line>
     <line>
-      <![CDATA[Next button is clicked]]>
+      <![CDATA[Entered password]]>
     </line>
     <line>
-      <![CDATA[Employee details page is displayed]]>
+      <![CDATA[clicked on Login button]]>
     </line>
     <line>
-      <![CDATA[StaleElementReferenceException occured, retrying for same element...!!!]]>
+      <![CDATA[Successfully logged out of the browser]]>
     </line>
     <line>
-      <![CDATA[Region drop-down is clicked]]>
+      <![CDATA[Browser is closed]]>
     </line>
     <line>
-      <![CDATA[Region-2 is selcted from the dropdown]]>
+      <![CDATA[Browser Name from the TestNG.xml is :Chrome]]>
     </line>
     <line>
-      <![CDATA[FTE drop-down is clicked]]>
+      <![CDATA[Website is loaded]]>
     </line>
     <line>
-      <![CDATA[0.5 is selected from the dropdown]]>
+      <![CDATA[Browser window maximized]]>
     </line>
     <line>
-      <![CDATA[Temporary department drop-down is clicked]]>
+      <![CDATA[Login button is clicked]]>
     </line>
     <line>
-      <![CDATA[Sub unit-3 is selected  from the dropdown]]>
+      <![CDATA[Email Id is entered]]>
     </line>
     <line>
-      <![CDATA[Save button is clicked]]>
+      <![CDATA[Entered password]]>
     </line>
     <line>
-      <![CDATA[save buttonn is clicked]]>
+      <![CDATA[clicked on Login button]]>
     </line>
     <line>
-      <![CDATA[Food selection radio button is clicked]]>
-    </line>
-    <line>
-      <![CDATA[save button is clicked]]>
-    </line>
-    <line>
-      <![CDATA[Emloyee list is seleced]]>
-    </line>
-    <line>
-      <![CDATA[Jinny and Georgia is selected as employee full name]]>
-    </line>
-    <line>
-      <![CDATA[Employee name entered in search tab]]>
-    </line>
-    <line>
-      <![CDATA[Employee selected from the dropdown]]>
+      <![CDATA[Successfully logged out of the browser]]>
     </line>
     <line>
       <![CDATA[Browser is closed]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-09-24T23:22:07 IST" name="Default suite" finished-at="2021-09-24T23:23:19 IST" duration-ms="72505">
+  <suite started-at="2021-09-24T21:07:57 EDT" name="Default suite" finished-at="2021-09-24T21:08:40 EDT" duration-ms="42949">
     <groups>
     </groups>
-    <test started-at="2021-09-24T23:22:07 IST" name="Default test" finished-at="2021-09-24T23:23:19 IST" duration-ms="72505">
-      <class name="testcases.TC_01_AddEmployee">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC_01_AddEmployee@47987356]" started-at="2021-09-24T23:22:07 IST" name="setup" finished-at="2021-09-24T23:22:07 IST" duration-ms="397" status="PASS">
+    <test started-at="2021-09-24T21:07:57 EDT" name="Default test" finished-at="2021-09-24T21:08:40 EDT" duration-ms="42949">
+      <class name="testcases.TC_06_DemoWebShop_Login">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC_06_DemoWebShop_Login@2f217633]" started-at="2021-09-24T21:07:58 EDT" name="setup" finished-at="2021-09-24T21:07:58 EDT" duration-ms="734" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning]]>
+              <![CDATA[Path of the Project is :C:\Users\rehan\git\SeleniumLearning]]>
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_01_AddEmployee@47987356]" started-at="2021-09-24T23:22:07 IST" name="openBrowser" finished-at="2021-09-24T23:22:08 IST" duration-ms="1117" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_06_DemoWebShop_Login@2f217633]" started-at="2021-09-24T21:07:58 EDT" name="openBrowser" finished-at="2021-09-24T21:08:02 EDT" duration-ms="4140" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -158,212 +137,227 @@
             <line>
               <![CDATA[Browser Name from the TestNG.xml is :Chrome]]>
             </line>
+            <line>
+              <![CDATA[Website is loaded]]>
+            </line>
+            <line>
+              <![CDATA[Browser window maximized]]>
+            </line>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="add_Employee()[pri:0, instance:testcases.TC_01_AddEmployee@47987356]" started-at="2021-09-24T23:22:08 IST" name="add_Employee" finished-at="2021-09-24T23:23:19 IST" duration-ms="70967" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//td[text()='0157']"}
-  (Session info: chrome=93.0.4577.82)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'DESKTOP-807AG9O', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\AARADH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53114}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 14e3aa18f14d79290b24d5ed4df2054d
-*** Element info: {Using=xpath, value=//td[text()='0157']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[text()='0157']"}
-  (Session info: chrome=93.0.4577.82)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'DESKTOP-807AG9O', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\AARADH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53114}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 14e3aa18f14d79290b24d5ed4df2054d
-*** Element info: {Using=xpath, value=//td[text()='0157']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at testcases.TC_01_AddEmployee.add_Employee(TC_01_AddEmployee.java:271)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="login_DemoWebShop_DataProvider(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC_06_DemoWebShop_Login@2f217633]" started-at="2021-09-24T21:08:02 EDT" name="login_DemoWebShop_DataProvider" data-provider="LoginData1" finished-at="2021-09-24T21:08:10 EDT" duration-ms="7135" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GwiDFrKoK@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[login@123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
-            <line>
-              <![CDATA[Orange HRM website is loaded]]>
-            </line>
-            <line>
-              <![CDATA[Browser window is maximized]]>
-            </line>
-            <line>
-              <![CDATA[Admin is entered as UserName in a text-box]]>
-            </line>
-            <line>
-              <![CDATA[Admin@123 is entered as Password in a text-box]]>
-            </line>
             <line>
               <![CDATA[Login button is clicked]]>
             </line>
             <line>
-              <![CDATA[Home page is displayed]]>
+              <![CDATA[Email Id is entered]]>
             </line>
             <line>
-              <![CDATA[Selected PIM from the available options]]>
+              <![CDATA[Entered password]]>
             </line>
             <line>
-              <![CDATA[Selected add employee option]]>
+              <![CDATA[clicked on Login button]]>
             </line>
             <line>
-              <![CDATA[Add Employee modal exists ]]>
-            </line>
-            <line>
-              <![CDATA[Jinny is enered as first name in the text-box]]>
-            </line>
-            <line>
-              <![CDATA[and is enered as middle name in the text-box]]>
-            </line>
-            <line>
-              <![CDATA[Georgiais enered as  nalastme in the text-box]]>
-            </line>
-            <line>
-              <![CDATA[Location dropdown button is clicked]]>
-            </line>
-            <line>
-              <![CDATA[Number of locations available:28]]>
-            </line>
-            <line>
-              <![CDATA[Next button is clicked]]>
-            </line>
-            <line>
-              <![CDATA[Personal details page is displayed]]>
-            </line>
-            <line>
-              <![CDATA[Entered data in other Id field]]>
-            </line>
-            <line>
-              <![CDATA[Nationality drop-down is clicked]]>
-            </line>
-            <line>
-              <![CDATA[Australian is selected as nationality of the employee]]>
-            </line>
-            <line>
-              <![CDATA[Option under marital status are 4]]>
-            </line>
-            <line>
-              <![CDATA[marital status drop-down is clicked]]>
-            </line>
-            <line>
-              <![CDATA[Gender drop-down is clicked]]>
-            </line>
-            <line>
-              <![CDATA[Gender is selcted as :Male]]>
-            </line>
-            <line>
-              <![CDATA[Data entered in hobbies field]]>
-            </line>
-            <line>
-              <![CDATA[Next button is clicked]]>
-            </line>
-            <line>
-              <![CDATA[Employee details page is displayed]]>
-            </line>
-            <line>
-              <![CDATA[StaleElementReferenceException occured, retrying for same element...!!!]]>
-            </line>
-            <line>
-              <![CDATA[Region drop-down is clicked]]>
-            </line>
-            <line>
-              <![CDATA[Region-2 is selcted from the dropdown]]>
-            </line>
-            <line>
-              <![CDATA[FTE drop-down is clicked]]>
-            </line>
-            <line>
-              <![CDATA[0.5 is selected from the dropdown]]>
-            </line>
-            <line>
-              <![CDATA[Temporary department drop-down is clicked]]>
-            </line>
-            <line>
-              <![CDATA[Sub unit-3 is selected  from the dropdown]]>
-            </line>
-            <line>
-              <![CDATA[Save button is clicked]]>
-            </line>
-            <line>
-              <![CDATA[save buttonn is clicked]]>
-            </line>
-            <line>
-              <![CDATA[Food selection radio button is clicked]]>
-            </line>
-            <line>
-              <![CDATA[save button is clicked]]>
-            </line>
-            <line>
-              <![CDATA[Emloyee list is seleced]]>
-            </line>
-            <line>
-              <![CDATA[Jinny and Georgia is selected as employee full name]]>
-            </line>
-            <line>
-              <![CDATA[Employee name entered in search tab]]>
-            </line>
-            <line>
-              <![CDATA[Employee selected from the dropdown]]>
+              <![CDATA[Successfully logged out of the browser]]>
             </line>
           </reporter-output>
-        </test-method> <!-- add_Employee -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_01_AddEmployee@47987356]" started-at="2021-09-24T23:23:19 IST" name="tearDown" finished-at="2021-09-24T23:23:19 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- login_DemoWebShop_DataProvider -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testcases.TC_06_DemoWebShop_Login@2f217633]" started-at="2021-09-24T21:08:10 EDT" name="afterClass" finished-at="2021-09-24T21:08:10 EDT" duration-ms="222" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser is closed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testcases.TC_01_AddEmployee -->
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_06_DemoWebShop_Login@2f217633]" started-at="2021-09-24T21:08:10 EDT" name="openBrowser" finished-at="2021-09-24T21:08:13 EDT" duration-ms="3219" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Browser Name from the TestNG.xml is :Chrome]]>
+            </line>
+            <line>
+              <![CDATA[Website is loaded]]>
+            </line>
+            <line>
+              <![CDATA[Browser window maximized]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="login_DemoWebShop_DataProvider(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC_06_DemoWebShop_Login@2f217633]" started-at="2021-09-24T21:08:13 EDT" name="login_DemoWebShop_DataProvider" data-provider="LoginData1" finished-at="2021-09-24T21:08:20 EDT" duration-ms="6904" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[aarosagarch@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Login button is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Email Id is entered]]>
+            </line>
+            <line>
+              <![CDATA[Entered password]]>
+            </line>
+            <line>
+              <![CDATA[clicked on Login button]]>
+            </line>
+            <line>
+              <![CDATA[Successfully logged out of the browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login_DemoWebShop_DataProvider -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testcases.TC_06_DemoWebShop_Login@2f217633]" started-at="2021-09-24T21:08:20 EDT" name="afterClass" finished-at="2021-09-24T21:08:20 EDT" duration-ms="249" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser is closed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_06_DemoWebShop_Login@2f217633]" started-at="2021-09-24T21:08:20 EDT" name="openBrowser" finished-at="2021-09-24T21:08:23 EDT" duration-ms="2958" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Browser Name from the TestNG.xml is :Chrome]]>
+            </line>
+            <line>
+              <![CDATA[Website is loaded]]>
+            </line>
+            <line>
+              <![CDATA[Browser window maximized]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="login_DemoWebShop_DataProvider(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC_06_DemoWebShop_Login@2f217633]" started-at="2021-09-24T21:08:23 EDT" name="login_DemoWebShop_DataProvider" data-provider="LoginData1" finished-at="2021-09-24T21:08:30 EDT" duration-ms="6973" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[log-in123@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[login@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Login button is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Email Id is entered]]>
+            </line>
+            <line>
+              <![CDATA[Entered password]]>
+            </line>
+            <line>
+              <![CDATA[clicked on Login button]]>
+            </line>
+            <line>
+              <![CDATA[Successfully logged out of the browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login_DemoWebShop_DataProvider -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testcases.TC_06_DemoWebShop_Login@2f217633]" started-at="2021-09-24T21:08:30 EDT" name="afterClass" finished-at="2021-09-24T21:08:30 EDT" duration-ms="190" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser is closed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_06_DemoWebShop_Login@2f217633]" started-at="2021-09-24T21:08:30 EDT" name="openBrowser" finished-at="2021-09-24T21:08:33 EDT" duration-ms="3052" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Browser Name from the TestNG.xml is :Chrome]]>
+            </line>
+            <line>
+              <![CDATA[Website is loaded]]>
+            </line>
+            <line>
+              <![CDATA[Browser window maximized]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="login_DemoWebShop_DataProvider(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC_06_DemoWebShop_Login@2f217633]" started-at="2021-09-24T21:08:33 EDT" name="login_DemoWebShop_DataProvider" data-provider="LoginData1" finished-at="2021-09-24T21:08:40 EDT" duration-ms="6871" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RxYEuAdru@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[login@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Login button is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Email Id is entered]]>
+            </line>
+            <line>
+              <![CDATA[Entered password]]>
+            </line>
+            <line>
+              <![CDATA[clicked on Login button]]>
+            </line>
+            <line>
+              <![CDATA[Successfully logged out of the browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login_DemoWebShop_DataProvider -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testcases.TC_06_DemoWebShop_Login@2f217633]" started-at="2021-09-24T21:08:40 EDT" name="afterClass" finished-at="2021-09-24T21:08:40 EDT" duration-ms="224" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser is closed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testcases.TC_06_DemoWebShop_Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

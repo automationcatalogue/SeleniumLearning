@@ -14,6 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
@@ -24,6 +25,7 @@ import org.testng.asserts.SoftAssert;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utilities.Constant;
 import utilities.ExcelUtilities;
+import utilities.RandomGenerator;
 import utilities.Utility;
 
 
@@ -31,13 +33,15 @@ public class TC_01_AddEmployee {
 	
 	static WebDriver driver;
 	static SoftAssert assertion;
+	static String excelPath;
 	
 	@BeforeClass
 	public void setup() throws Exception{
 		String path=System.getProperty("user.dir");
 		Reporter.log("Path of the Project is :"+path, true);
 		
-		ExcelUtilities.setExcelFile(path+"\\TestData\\TestData.xlsx");
+		excelPath=path+"\\TestData\\TestData.xlsx";
+		ExcelUtilities.setExcelFile(excelPath);
 		assertion = new SoftAssert();
 	}
 	
@@ -79,20 +83,26 @@ public class TC_01_AddEmployee {
 		driver.findElement(By.xpath("//span[text()='Add Employee']")).click();
 		Reporter.log("Selected add employee option", true);
 		
-		String firstname =ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_firsname, "OrangeHRM");
-		String middlename=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_middlename, "OrangeHRM");
-		String lastname=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_lastname, "OrangeHRM");
+		//String firstname =ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_firsname, "OrangeHRM");
+		//String middlename=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_middlename, "OrangeHRM");
+		//String lastname=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_lastname, "OrangeHRM");
 		
 		driver.findElement(By.xpath("//div[@class='modal-content']")).isDisplayed();
 		Reporter.log("Add Employee modal exists ", true);
-
-		driver.findElement(By.xpath("//div[@class='input-group']/input[1]")).sendKeys(firstname);
-		Reporter.log(firstname+" is enered as first name in the text-box", true);
 		
+		String firstname =RandomGenerator.randomAlphabet(5, 8);
+		driver.findElement(By.xpath("//div[@class='input-group']/input[1]")).sendKeys(firstname);
+		ExcelUtilities.setCellData(firstname, Constant.RowNumber_five, Constant.col_Firstname, "OrangeHRM", excelPath);
+		Reporter.log(firstname+ "First-name entered in the text-box", true);
+		
+		String middlename =RandomGenerator.randomAlphabet(3, 4);
 		driver.findElement(By.xpath("//div[@class='input-group']/input[2]")).sendKeys(middlename);
+		ExcelUtilities.setCellData(firstname, Constant.RowNumber_five, Constant.col_middlename, "OrangeHRM", excelPath);
 		Reporter.log(middlename+ " is enered as middle name in the text-box", true);
 		
+		String lastname =RandomGenerator.randomAlphabet(3, 6);
 		driver.findElement(By.xpath("//div[@class='input-group']/input[3]")).sendKeys(lastname);
+		ExcelUtilities.setCellData(firstname, Constant.RowNumber_five, Constant.col_lastname, "OrangeHRM", excelPath);
 		Reporter.log(lastname+ "is enered as  nalastme in the text-box", true);
 		
 		//String emp_id=driver.findElement(By.xpath("//input[@id='employeeId']")).getText();
@@ -268,7 +278,23 @@ public class TC_01_AddEmployee {
 
 		driver.findElement(By.xpath("//input[@placeholder='Employee Name']")).sendKeys(Keys.ENTER);
 		
-		driver.findElement(By.xpath("//td[text()='0157']")).getText();
+		Thread.sleep(2000);
+		
+		String element_employee=driver.findElement(By.xpath("//table[@id='employeeListTable']//td[3]")).getText();
+		Reporter.log(element_employee, true);
+		
+		assertion.assertEquals(element_employee, employee_name, "Employee details do not exist");
+		Reporter.log("Employee details exist",true);
+		
+		WebElement dropdown_logout = driver.findElement(By.xpath("//i[text()='keyboard_arrow_down']"));
+		js.executeScript("arguments[0].click();",dropdown_logout);
+		Reporter.log("Logout dropdown is clicked",true);
+		
+		WebElement element_logoutBtn=driver.findElement(By.xpath("//ul[@id='user_menu']//li[3]/a"));
+		js.executeScript("arguments[0].click();", element_logoutBtn);
+		Reporter.log("Successfully logged out of the browser", true); 
+		
+		Thread.sleep(2000);
 		
 	}
 	

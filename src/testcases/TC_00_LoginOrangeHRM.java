@@ -101,9 +101,8 @@ public class TC_00_LoginOrangeHRM {
 		
 		WebElement dropdown_logout = driver.findElement(By.xpath("//i[text()='keyboard_arrow_down']"));
 		((JavascriptExecutor)driver).executeScript("arguments[0].click();",dropdown_logout);
-		Reporter.log("Logout dropdown is clicked");
+		Reporter.log("Logout dropdown is clicked", true);
 		
-		String logout=ExcelUtilities.getCellData(Constant.uRowNumber, Constant.options, "OrangeHRM");
 		WebElement element_logoutBtn=driver.findElement(By.xpath("//ul[@id='user_menu']//li[3]/a"));
 		((JavascriptExecutor)driver).executeScript("arguments[0].click();", element_logoutBtn);
 		Reporter.log("Successfully logged out of the browser", true);
