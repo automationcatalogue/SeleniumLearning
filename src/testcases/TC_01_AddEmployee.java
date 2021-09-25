@@ -83,48 +83,33 @@ public class TC_01_AddEmployee {
 		driver.findElement(By.xpath("//span[text()='Add Employee']")).click();
 		Reporter.log("Selected add employee option", true);
 		
-		//String firstname =ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_firsname, "OrangeHRM");
-		//String middlename=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_middlename, "OrangeHRM");
-		//String lastname=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_lastname, "OrangeHRM");
-		
 		driver.findElement(By.xpath("//div[@class='modal-content']")).isDisplayed();
 		Reporter.log("Add Employee modal exists ", true);
 		
+		//firstname
 		String firstname =RandomGenerator.randomAlphabet(5, 8);
 		driver.findElement(By.xpath("//div[@class='input-group']/input[1]")).sendKeys(firstname);
 		ExcelUtilities.setCellData(firstname, Constant.RowNumber_five, Constant.col_Firstname, "OrangeHRM", excelPath);
 		Reporter.log(firstname+ "First-name entered in the text-box", true);
 		
+		//middlename
 		String middlename =RandomGenerator.randomAlphabet(3, 4);
 		driver.findElement(By.xpath("//div[@class='input-group']/input[2]")).sendKeys(middlename);
 		ExcelUtilities.setCellData(firstname, Constant.RowNumber_five, Constant.col_middlename, "OrangeHRM", excelPath);
 		Reporter.log(middlename+ " is enered as middle name in the text-box", true);
 		
+		//lastname
 		String lastname =RandomGenerator.randomAlphabet(3, 6);
 		driver.findElement(By.xpath("//div[@class='input-group']/input[3]")).sendKeys(lastname);
 		ExcelUtilities.setCellData(firstname, Constant.RowNumber_five, Constant.col_lastname, "OrangeHRM", excelPath);
 		Reporter.log(lastname+ "is enered as  nalastme in the text-box", true);
 		
-		//String emp_id=driver.findElement(By.xpath("//input[@id='employeeId']")).getText();
-		//System.out.println(emp_id);
-		
 		driver.findElement(By.xpath("//i[text()='arrow_drop_down']")).click();
 		Reporter.log("Location dropdown button is clicked", true);
 		
+		//locations
 		int location_size=driver.findElements(By.xpath("//ul[@class='dropdown-menu inner show']/li/a/span")).size();
 		Reporter.log("Number of locations available:" + location_size, true);
-		
-//		List<WebElement> elements_location=driver.findElements(By.xpath("//ul[@class='dropdown-menu inner show']/li/a/span"));
-//
-//		data=Constant.data_location;
-//		for(WebElement location:elements_location) {
-//			String text_location=location.getText();
-//			
-//			if (text_location.equalsIgnoreCase(data)) {
-//				location.click();
-//				System.out.println(text_location + " Is selected from the dropdown");
-//			}
-//		}
 		
 		String datalocation=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_datalocation, "OrangeHRM");
 		Utility.selection_dropdown(driver, "//ul[@class='dropdown-menu inner show']/li/a/span", datalocation);

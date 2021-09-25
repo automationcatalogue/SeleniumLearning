@@ -1,29 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Path of the Project is :C:\Users\rehan\git\SeleniumLearning]]>
+      <![CDATA[Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning]]>
     </line>
     <line>
       <![CDATA[Browser Name from the TestNG.xml is :Chrome]]>
     </line>
     <line>
-      <![CDATA[Website is loaded]]>
+      <![CDATA[Browser Name from the TestNG.xml is :Chrome]]>
     </line>
     <line>
-      <![CDATA[Browser window maximized]]>
+      <![CDATA[Orange HRM website is loaded]]>
+    </line>
+    <line>
+      <![CDATA[Orange HRM website is loaded]]>
+    </line>
+    <line>
+      <![CDATA[Browser window is maximized]]>
+    </line>
+    <line>
+      <![CDATA[Browser window is maximized]]>
+    </line>
+    <line>
+      <![CDATA[Admin is entered as UserName in a text-box]]>
+    </line>
+    <line>
+      <![CDATA[Admin is entered as UserName in a text-box]]>
+    </line>
+    <line>
+      <![CDATA[Admin@123 is entered as Password in a text-box]]>
+    </line>
+    <line>
+      <![CDATA[Admin@123 is entered as Password in a text-box]]>
     </line>
     <line>
       <![CDATA[Login button is clicked]]>
     </line>
     <line>
-      <![CDATA[Email Id is entered]]>
+      <![CDATA[Browser is closed]]>
     </line>
     <line>
-      <![CDATA[Entered password]]>
+      <![CDATA[Browser is closed]]>
     </line>
     <line>
-      <![CDATA[clicked on Login button]]>
+      <![CDATA[Browser Name from the TestNG.xml is :Chrome]]>
+    </line>
+    <line>
+      <![CDATA[Orange HRM website is loaded]]>
+    </line>
+    <line>
+      <![CDATA[Browser window is maximized]]>
+    </line>
+    <line>
+      <![CDATA[aaliyah.haq is entered as UserName in a text-box]]>
+    </line>
+    <line>
+      <![CDATA[Test@1234 is entered as Password in a text-box]]>
+    </line>
+    <line>
+      <![CDATA[Login button is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Home page is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Logout dropdown is clicked]]>
     </line>
     <line>
       <![CDATA[Successfully logged out of the browser]]>
@@ -35,22 +77,25 @@
       <![CDATA[Browser Name from the TestNG.xml is :Chrome]]>
     </line>
     <line>
-      <![CDATA[Website is loaded]]>
+      <![CDATA[Orange HRM website is loaded]]>
     </line>
     <line>
-      <![CDATA[Browser window maximized]]>
+      <![CDATA[Browser window is maximized]]>
+    </line>
+    <line>
+      <![CDATA[Adella is entered as UserName in a text-box]]>
+    </line>
+    <line>
+      <![CDATA[abcd@123 is entered as Password in a text-box]]>
     </line>
     <line>
       <![CDATA[Login button is clicked]]>
     </line>
     <line>
-      <![CDATA[Email Id is entered]]>
+      <![CDATA[Home page is displayed]]>
     </line>
     <line>
-      <![CDATA[Entered password]]>
-    </line>
-    <line>
-      <![CDATA[clicked on Login button]]>
+      <![CDATA[Logout dropdown is clicked]]>
     </line>
     <line>
       <![CDATA[Successfully logged out of the browser]]>
@@ -62,49 +107,25 @@
       <![CDATA[Browser Name from the TestNG.xml is :Chrome]]>
     </line>
     <line>
-      <![CDATA[Website is loaded]]>
+      <![CDATA[Orange HRM website is loaded]]>
     </line>
     <line>
-      <![CDATA[Browser window maximized]]>
+      <![CDATA[Browser window is maximized]]>
     </line>
     <line>
-      <![CDATA[Login button is clicked]]>
+      <![CDATA[alice is entered as UserName in a text-box]]>
     </line>
     <line>
-      <![CDATA[Email Id is entered]]>
-    </line>
-    <line>
-      <![CDATA[Entered password]]>
-    </line>
-    <line>
-      <![CDATA[clicked on Login button]]>
-    </line>
-    <line>
-      <![CDATA[Successfully logged out of the browser]]>
-    </line>
-    <line>
-      <![CDATA[Browser is closed]]>
-    </line>
-    <line>
-      <![CDATA[Browser Name from the TestNG.xml is :Chrome]]>
-    </line>
-    <line>
-      <![CDATA[Website is loaded]]>
-    </line>
-    <line>
-      <![CDATA[Browser window maximized]]>
+      <![CDATA[Admin@1234 is entered as Password in a text-box]]>
     </line>
     <line>
       <![CDATA[Login button is clicked]]>
     </line>
     <line>
-      <![CDATA[Email Id is entered]]>
+      <![CDATA[Home page is displayed]]>
     </line>
     <line>
-      <![CDATA[Entered password]]>
-    </line>
-    <line>
-      <![CDATA[clicked on Login button]]>
+      <![CDATA[Logout dropdown is clicked]]>
     </line>
     <line>
       <![CDATA[Successfully logged out of the browser]]>
@@ -113,19 +134,19 @@
       <![CDATA[Browser is closed]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-09-24T21:07:57 EDT" name="Default suite" finished-at="2021-09-24T21:08:40 EDT" duration-ms="42949">
+  <suite started-at="2021-09-25T08:31:25 IST" name="Suite" finished-at="2021-09-25T08:32:48 IST" duration-ms="83259">
     <groups>
     </groups>
-    <test started-at="2021-09-24T21:07:57 EDT" name="Default test" finished-at="2021-09-24T21:08:40 EDT" duration-ms="42949">
-      <class name="testcases.TC_06_DemoWebShop_Login">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC_06_DemoWebShop_Login@2f217633]" started-at="2021-09-24T21:07:58 EDT" name="setup" finished-at="2021-09-24T21:07:58 EDT" duration-ms="734" status="PASS">
+    <test started-at="2021-09-25T08:31:25 IST" name="OrangeHRM" finished-at="2021-09-25T08:32:48 IST" duration-ms="83259">
+      <class name="testcases.TC_00_LoginOrangeHRM">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC_00_LoginOrangeHRM@1da2cb77]" started-at="2021-09-25T08:31:25 IST" name="setup" finished-at="2021-09-25T08:31:25 IST" duration-ms="436" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Path of the Project is :C:\Users\rehan\git\SeleniumLearning]]>
+              <![CDATA[Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning]]>
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_06_DemoWebShop_Login@2f217633]" started-at="2021-09-24T21:07:58 EDT" name="openBrowser" finished-at="2021-09-24T21:08:02 EDT" duration-ms="4140" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_00_LoginOrangeHRM@1da2cb77]" started-at="2021-09-25T08:31:25 IST" name="openBrowser" finished-at="2021-09-25T08:31:26 IST" duration-ms="1239" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -137,53 +158,9 @@
             <line>
               <![CDATA[Browser Name from the TestNG.xml is :Chrome]]>
             </line>
-            <line>
-              <![CDATA[Website is loaded]]>
-            </line>
-            <line>
-              <![CDATA[Browser window maximized]]>
-            </line>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="login_DemoWebShop_DataProvider(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC_06_DemoWebShop_Login@2f217633]" started-at="2021-09-24T21:08:02 EDT" name="login_DemoWebShop_DataProvider" data-provider="LoginData1" finished-at="2021-09-24T21:08:10 EDT" duration-ms="7135" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[GwiDFrKoK@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[login@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Login button is clicked]]>
-            </line>
-            <line>
-              <![CDATA[Email Id is entered]]>
-            </line>
-            <line>
-              <![CDATA[Entered password]]>
-            </line>
-            <line>
-              <![CDATA[clicked on Login button]]>
-            </line>
-            <line>
-              <![CDATA[Successfully logged out of the browser]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- login_DemoWebShop_DataProvider -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testcases.TC_06_DemoWebShop_Login@2f217633]" started-at="2021-09-24T21:08:10 EDT" name="afterClass" finished-at="2021-09-24T21:08:10 EDT" duration-ms="222" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Browser is closed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_06_DemoWebShop_Login@2f217633]" started-at="2021-09-24T21:08:10 EDT" name="openBrowser" finished-at="2021-09-24T21:08:13 EDT" duration-ms="3219" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_00_LoginOrangeHRM@1da2cb77]" started-at="2021-09-25T08:31:25 IST" name="openBrowser" finished-at="2021-09-25T08:31:26 IST" duration-ms="1236" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -195,19 +172,13 @@
             <line>
               <![CDATA[Browser Name from the TestNG.xml is :Chrome]]>
             </line>
-            <line>
-              <![CDATA[Website is loaded]]>
-            </line>
-            <line>
-              <![CDATA[Browser window maximized]]>
-            </line>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="login_DemoWebShop_DataProvider(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC_06_DemoWebShop_Login@2f217633]" started-at="2021-09-24T21:08:13 EDT" name="login_DemoWebShop_DataProvider" data-provider="LoginData1" finished-at="2021-09-24T21:08:20 EDT" duration-ms="6904" status="PASS">
+        <test-method signature="login_OrangeHRM_DataProvider(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC_00_LoginOrangeHRM@1da2cb77]" started-at="2021-09-25T08:31:26 IST" name="login_OrangeHRM_DataProvider" data-provider="LoginData" finished-at="2021-09-25T08:31:54 IST" duration-ms="28089" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[aarosagarch@gmail.com]]>
+                <![CDATA[Admin]]>
               </value>
             </param>
             <param index="1">
@@ -216,32 +187,175 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//li[text()='Dashboard']"}
+  (Session info: chrome=93.0.4577.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-807AG9O', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\AARADH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57416}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 183c95f6b25e1e1bc2dfb775add71854
+*** Element info: {Using=xpath, value=//li[text()='Dashboard']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[text()='Dashboard']"}
+  (Session info: chrome=93.0.4577.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-807AG9O', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\AARADH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57416}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 183c95f6b25e1e1bc2dfb775add71854
+*** Element info: {Using=xpath, value=//li[text()='Dashboard']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at testcases.TC_00_LoginOrangeHRM.login_OrangeHRM_DataProvider(TC_00_LoginOrangeHRM.java:99)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
+            <line>
+              <![CDATA[Orange HRM website is loaded]]>
+            </line>
+            <line>
+              <![CDATA[Browser window is maximized]]>
+            </line>
+            <line>
+              <![CDATA[Admin is entered as UserName in a text-box]]>
+            </line>
+            <line>
+              <![CDATA[Admin@123 is entered as Password in a text-box]]>
+            </line>
             <line>
               <![CDATA[Login button is clicked]]>
             </line>
+          </reporter-output>
+        </test-method> <!-- login_OrangeHRM_DataProvider -->
+        <test-method signature="login_OrangeHRM_Parameterization(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC_00_LoginOrangeHRM@1da2cb77]" started-at="2021-09-25T08:31:26 IST" name="login_OrangeHRM_Parameterization" finished-at="2021-09-25T08:31:34 IST" duration-ms="8079" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin@123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=93.0.4577.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-807AG9O', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\AARADH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57416}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 183c95f6b25e1e1bc2dfb775add71854]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=93.0.4577.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-807AG9O', ip: '192.168.1.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 93.0.4577.82, chrome: {chromedriverVersion: 93.0.4577.63 (ff5c0da2ec0ad..., userDataDir: C:\Users\AARADH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57416}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 183c95f6b25e1e1bc2dfb775add71854
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at testcases.TC_00_LoginOrangeHRM.login_OrangeHRM_Parameterization(TC_00_LoginOrangeHRM.java:71)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:831)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
             <line>
-              <![CDATA[Email Id is entered]]>
+              <![CDATA[Orange HRM website is loaded]]>
             </line>
             <line>
-              <![CDATA[Entered password]]>
+              <![CDATA[Browser window is maximized]]>
             </line>
             <line>
-              <![CDATA[clicked on Login button]]>
+              <![CDATA[Admin is entered as UserName in a text-box]]>
             </line>
             <line>
-              <![CDATA[Successfully logged out of the browser]]>
+              <![CDATA[Admin@123 is entered as Password in a text-box]]>
             </line>
           </reporter-output>
-        </test-method> <!-- login_DemoWebShop_DataProvider -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testcases.TC_06_DemoWebShop_Login@2f217633]" started-at="2021-09-24T21:08:20 EDT" name="afterClass" finished-at="2021-09-24T21:08:20 EDT" duration-ms="249" status="PASS">
+        </test-method> <!-- login_OrangeHRM_Parameterization -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_00_LoginOrangeHRM@1da2cb77]" started-at="2021-09-25T08:31:34 IST" name="tearDown" finished-at="2021-09-25T08:31:55 IST" duration-ms="20214" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser is closed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_06_DemoWebShop_Login@2f217633]" started-at="2021-09-24T21:08:20 EDT" name="openBrowser" finished-at="2021-09-24T21:08:23 EDT" duration-ms="2958" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_00_LoginOrangeHRM@1da2cb77]" started-at="2021-09-25T08:31:54 IST" name="tearDown" finished-at="2021-09-25T08:31:55 IST" duration-ms="206" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser is closed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_00_LoginOrangeHRM@1da2cb77]" started-at="2021-09-25T08:31:55 IST" name="openBrowser" finished-at="2021-09-25T08:31:55 IST" duration-ms="643" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -253,53 +367,56 @@
             <line>
               <![CDATA[Browser Name from the TestNG.xml is :Chrome]]>
             </line>
-            <line>
-              <![CDATA[Website is loaded]]>
-            </line>
-            <line>
-              <![CDATA[Browser window maximized]]>
-            </line>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="login_DemoWebShop_DataProvider(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC_06_DemoWebShop_Login@2f217633]" started-at="2021-09-24T21:08:23 EDT" name="login_DemoWebShop_DataProvider" data-provider="LoginData1" finished-at="2021-09-24T21:08:30 EDT" duration-ms="6973" status="PASS">
+        <test-method signature="login_OrangeHRM_DataProvider(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC_00_LoginOrangeHRM@1da2cb77]" started-at="2021-09-25T08:31:55 IST" name="login_OrangeHRM_DataProvider" data-provider="LoginData" finished-at="2021-09-25T08:32:18 IST" duration-ms="22802" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[log-in123@gmail.com]]>
+                <![CDATA[aaliyah.haq]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[login@123]]>
+                <![CDATA[Test@1234]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
+              <![CDATA[Orange HRM website is loaded]]>
+            </line>
+            <line>
+              <![CDATA[Browser window is maximized]]>
+            </line>
+            <line>
+              <![CDATA[aaliyah.haq is entered as UserName in a text-box]]>
+            </line>
+            <line>
+              <![CDATA[Test@1234 is entered as Password in a text-box]]>
+            </line>
+            <line>
               <![CDATA[Login button is clicked]]>
             </line>
             <line>
-              <![CDATA[Email Id is entered]]>
+              <![CDATA[Home page is displayed]]>
             </line>
             <line>
-              <![CDATA[Entered password]]>
-            </line>
-            <line>
-              <![CDATA[clicked on Login button]]>
+              <![CDATA[Logout dropdown is clicked]]>
             </line>
             <line>
               <![CDATA[Successfully logged out of the browser]]>
             </line>
           </reporter-output>
-        </test-method> <!-- login_DemoWebShop_DataProvider -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testcases.TC_06_DemoWebShop_Login@2f217633]" started-at="2021-09-24T21:08:30 EDT" name="afterClass" finished-at="2021-09-24T21:08:30 EDT" duration-ms="190" status="PASS">
+        </test-method> <!-- login_OrangeHRM_DataProvider -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_00_LoginOrangeHRM@1da2cb77]" started-at="2021-09-25T08:32:18 IST" name="tearDown" finished-at="2021-09-25T08:32:18 IST" duration-ms="200" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser is closed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_06_DemoWebShop_Login@2f217633]" started-at="2021-09-24T21:08:30 EDT" name="openBrowser" finished-at="2021-09-24T21:08:33 EDT" duration-ms="3052" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_00_LoginOrangeHRM@1da2cb77]" started-at="2021-09-25T08:32:18 IST" name="openBrowser" finished-at="2021-09-25T08:32:19 IST" duration-ms="629" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -311,53 +428,117 @@
             <line>
               <![CDATA[Browser Name from the TestNG.xml is :Chrome]]>
             </line>
-            <line>
-              <![CDATA[Website is loaded]]>
-            </line>
-            <line>
-              <![CDATA[Browser window maximized]]>
-            </line>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="login_DemoWebShop_DataProvider(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC_06_DemoWebShop_Login@2f217633]" started-at="2021-09-24T21:08:33 EDT" name="login_DemoWebShop_DataProvider" data-provider="LoginData1" finished-at="2021-09-24T21:08:40 EDT" duration-ms="6871" status="PASS">
+        <test-method signature="login_OrangeHRM_DataProvider(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC_00_LoginOrangeHRM@1da2cb77]" started-at="2021-09-25T08:32:19 IST" name="login_OrangeHRM_DataProvider" data-provider="LoginData" finished-at="2021-09-25T08:32:36 IST" duration-ms="16584" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[RxYEuAdru@gmail.com]]>
+                <![CDATA[Adella]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[login@123]]>
+                <![CDATA[abcd@123]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
+              <![CDATA[Orange HRM website is loaded]]>
+            </line>
+            <line>
+              <![CDATA[Browser window is maximized]]>
+            </line>
+            <line>
+              <![CDATA[Adella is entered as UserName in a text-box]]>
+            </line>
+            <line>
+              <![CDATA[abcd@123 is entered as Password in a text-box]]>
+            </line>
+            <line>
               <![CDATA[Login button is clicked]]>
             </line>
             <line>
-              <![CDATA[Email Id is entered]]>
+              <![CDATA[Home page is displayed]]>
             </line>
             <line>
-              <![CDATA[Entered password]]>
-            </line>
-            <line>
-              <![CDATA[clicked on Login button]]>
+              <![CDATA[Logout dropdown is clicked]]>
             </line>
             <line>
               <![CDATA[Successfully logged out of the browser]]>
             </line>
           </reporter-output>
-        </test-method> <!-- login_DemoWebShop_DataProvider -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testcases.TC_06_DemoWebShop_Login@2f217633]" started-at="2021-09-24T21:08:40 EDT" name="afterClass" finished-at="2021-09-24T21:08:40 EDT" duration-ms="224" status="PASS">
+        </test-method> <!-- login_OrangeHRM_DataProvider -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_00_LoginOrangeHRM@1da2cb77]" started-at="2021-09-25T08:32:36 IST" name="tearDown" finished-at="2021-09-25T08:32:36 IST" duration-ms="261" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser is closed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- testcases.TC_06_DemoWebShop_Login -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_00_LoginOrangeHRM@1da2cb77]" started-at="2021-09-25T08:32:36 IST" name="openBrowser" finished-at="2021-09-25T08:32:36 IST" duration-ms="637" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Browser Name from the TestNG.xml is :Chrome]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="login_OrangeHRM_DataProvider(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC_00_LoginOrangeHRM@1da2cb77]" started-at="2021-09-25T08:32:36 IST" name="login_OrangeHRM_DataProvider" data-provider="LoginData" finished-at="2021-09-25T08:32:48 IST" duration-ms="11294" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[alice]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin@1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Orange HRM website is loaded]]>
+            </line>
+            <line>
+              <![CDATA[Browser window is maximized]]>
+            </line>
+            <line>
+              <![CDATA[alice is entered as UserName in a text-box]]>
+            </line>
+            <line>
+              <![CDATA[Admin@1234 is entered as Password in a text-box]]>
+            </line>
+            <line>
+              <![CDATA[Login button is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Home page is displayed]]>
+            </line>
+            <line>
+              <![CDATA[Logout dropdown is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Successfully logged out of the browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login_OrangeHRM_DataProvider -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_00_LoginOrangeHRM@1da2cb77]" started-at="2021-09-25T08:32:48 IST" name="tearDown" finished-at="2021-09-25T08:32:48 IST" duration-ms="204" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser is closed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.TC_00_LoginOrangeHRM -->
+    </test> <!-- OrangeHRM -->
+  </suite> <!-- Suite -->
 </testng-results>
