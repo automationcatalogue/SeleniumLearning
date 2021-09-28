@@ -17,19 +17,21 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import pageMethods.BaseClass;
 import utilities.Constant;
 import utilities.ExcelUtilities;
 import utilities.RandomGenerator;
 import utilities.Utility;
 
-
-public class TC_01_AddEmployee {
+@Listeners(utilities.Listeners.class)
+public class TC_01_AddEmployee{
 	
 	static WebDriver driver;
 	static SoftAssert assertion;
@@ -50,6 +52,7 @@ public class TC_01_AddEmployee {
 	public void openBrowser(@Optional("Chrome") String browser) {
 		Reporter.log("Browser Name from the TestNG.xml is :"+browser);
 		driver=Utility.getDriver(browser);
+		new BaseClass(driver);
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 	}
 	
@@ -287,7 +290,7 @@ public class TC_01_AddEmployee {
 	public void tearDown() {
 		driver.quit();
 		Reporter.log("Browser is closed", true);
-		assertion.assertAll();
+		//assertion.assertAll();
 	}
 }
 
