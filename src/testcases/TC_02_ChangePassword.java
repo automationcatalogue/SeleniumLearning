@@ -12,6 +12,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -20,6 +21,7 @@ import utilities.Constant;
 import utilities.ExcelUtilities;
 import utilities.Utility;
 
+@Listeners(utilities.Listeners.class)
 public class TC_02_ChangePassword {
 	
 static WebDriver driver;
@@ -64,7 +66,7 @@ static SoftAssert assertion;
 		driver.findElement(By.id("btnLogin")).click();
 		Reporter.log("Login button is clicked",true);
 		
-		driver.findElement(By.xpath("(//span[text()='Admin'])[1]")).click();
+		driver.findElement(By.xpath("(//span[text()='Admin'])[100]")).click();
 		Reporter.log("Admin menu is clicked", true);
 		
 		driver.findElement(By.xpath("//span[text()='User Management']")).click();

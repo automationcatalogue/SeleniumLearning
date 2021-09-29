@@ -154,12 +154,11 @@ public class TC_11_AirbnbValidation {
 		//Reporter.log(size);
 		
 		for (WebElement element:element_price) {
-			String price=element.getText().substring(1);
-			//Reporter.log(price, true);
-
+			
+			String price=element.getText();
+			Reporter.log("Price of the elements is "+ price, true);
 			price=price.replace(",","");
-			//Reporter.log( price, true);
-
+			Reporter.log("Price of the elements is "+ price, true);
 			price=price.substring(1);
 			Reporter.log("Price of the elements is "+ price, true);
 			int pricevalue=Integer.parseInt(price);

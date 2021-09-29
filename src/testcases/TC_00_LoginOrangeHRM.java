@@ -77,7 +77,7 @@ public class TC_00_LoginOrangeHRM {
 
 	}
 	
-	@Test(dataProviderClass = utilities.DataProviders.class, dataProvider = "LoginData", enabled=true) 
+	@Test(dataProviderClass = utilities.DataProviders.class, dataProvider = "OrangeHRMLoginData", enabled=true) 
 	public void login_OrangeHRM_DataProvider(String username, String password) throws Exception {
 		
 		
