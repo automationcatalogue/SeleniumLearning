@@ -36,7 +36,7 @@ public class TC_11_AirbnbValidation {
 	@Parameters({"browser"})
 	@BeforeMethod
 	public void openBrowser(@Optional("Chrome") String browser) {
-		Reporter.log("Browser Name from the TestNG.xml is :"+browser);
+		Reporter.log("Browser Name from the TestNG.xml is :"+browser, true);
 		driver=Utility.getDriver(browser);
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 	}
@@ -51,10 +51,13 @@ public class TC_11_AirbnbValidation {
 		Reporter.log("Browser window is maximized", true);
 		
 		driver.findElement(By.xpath("//button[text()='OK']")).click();
-		Reporter.log("Accepted the cookies", true);
+		Reporter.log("Accept cookies button is clicked", true);
 		
+		//location
 		driver.findElement(By.xpath("//input[contains(@placeholder,'Where are you going')]")).click();
 		Reporter.log("Location is clicked ", true);
+		
+		Utility.waitForPageLoad(driver);
 		
 		driver.findElement(By.xpath("//div[text()='I’m flexible']")).click();
 		Reporter.log("I’m flexible button is clicked", true);
@@ -62,20 +65,23 @@ public class TC_11_AirbnbValidation {
 		driver.findElement(By.xpath("//div[@id='search-results-container']")).isDisplayed();
 		Reporter.log("Search results are displayed",true);
 		
+		//filters
 		driver.findElement(By.xpath("(//span[text()='Guests'])[1]")).click();
 		Reporter.log("Guests dropdown is clicked", true);
 		
 		WebElement element_adults=driver.findElement(By.xpath("(//button[@aria-label='increase value'])[1]"));
-		
 		Actions action_click=new Actions(driver);
 		action_click.click(element_adults).click(element_adults).build().perform();
-		Reporter.log("No of adults selected from filter : 2", true);
+		Reporter.log("Number of adults selected from filter : 2", true);
 		
 		driver.findElement(By.xpath("//button[text()='Save']")).click();
-		Reporter.log("Saved selection",true);
+		Reporter.log("Save button is clicked",true);
 		
 		driver.findElement(By.xpath("//button[contains(@aria-label,'Filters')]/div/div")).click();
 		Reporter.log("Filters button is clicked", true);
+		
+		Utility.waitForPageLoad(driver);
+		Reporter.log("Employee details page is displayed",true);
 		
 		WebElement checkbox=driver.findElement(By.xpath("//input[@name='Entire place']"));
 		if (!checkbox.isSelected()) {
@@ -94,10 +100,7 @@ public class TC_11_AirbnbValidation {
 		}
 		
 		WebElement verified_switch=driver.findElement(By.xpath("(//button[@role='switch'])[1]"));
-//		boolean abc=verified_switch.isEnabled();
-//		boolean xyz=verified_switch.isSelected();
-//		System.out.println(abc);
-//		System.out.println(xyz);
+
 		if (verified_switch.isSelected()) {
 			verified_switch.click();
 			Reporter.log("Airbnb switch is disabled", true);
@@ -151,8 +154,12 @@ public class TC_11_AirbnbValidation {
 		//Reporter.log(size);
 		
 		for (WebElement element:element_price) {
-			String price=element.getText();
+			String price=element.getText().substring(1);
+			//Reporter.log(price, true);
+
 			price=price.replace(",","");
+			//Reporter.log( price, true);
+
 			price=price.substring(1);
 			Reporter.log("Price of the elements is "+ price, true);
 			int pricevalue=Integer.parseInt(price);
@@ -168,7 +175,7 @@ public class TC_11_AirbnbValidation {
 	
 	@AfterClass
 	public void close_browser() {
-		driver.quit();
+		//driver.quit();
 		assertion.assertAll();
 	}
 	

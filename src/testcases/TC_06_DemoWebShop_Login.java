@@ -64,10 +64,10 @@ public class TC_06_DemoWebShop_Login {
 		Reporter.log("Email Id is entered",true);
 		
 		driver.findElement(By.id("Password")).sendKeys(password);
-		Reporter.log("Entered password", true);
+		Reporter.log("Password is entered", true);
 		
 		driver.findElement(By.xpath("//input[@value='Log in']")).click();
-		Reporter.log("clicked on Login button", true);
+		Reporter.log("Login button is clicked", true);
 		
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//a[text()='Log out']")).click();

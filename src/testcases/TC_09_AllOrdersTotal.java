@@ -55,28 +55,27 @@ static SoftAssert assertion;
 	@Test
 	
 	public void allorders_total() throws Exception{
-		
+		//login
 		driver.findElement(By.className("ico-login")).click();
 		Reporter.log("Login button is clicked", true);
 		
 		String email=ExcelUtilities.getCellData(Constant.uRowNumber, Constant.col_Email, "DemoWebShop");
-		
 		driver.findElement(By.id("Email")).sendKeys(email);
 		Reporter.log("Email Id is entered",true);
 		
 		String password=ExcelUtilities.getCellData(Constant.uRowNumber, Constant.col_Password, "DemoWebShop");
-		
 		driver.findElement(By.id("Password")).sendKeys(password);
-		Reporter.log("Entered password", true);
+		Reporter.log("Password is entered", true);
 		
 		driver.findElement(By.xpath("//input[@value='Log in']")).click();
-		Reporter.log("clicked on Login button", true);
+		Reporter.log("Login button is clicked", true);
 		
+		//orders
 		driver.findElement(By.xpath("//a[text()='aarosagarch@gmail.com']")).click();
-		Reporter.log("Clicked on email name", true);
+		Reporter.log("Email name is clicked", true);
 		
 		driver.findElement(By.xpath("//ul[@class='list']/li[3]/a")).click();
-		Reporter.log("Orders selcted from the options", true);
+		Reporter.log("Orders options is clicked", true);
 		
 		int totalorders = driver.findElements(By.xpath("//div[@class='order-list']/div")).size();
 		Reporter.log("Total number of orders placed are:" + totalorders, true);

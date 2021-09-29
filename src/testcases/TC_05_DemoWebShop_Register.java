@@ -58,7 +58,7 @@ public class TC_05_DemoWebShop_Register {
 	public static void register() throws Exception {
 		
 		driver.findElement(By.xpath("//a[text()='Register']")).click();
-		Reporter.log("Selectd register button",true);
+		Reporter.log("Register button is clicked",true);
 
 		String Gender=ExcelUtilities.getCellData(Constant.iRowNumber,Constant.col_gender ,"DemoWebShop");
 		
@@ -75,7 +75,7 @@ public class TC_05_DemoWebShop_Register {
 		String firstname =RandomGenerator.randomAlphabet(5, 7);
 		driver.findElement(By.name("FirstName")).sendKeys(firstname);
 		ExcelUtilities.setCellData(firstname, Constant.iRowNumber, Constant.col_Firstname, "DemoWebShop", excelPath);
-		Reporter.log("First-name entered", true);
+		Reporter.log("First-name is entered", true);
 
 		String lastname =RandomGenerator.randomAlphabet(5, 7);
 		driver.findElement(By.id("LastName")).sendKeys(lastname);
@@ -85,17 +85,17 @@ public class TC_05_DemoWebShop_Register {
 		String Email =RandomGenerator.randomAlphabet(8,10)+"@gmail.com";
 		driver.findElement(By.id("Email")).sendKeys(Email);
 		ExcelUtilities.setCellData(Email, Constant.iRowNumber, Constant.col_email, "DemoWebShop", excelPath);
-		Reporter.log("Email id is entered in the text-box", true);
+		Reporter.log("Email id is entered", true);
 
 		String Password = ExcelUtilities.getCellData(Constant.iRowNumber,Constant.col_password, "DemoWebShop");
 		driver.findElement(By.name("Password")).sendKeys(Password);
-		Reporter.log("password is entered in the text-box", true);
+		Reporter.log("password is entered", true);
 
 		driver.findElement(By.id("ConfirmPassword")).sendKeys(Password);
 		Reporter.log("password entered in confirm password text-box", true);
 
 		driver.findElement(By.id("register-button")).click();
-		Reporter.log("Register button selected", true);
+		Reporter.log("Register button is selected", true);
 		
 		Thread.sleep(4000);
 		

@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.TC_06_DemoWebShop_Login">
+      <class name="testcases.TC_11_AirbnbValidation">
         <methods>
-          <include name="login_DemoWebShop_DataProvider"/>
-          <include name="openBrowser"/>
-          <include name="afterClass"/>
           <include name="setup"/>
+          <include name="close_browser"/>
+          <include name="openBrowser"/>
+          <include name="priceRangeFilter"/>
         </methods>
-      </class> <!-- testcases.TC_06_DemoWebShop_Login -->
+      </class> <!-- testcases.TC_11_AirbnbValidation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

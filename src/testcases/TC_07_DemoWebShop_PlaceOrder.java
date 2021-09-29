@@ -49,7 +49,7 @@ public class TC_07_DemoWebShop_PlaceOrder {
 		
 	@Test
 	public void placeOrder_DemoWebshop() throws Exception {
-		
+		//login
 		driver.findElement(By.className("ico-login")).click();
 		Reporter.log("Login button is clicked", true);
 		
@@ -59,11 +59,12 @@ public class TC_07_DemoWebShop_PlaceOrder {
 		
 		String password=ExcelUtilities.getCellData(Constant.uRowNumber, Constant.col_Password, "DemoWebShop");
 		driver.findElement(By.id("Password")).sendKeys(password);
-		Reporter.log("Entered password", true);
+		Reporter.log("Password is entered", true);
 		
 		driver.findElement(By.xpath("//input[@value='Log in']")).click();
-		Reporter.log("clicked on Login button", true);
+		Reporter.log("Login button is clicked", true);
 		
+		//order
 		driver.findElement(By.xpath("(//ul[@class='top-menu']/li/a)[1]")).click();
 		Reporter.log("Selected Books from top menu",true);
 
@@ -78,7 +79,8 @@ public class TC_07_DemoWebShop_PlaceOrder {
 
 		driver.findElement(By.xpath("(//input[@value='Add to cart'])[1]")).click();
 		Reporter.log("Added item to the cart",true);
-
+		
+		//cart
 		driver.findElement(By.xpath("//span[text()='Shopping cart']")).click();
 		Reporter.log("Selected shopping cart",true);
 
@@ -86,7 +88,7 @@ public class TC_07_DemoWebShop_PlaceOrder {
 		Select s1category = new Select(element_country);
 
 		s1category.selectByVisibleText("India");
-		Reporter.log("India selected from the country drop down", true);
+		Reporter.log("India is selected from the country drop down", true);
 
 		WebElement element_state = driver.findElement(By.xpath("//select[@name='StateProvinceId']"));
 		Select s2category = new Select(element_state);
@@ -96,11 +98,10 @@ public class TC_07_DemoWebShop_PlaceOrder {
 
 		driver.findElement(By.xpath("//input[@name='ZipPostalCode']")).clear();
 
-		driver.findElement(By.xpath("//input[@name='ZipPostalCode']")).sendKeys("500060");
+		driver.findElement(By.xpath("//input[@name='ZipPostalCode']")).sendKeys("500020");
 		Reporter.log("Entered pincode as 500060",true);
 
 		WebElement element_chekbox = driver.findElement(By.id("termsofservice"));
-
 		if (!element_chekbox.isSelected()) {
 			element_chekbox.click();
 			Reporter.log("Termsofservice Check-box is selected",true);
@@ -111,41 +112,23 @@ public class TC_07_DemoWebShop_PlaceOrder {
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		Reporter.log("Checkout button is clicked",true);
 
-// WebElement elemant_selectcountry=Register.driver.findElement(By.xpath("//select[@name='BillingNewAddress.CountryId']"));
-// Select s3category=new Select(elemant_selectcountry);
-//
-// s3category.selectByVisibleText("India");
-// System.out.println("India selected from the dropdown list");
-//
-// Register.driver.findElement(By.xpath("//input[@name='BillingNewAddress.City']")).sendKeys("Hyderabad");
-// System.out.println("Entered city name");
-//
-// Register.driver.findElement(By.xpath("//input[@name='BillingNewAddress.Address1']")).sendKeys("5958");
-// System.out.println("Entered Adress1 details");
-//
-// Register.driver.findElement(By.xpath("//input[@name='BillingNewAddress.ZipPostalCode']")).sendKeys("500040");
-// System.out.println("Entered pincode number");
-//
-// Register.driver.findElement(By.xpath("//input[@name='BillingNewAddress.PhoneNumber']")).sendKeys("123456789");
-// System.out.println("Entered phone number");
-
 		driver.findElement(By.xpath("//input[@onclick='Billing.save()']")).click();
-		Reporter.log("Continue button selected for billing", true);
+		Reporter.log("Continue button is selected for billing", true);
 
 		driver.findElement(By.xpath("//input[@onclick='Shipping.save()']")).click();
-		Reporter.log("Continue button selected for shipping",true);
+		Reporter.log("Continue button is selected for shipping",true);
 
 		driver.findElement(By.xpath("//input[@onclick='ShippingMethod.save()']")).click();
-		Reporter.log("Continue button selected for shipping method",true);
+		Reporter.log("Continue button is selected for shipping method",true);
 
 		driver.findElement(By.xpath("//input[@onclick='PaymentMethod.save()']")).click();
-		Reporter.log("Continue button selected for payment method",true);
+		Reporter.log("Continue button is selected for payment method",true);
 
 		driver.findElement(By.xpath("//input[@onclick='PaymentInfo.save()']")).click();
-		Reporter.log("Continue button selected for payment info",true);
+		Reporter.log("Continue button is selected for payment info",true);
 
 		driver.findElement(By.xpath("//input[@onclick='ConfirmOrder.save()']")).click();
-		Reporter.log("Confirm button selected",true);
+		Reporter.log("Confirm button is clicked",true);
 
 		String g = driver.findElement(By.xpath("//ul[@class='details']/li")).getText();
 		Reporter.log(g, true);

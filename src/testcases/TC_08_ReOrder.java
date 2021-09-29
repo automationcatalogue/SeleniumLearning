@@ -59,26 +59,26 @@ static SoftAssert assertion;
 		driver.findElement(By.className("ico-login")).click();
 		Reporter.log("Login button is clicked", true);
 		
+		//login
 		String email=ExcelUtilities.getCellData(Constant.uRowNumber, Constant.col_Email, "DemoWebShop");
-		
 		driver.findElement(By.id("Email")).sendKeys(email);
 		Reporter.log("Email Id is entered",true);
 		
 		String password=ExcelUtilities.getCellData(Constant.uRowNumber, Constant.col_Password, "DemoWebShop");
 		driver.findElement(By.id("Password")).sendKeys(password);
-		Reporter.log("Entered password", true);
+		Reporter.log("Password is entered", true);
 		
 		driver.findElement(By.xpath("//input[@value='Log in']")).click();
-		Reporter.log("clicked on Login button", true);
+		Reporter.log("Login button is clicked", true);
 		
 		driver.findElement(By.xpath("//a[text()='aarosagarch@gmail.com']")).click();
-		Reporter.log("Clicked on email name", true);
+		Reporter.log("Email name is clicked", true);
 		
+		//orders
 		driver.findElement(By.xpath("//ul[@class='list']/li[3]/a")).click();
 		Reporter.log("Orders selcted from the options", true);
 		
-		List<WebElement> orders = driver.findElements(By.xpath("//div[@class='order-list']/div/div[1]"));
-        
+		List<WebElement> orders = driver.findElements(By.xpath("//div[@class='order-list']/div/div[1]")); 
          for(int i=1;i<=orders.size();i++){
             
         	 System.out.print(orders.get(i));
@@ -95,22 +95,22 @@ static SoftAssert assertion;
 
             	 orders.get(i).findElement(By.xpath(".//following-sibling::div/input")).click();
             	 Reporter.log("Order details button is clicked", true);
-            	 break;
-                         	 
+            	 break;        	 
              }
          }
          
+         //reorder
          driver.findElement(By.xpath("//input[@class='button-1 re-order-button']")).click();
     	 Reporter.log("Re-Order button is clicked",true);
     	 
     	 driver.findElement(By.xpath("//input[@id='termsofservice']")).click();
-    	 Reporter.log("Terms of service check-box is checked", true);
+    	 Reporter.log("Terms of service check-box is clicked", true);
     	 
     	 driver.findElement(By.xpath("//button[@id='checkout']")).click();
     	 Reporter.log("Checkout button is clicked", true);
     	 
     	 driver.findElement(By.xpath("//input[@onclick='Billing.save()']")).click();
-    	 Reporter.log("Continue button is clicked agter saving billing information", true);
+    	 Reporter.log("Continue button is clicked after saving billing information", true);
     	             	
     	 driver.findElement(By.xpath("//input[@onclick='Shipping.save()']")).click();
     	 Reporter.log("Continue button is clicked", true);
@@ -118,18 +118,17 @@ static SoftAssert assertion;
     	 Actions radio_btn= new Actions(driver);
     	 
     	 WebElement shipping_method= driver.findElement(By.xpath("//input[@value='Next Day Air___Shipping.FixedRate']"));
-    	 
     	 radio_btn.click(shipping_method).build().perform();
-    	 Reporter.log("Shipping method radio button is selected",true);            	 
+    	 Reporter.log("Shipping method radio button is clicked",true);            	 
     	 
     	 driver.findElement(By.xpath("//input[@onclick='ShippingMethod.save()']")).click();
     	 Reporter.log("Continue button clicked after selecting shipping method", true);
     	 
     	 driver.findElement(By.xpath("//input[@onclick='PaymentMethod.save()']")).click();
-    	 Reporter.log("Continue buton clicked after selecting payment method",true);
+    	 Reporter.log("Continue buton is clicked after selecting payment method",true);
     	 
     	 driver.findElement(By.xpath("//input[@onclick='PaymentInfo.save()']")).click();
-    	 Reporter.log("Contine button clicked to save payment information", true);
+    	 Reporter.log("Contine button is clicked to save payment information", true);
     	 
     	 driver.findElement(By.xpath("//input[@onclick='ConfirmOrder.save()']")).click();
     	 Reporter.log("Confirm button is clicked to confirm order", true);
@@ -137,8 +136,7 @@ static SoftAssert assertion;
     	String order_confirmation= driver.findElement(By.xpath("//ul[@class='details']/li[1]")).getText();
     	Reporter.log(order_confirmation,true);
     	
-    	Thread.sleep(3000);
-		
+    	Thread.sleep(3000);		
 		driver.findElement(By.xpath("//a[text()='Log out']")).click();
 		Reporter.log("Successfully logged out of the browser", true);
 	}
