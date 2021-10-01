@@ -52,7 +52,7 @@ public class TC_06_DemoWebShop_Login {
 		Reporter.log("Browser window maximized", true);
 	}
 	
-	@Test(dataProviderClass = utilities.DataProvider_DemoWebShop_Login.class, dataProvider = "LoginData1") 
+	@Test(dataProviderClass = utilities.DataProviders.class, dataProvider = "DemoWebShopLoginData") 
 	public static void login_DemoWebShop_DataProvider(String email, String password) throws Exception{
 		
 		
