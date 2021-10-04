@@ -23,6 +23,7 @@ import pageMethods.OrangeHRM.OrangeHRM_Login_LogoutPage;
 import pageMethods.OrangeHRM.OrangeHRM_PIMPage;
 import utilities.Constant;
 import utilities.ExcelUtilities;
+import utilities.Log;
 import utilities.Utility;
 
 @Listeners(utilities.Listeners.class)
@@ -34,7 +35,7 @@ static SoftAssert assertion;
 	@BeforeClass
 	public void setup() throws Exception{
 		String path=System.getProperty("user.dir");
-		Reporter.log("Path of the Project is :"+path, true);
+		Log.info("Path of the Project is :"+path);
 		
 		ExcelUtilities.setExcelFile(path+"\\TestData\\TestData.xlsx");
 		assertion = new SoftAssert();
@@ -53,9 +54,9 @@ static SoftAssert assertion;
 	public void change_password() throws Exception {
 		
 		driver.get("https://testseleniumcod-trials72.orangehrmlive.com");
-		Reporter.log("Orange HRM website is loaded", true);
+		Log.info("Orange HRM website is loaded");
 		driver.manage().window().maximize();
-		Reporter.log("Browser window is maximized", true);
+		Log.info("Browser window is maximized");
 		
 		
 		OrangeHRM_Login_LogoutPage.login("Admin", "Admin@123");
@@ -79,7 +80,7 @@ static SoftAssert assertion;
 	@AfterClass
 	public void afterClass() {
 		driver.quit();
-		Reporter.log("Browser is closed");
+		Log.info("Browser is closed");
 		assertion.assertAll();
 	}
 }	

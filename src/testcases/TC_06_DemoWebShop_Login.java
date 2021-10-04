@@ -21,6 +21,7 @@ import org.testng.asserts.SoftAssert;
 import pageMethods.DemoWebShop.DemoWebShop_Login_LogoutPage;
 import utilities.Constant;
 import utilities.ExcelUtilities;
+import utilities.Log;
 import utilities.Utility;
 
 
@@ -32,7 +33,7 @@ public class TC_06_DemoWebShop_Login {
 	@BeforeClass
 	public static void setup() throws Exception{
 		String path=System.getProperty("user.dir");
-		Reporter.log("Path of the Project is :"+path, true);
+		Log.info("Path of the Project is :"+path);
 		
 		ExcelUtilities.setExcelFile(path+"\\TestData\\TestData.xlsx");
 		assertion= new SoftAssert();
@@ -41,16 +42,16 @@ public class TC_06_DemoWebShop_Login {
 	@Parameters({"browser"})
 	@BeforeMethod
 	public static void openBrowser(@Optional("Chrome") String browser) {
-		Reporter.log("Browser Name from the TestNG.xml is :"+browser , true);
+		Log.info("Browser Name from the TestNG.xml is :"+browser );
 		driver=Utility.getDriver(browser);
 				
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 
 		driver.get("http://demowebshop.tricentis.com");
-		Reporter.log("Website is loaded", true);
+		Log.info("Website is loaded");
 
 		driver.manage().window().maximize();
-		Reporter.log("Browser window maximized", true);
+		Log.info("Browser window maximized");
 	}
 	
 	@Test(dataProviderClass = utilities.DataProviders.class, dataProvider = "DemoWebShopLoginData") 
@@ -65,7 +66,7 @@ public class TC_06_DemoWebShop_Login {
 	@AfterMethod
 	public void afterClass() {
 		driver.quit();
-		Reporter.log("Browser is closed", true);
+		Log.info("Browser is closed");
 		assertion.assertAll();
 	}
 }

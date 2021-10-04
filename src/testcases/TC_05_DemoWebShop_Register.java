@@ -20,6 +20,7 @@ import pageMethods.DemoWebShop.DemoWebShop_Login_LogoutPage;
 import pageMethods.DemoWebShop.DemoWebShop_RegistrationPage;
 import utilities.Constant;
 import utilities.ExcelUtilities;
+import utilities.Log;
 import utilities.RandomGenerator;
 import utilities.Utility;
 
@@ -32,7 +33,7 @@ public class TC_05_DemoWebShop_Register {
 	@BeforeClass
 	public void setup() throws Exception {
 		String path=System.getProperty("user.dir");
-		Reporter.log("Path of the Project is :"+path, true);
+		Log.info("Path of the Project is :"+path);
 		
 		excelPath=path+"\\TestData\\TestData.xlsx";
 		ExcelUtilities.setExcelFile(excelPath);
@@ -43,16 +44,16 @@ public class TC_05_DemoWebShop_Register {
 	@Parameters({"browser"})
 	@BeforeMethod
 	public static void openBrowser(@Optional("Chrome") String browser) {
-		Reporter.log("Browser Name from the TestNG.xml is :"+browser);
+		Log.info("Browser Name from the TestNG.xml is :"+browser);
 		driver=Utility.getDriver(browser);
 				
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 
 		driver.get("http://demowebshop.tricentis.com");
-		Reporter.log("Website is successfully loaded", true);
+		Log.info("Website is successfully loaded");
 
 		driver.manage().window().maximize();
-		Reporter.log("Browser window maximized", true);
+		Log.info("Browser window maximized");
 	}
 	
 	
@@ -66,7 +67,7 @@ public class TC_05_DemoWebShop_Register {
 	@AfterClass
 	public void teardown() {
 		driver.quit();
-		Reporter.log("Browser is closed", true);
+		Log.info("Browser is closed");
 		assertion.assertAll();
 	}
 }

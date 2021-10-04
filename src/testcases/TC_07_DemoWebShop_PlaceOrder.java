@@ -55,16 +55,16 @@ public class TC_07_DemoWebShop_PlaceOrder {
 	@Parameters({"browser"})
 	@BeforeMethod
 	public static void openBrowser(@Optional("Chrome") String browser) {
-		Reporter.log("Browser Name from the TestNG.xml is :"+browser, true);
+		Log.info("Browser Name from the TestNG.xml is :"+browser);
 		driver=Utility.getDriver(browser);
 				
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 
 		driver.get("http://demowebshop.tricentis.com");
-		Reporter.log("Website is loaded", true);
+		Log.info("Website is loaded");
 
 		driver.manage().window().maximize();
-		Reporter.log("Browser window maximized", true);
+		Log.info("Browser window maximized");
 	}
 		
 	@Test

@@ -26,6 +26,7 @@ import org.testng.asserts.SoftAssert;
 import pageMethods.OrangeHRM.OrangeHRM_Login_LogoutPage;
 import utilities.Constant;
 import utilities.ExcelUtilities;
+import utilities.Log;
 import utilities.Utility;
 
 
@@ -38,7 +39,7 @@ public class TC_00_LoginOrangeHRM {
 	@BeforeClass
 	public void setup() throws Exception{
 		String path=System.getProperty("user.dir");
-		Reporter.log("Path of the Project is :"+path, true);
+		Log.info("Path of the Project is :"+path);
 		
 		ExcelUtilities.setExcelFile(path+"\\TestData\\TestData.xlsx");
 		assertion = new SoftAssert();
@@ -47,7 +48,7 @@ public class TC_00_LoginOrangeHRM {
 	@Parameters({"browser"})
 	@BeforeMethod
 	public void openBrowser(@Optional("Chrome") String browser) {
-		Reporter.log("Browser Name from the TestNG.xml is :"+browser);
+		Log.info("Browser Name from the TestNG.xml is :"+browser);
 		driver=Utility.getDriver(browser);
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 	}
@@ -58,9 +59,9 @@ public class TC_00_LoginOrangeHRM {
 		
 		
 		driver.get("https://testseleniumcod-trials72.orangehrmlive.com");
-		Reporter.log("Orange HRM website is loaded", true);
+		Log.info("Orange HRM website is loaded");
 		driver.manage().window().maximize();
-		Reporter.log("Browser window is maximized", true);
+		Log.info("Browser window is maximized");
 		
 	
 		OrangeHRM_Login_LogoutPage.login(username, password);
@@ -73,9 +74,9 @@ public class TC_00_LoginOrangeHRM {
 		
 		
 		driver.get("https://testseleniumcod-trials72.orangehrmlive.com");
-		Reporter.log("Orange HRM website is loaded", true);
+		Log.info("Orange HRM website is loaded");
 		driver.manage().window().maximize();
-		Reporter.log("Browser window is maximized", true);
+		Log.info("Browser window is maximized");
 		
 	
 		OrangeHRM_Login_LogoutPage.login(username, password);
@@ -86,7 +87,7 @@ public class TC_00_LoginOrangeHRM {
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();
-		Reporter.log("Browser is closed", true);
+		Log.info("Browser is closed");
 		assertion.assertAll();
 	}
 }
