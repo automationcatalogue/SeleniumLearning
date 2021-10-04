@@ -23,6 +23,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import pageMethods.OrangeHRM.OrangeHRM_Login_LogoutPage;
 import utilities.Constant;
 import utilities.ExcelUtilities;
 import utilities.Utility;
@@ -62,17 +63,7 @@ public class TC_00_LoginOrangeHRM {
 		Reporter.log("Browser window is maximized", true);
 		
 	
-		driver.findElement(By.id("txtUsername")).sendKeys(username);
-		Reporter.log(username+" is entered as UserName in a text-box", true);
-		
-		driver.findElement(By.name("txtPassword")).sendKeys(password);
-		Reporter.log(password+" is entered as Password in a text-box", true);
-		
-		driver.findElement(By.id("btnLogin")).click();
-		Reporter.log("Login button is clicked",true);
-		
-		Assert.assertTrue(driver.findElement(By.xpath("//li[text()='Dashboard']")).isDisplayed());
-		Reporter.log("Home page is displayed", true);
+		OrangeHRM_Login_LogoutPage.login(username, password);
 		
 
 	}
@@ -87,27 +78,9 @@ public class TC_00_LoginOrangeHRM {
 		Reporter.log("Browser window is maximized", true);
 		
 	
-		driver.findElement(By.id("txtUsername")).sendKeys(username);
-		Reporter.log(username+" is entered as UserName in a text-box", true);
+		OrangeHRM_Login_LogoutPage.login(username, password);
 		
-		driver.findElement(By.name("txtPassword")).sendKeys(password);
-		Reporter.log(password+" is entered as Password in a text-box", true);
-		
-		driver.findElement(By.id("btnLogin")).click();
-		Reporter.log("Login button is clicked",true);
-		
-		Assert.assertTrue(driver.findElement(By.xpath("//li[text()='Dashboard']")).isDisplayed());
-		Reporter.log("Home page is displayed", true);
-		
-		WebElement dropdown_logout = driver.findElement(By.xpath("//i[text()='keyboard_arrow_down']"));
-		((JavascriptExecutor)driver).executeScript("arguments[0].click();",dropdown_logout);
-		Reporter.log("Logout dropdown is clicked", true);
-		
-		WebElement element_logoutBtn=driver.findElement(By.xpath("//ul[@id='user_menu']//li[3]/a"));
-		((JavascriptExecutor)driver).executeScript("arguments[0].click();", element_logoutBtn);
-		Reporter.log("Successfully logged out of the browser", true);
-		
-		Thread.sleep(2000);
+		OrangeHRM_Login_LogoutPage.logout();
 	}
 	
 	@AfterMethod

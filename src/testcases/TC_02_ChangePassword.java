@@ -17,6 +17,10 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import pageMethods.OrangeHRM.OrangeHRM_AdminPage;
+import pageMethods.OrangeHRM.OrangeHRM_HomePage;
+import pageMethods.OrangeHRM.OrangeHRM_Login_LogoutPage;
+import pageMethods.OrangeHRM.OrangeHRM_PIMPage;
 import utilities.Constant;
 import utilities.ExcelUtilities;
 import utilities.Utility;
@@ -54,80 +58,21 @@ static SoftAssert assertion;
 		Reporter.log("Browser window is maximized", true);
 		
 		
-		String userName=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_UserName, "OrangeHRM");
-		String password = ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_Password, "OrangeHRM");
+		OrangeHRM_Login_LogoutPage.login("Admin", "Admin@123");
 		
-		driver.findElement(By.id("txtUsername")).sendKeys(userName);
-		Reporter.log("userName is entered in the text-box", true);
+		OrangeHRM_HomePage.clickUsers();
 		
-		driver.findElement(By.name("txtPassword")).sendKeys(password);
-		Reporter.log("password is entered in the text-box", true);
+		OrangeHRM_AdminPage.changePassword();
 		
-		driver.findElement(By.id("btnLogin")).click();
-		Reporter.log("Login button is clicked",true);
-		
-		driver.findElement(By.xpath("(//span[text()='Admin'])[100]")).click();
-		Reporter.log("Admin menu is clicked", true);
-		
-		driver.findElement(By.xpath("//span[text()='User Management']")).click();
-		Reporter.log("User Management option is clicked", true);
-		
-		driver.findElement(By.xpath("//span[text()='Users']")).click();
-		Reporter.log("Useres option is clicked",true);
-		
-		WebElement edit = driver.findElement(By.xpath("(//table[@class='highlight bordered']//td[8]/i[contains(text(),'ohrm_edit')])[1]"));
-		edit.click();
-		Reporter.log("Edit user option is clicked",true);
-
-		
-		driver.findElement(By.xpath("//label[@for='changepassword']")).click();
-		
-		String new_password = ExcelUtilities.getCellData(Constant.uRowNumber, Constant.col_Password, "OrangeHRM");
-		
-		driver.findElement(By.xpath("//input[@id='password']")).sendKeys(new_password);
-		Reporter.log("New password is entered ", true);
-		
-		driver.findElement(By.xpath("//input[@id='confirmpassword']")).sendKeys(new_password);
-		Reporter.log("Confirm password is entered ", true);
-		
-		Thread.sleep(3000);
-		
-		WebElement element_saveBtn=driver.findElement(By.xpath("//button[text()='Save']"));
-		((JavascriptExecutor)driver).executeScript("arguments[0].click();", element_saveBtn);
-		Reporter.log("Save button is clicked", true);
-		
-		WebElement dropdown_logout = driver.findElement(By.xpath("//i[text()='keyboard_arrow_down']"));
-		((JavascriptExecutor)driver).executeScript("arguments[0].click();",dropdown_logout);
-		Reporter.log("Logout dropdown is clicked", true);
-		
-		String logout=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.options, "OrangeHRM");
-		WebElement element_logoutBtn=driver.findElement(By.xpath("//ul[@id='user_menu']//li[3]/a"));
-		((JavascriptExecutor)driver).executeScript("arguments[0].click();", element_logoutBtn);
-		Reporter.log(logout+ " is selected from the dropdown",true);
+		OrangeHRM_Login_LogoutPage.logout();
 		
 	
 		String newuserName=ExcelUtilities.getCellData(Constant.uRowNumber, Constant.col_UserName, "OrangeHRM");
 		String newpassword = ExcelUtilities.getCellData(Constant.uRowNumber, Constant.col_Password, "OrangeHRM");
 		
-		driver.findElement(By.id("txtUsername")).sendKeys(newuserName);
-		Reporter.log(newuserName+" is entered as UserName in a text-box", true);
+		OrangeHRM_Login_LogoutPage.login(newuserName, newpassword);
 		
-		driver.findElement(By.name("txtPassword")).sendKeys(newpassword);
-		Reporter.log(newpassword+" is entered as Password in a text-box", true);
-		
-		driver.findElement(By.id("btnLogin")).click();
-		Reporter.log("Login button is clicked",true);
-		
-		Thread.sleep(4000);
-		
-		WebElement dropdown_logout1 = driver.findElement(By.xpath("//i[text()='keyboard_arrow_down']"));
-		((JavascriptExecutor)driver).executeScript("arguments[0].click();",dropdown_logout1);
-		Reporter.log("Logout dropdown is clicked", true);
-		
-		String logout1=ExcelUtilities.getCellData(Constant.iRowNumber, Constant.options, "OrangeHRM");
-		WebElement element_logoutBtn1=driver.findElement(By.xpath("//ul[@id='user_menu']//li[3]/a"));
-		((JavascriptExecutor)driver).executeScript("arguments[0].click();", element_logoutBtn1);
-		Reporter.log("Successfully logged out of the website",true);
+		OrangeHRM_Login_LogoutPage.logout();
 		
 		
 	}

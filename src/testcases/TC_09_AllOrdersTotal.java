@@ -18,6 +18,9 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import pageMethods.DemoWebShop.DemoWebShop_CustomerInfoPage;
+import pageMethods.DemoWebShop.DemoWebShop_Login_LogoutPage;
+import pageMethods.DemoWebShop.DemoWebShop_OrdersPage;
 import utilities.Constant;
 import utilities.ExcelUtilities;
 import utilities.Utility;
@@ -55,53 +58,16 @@ static SoftAssert assertion;
 	@Test
 	
 	public void allorders_total() throws Exception{
-		//login
-		driver.findElement(By.className("ico-login")).click();
-		Reporter.log("Login button is clicked", true);
 		
-		String email=ExcelUtilities.getCellData(Constant.uRowNumber, Constant.col_Email, "DemoWebShop");
-		driver.findElement(By.id("Email")).sendKeys(email);
-		Reporter.log("Email Id is entered",true);
+		DemoWebShop_Login_LogoutPage.login("aarosagarch@gmail.com", "Admin@123");
 		
-		String password=ExcelUtilities.getCellData(Constant.uRowNumber, Constant.col_Password, "DemoWebShop");
-		driver.findElement(By.id("Password")).sendKeys(password);
-		Reporter.log("Password is entered", true);
+		DemoWebShop_CustomerInfoPage.clickOrders();
 		
-		driver.findElement(By.xpath("//input[@value='Log in']")).click();
-		Reporter.log("Login button is clicked", true);
+		DemoWebShop_OrdersPage.getNumberOfOrders();
 		
-		//orders
-		driver.findElement(By.xpath("//a[text()='aarosagarch@gmail.com']")).click();
-		Reporter.log("Email name is clicked", true);
+		DemoWebShop_OrdersPage.getSumOfAllOrdersTotal();
 		
-		driver.findElement(By.xpath("//ul[@class='list']/li[3]/a")).click();
-		Reporter.log("Orders options is clicked", true);
-		
-		int totalorders = driver.findElements(By.xpath("//div[@class='order-list']/div")).size();
-		Reporter.log("Total number of orders placed are:" + totalorders, true);
-		
-		
-		List<WebElement> list_totalorders = driver.findElements(By.xpath("//div[@class='order-list']/div/ul/li[3]"));
-		int sum=0;
-		for(WebElement element_orderTotal:list_totalorders) {
-			String orderTotal=element_orderTotal.getText();
-			orderTotal=orderTotal.split(":")[1].trim().split("\\.")[0];
-			int total=Integer.parseInt(orderTotal);
-			sum=sum+total;
-		}
-		Reporter.log("Sum of Total orders is :"+sum , true);
-		
-		List<WebElement> list_totalorders_daywise=driver.findElements(By.xpath("//div[@class='order-list']/div/ul/li[2]"));
-		for (WebElement daywise_list:list_totalorders_daywise) {
-			String daywise_ordervalue=daywise_list.getText().split(" ")[2];
-			//System.out.println(daywise_ordervalue);
-			
-			List<String> Totalorders_daywise= new ArrayList<String>();
-			Totalorders_daywise.add(daywise_ordervalue);
-			System.out.println(Totalorders_daywise);
-		
-			
-		}
+		DemoWebShop_OrdersPage.getSumOfAllOrdersTotal_DateWise();
 		
 	}
 	@AfterClass

@@ -18,6 +18,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import pageMethods.DemoWebShop.DemoWebShop_Login_LogoutPage;
 import utilities.Constant;
 import utilities.ExcelUtilities;
 import utilities.Utility;
@@ -55,23 +56,9 @@ public class TC_06_DemoWebShop_Login {
 	@Test(dataProviderClass = utilities.DataProviders.class, dataProvider = "DemoWebShopLoginData") 
 	public static void login_DemoWebShop_DataProvider(String email, String password) throws Exception{
 		
+		DemoWebShop_Login_LogoutPage.login(email, password);
 		
-		driver.findElement(By.className("ico-login")).click();
-		Reporter.log("Login button is clicked", true);
-		
-		
-		driver.findElement(By.id("Email")).sendKeys(email);
-		Reporter.log("Email Id is entered",true);
-		
-		driver.findElement(By.id("Password")).sendKeys(password);
-		Reporter.log("Password is entered", true);
-		
-		driver.findElement(By.xpath("//input[@value='Log in']")).click();
-		Reporter.log("Login button is clicked", true);
-		
-		Thread.sleep(5000);
-		driver.findElement(By.xpath("//a[text()='Log out']")).click();
-		Reporter.log("Successfully logged out of the browser", true);
+		DemoWebShop_Login_LogoutPage.logout();
   }
 	
 	
