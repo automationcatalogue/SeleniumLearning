@@ -146,7 +146,7 @@ public class TC_11_AirbnbValidation {
 		increase_btn.click(bedroom_btn).build().perform();
 		Reporter.log("Number of bedrooms set to one", true);
 		
-		driver.findElement(By.xpath("//button[text()='Show 300+ stays']")).click();
+		driver.findElement(By.xpath("//button[@data-testid='more-filters-modal-submit-button']")).click();
 		Reporter.log("Show listings button is clicked", true);
 		
 		List<WebElement> element_price=driver.findElements(By.xpath("//div[@itemprop='itemList']//following::div[@class='_1i1hiso']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/span[1]"));
@@ -174,7 +174,7 @@ public class TC_11_AirbnbValidation {
 	
 	@AfterClass
 	public void close_browser() {
-		//driver.quit();
+		driver.quit();
 		assertion.assertAll();
 	}
 	
