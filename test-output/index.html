@@ -5,9 +5,8 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery.min.js"></script>
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -24,9 +23,8 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
-      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\rehan\AppData\Local\Temp\testng-eclipse--1865092976\testng-customsuite.xml</span>
+                    <span>C:\Users\AaradhyaVashisht\AppData\Local\Temp\testng-eclipse--1245405138\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content failed suite-Default_suite">
+                    <div class="method-list-content passed suite-Default_suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testcases.TC_11_AirbnbValidation" class="method navigator-link" hash-for-method="priceRangeFilter">priceRangeFilter</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.TC_07_DemoWebShop_PlaceOrder" class="method navigator-link" hash-for-method="placeOrder_DemoWebshop">placeOrder_DemoWebshop</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,69 +117,34 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
+          <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testcases.TC_11_AirbnbValidation</span>
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TC_07_DemoWebShop_PlaceOrder</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="priceRangeFilter">
-                  </a> <!-- priceRangeFilter -->
-                  <span class="method-name">priceRangeFilter</span>
-                  <div class="stack-trace">java.lang.StringIndexOutOfBoundsException: begin 1, end 0, length 0
-	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3751)
-	at java.base/java.lang.String.substring(String.java:1907)
-	at java.base/java.lang.String.substring(String.java:1880)
-	at testcases.TC_11_AirbnbValidation.priceRangeFilter(TC_11_AirbnbValidation.java:157)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
+                  <a name="placeOrder_DemoWebshop">
+                  </a> <!-- placeOrder_DemoWebshop -->
+                  <span class="method-name">placeOrder_DemoWebshop</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
+          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\rehan\AppData\Local\Temp\testng-eclipse--1865092976\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\AaradhyaVashisht\AppData\Local\Temp\testng-eclipse--1245405138\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testcases.TC_11_AirbnbValidation&quot;/&gt;
+      &lt;class name=&quot;testcases.TC_07_DemoWebShop_PlaceOrder&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -223,14 +186,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'priceRangeFilter')
-data.setCell(0, 2, 'testcases.TC_11_AirbnbValidation')
-data.setCell(0, 3, 11378);
+data.setCell(0, 1, 'placeOrder_DemoWebshop')
+data.setCell(0, 2, 'testcases.TC_07_DemoWebShop_PlaceOrder')
+data.setCell(0, 3, 12335);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -242,26 +205,27 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">priceRangeFilter</span>
+              <span class="reporter-method-name">placeOrder_DemoWebshop</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Airbnb website is loaded</span>
-                <span class="reporter-method-output">Browser window is maximized</span>
-                <span class="reporter-method-output">Accept cookies button is clicked</span>
-                <span class="reporter-method-output">Location is clicked </span>
-                <span class="reporter-method-output">I’m flexible button is clicked</span>
-                <span class="reporter-method-output">Search results are displayed</span>
-                <span class="reporter-method-output">Guests dropdown is clicked</span>
-                <span class="reporter-method-output">Number of adults selected from filter : 2</span>
-                <span class="reporter-method-output">Save button is clicked</span>
-                <span class="reporter-method-output">Filters button is clicked</span>
-                <span class="reporter-method-output">Employee details page is displayed</span>
-                <span class="reporter-method-output">Entire place checkbox is selected</span>
-                <span class="reporter-method-output">Hotel room checkbox is selected</span>
-                <span class="reporter-method-output">Airbnb switch is already disabled</span>
-                <span class="reporter-method-output">Final Actual max price is :34708</span>
-                <span class="reporter-method-output">Final actual min price is 3718</span>
-                <span class="reporter-method-output">Number of bedrooms set to one</span>
-                <span class="reporter-method-output">Show listings button is clicked</span>
+                <span class="reporter-method-output">Login button is clicked</span>
+                <span class="reporter-method-output">Selected Books from top menu</span>
+                <span class="reporter-method-output">first option selected from the dropdown</span>
+                <span class="reporter-method-output">Category Z to A slected from the dropdown</span>
+                <span class="reporter-method-output">Added item to the cart</span>
+                <span class="reporter-method-output">Selected shopping cart</span>
+                <span class="reporter-method-output">India is selected from the country drop down</span>
+                <span class="reporter-method-output">Other (Non US) selected from the state dropdown</span>
+                <span class="reporter-method-output">Entered pincode as 500060</span>
+                <span class="reporter-method-output">Termsofservice Check-box is selected</span>
+                <span class="reporter-method-output">Checkout button is clicked</span>
+                <span class="reporter-method-output">Continue button is selected for billing</span>
+                <span class="reporter-method-output">Continue button is selected for shipping</span>
+                <span class="reporter-method-output">Continue button is selected for shipping method</span>
+                <span class="reporter-method-output">Continue button is selected for payment method</span>
+                <span class="reporter-method-output">Continue button is selected for payment info</span>
+                <span class="reporter-method-output">Confirm button is clicked</span>
+                <span class="reporter-method-output">Order number: 1024427</span>
+                <span class="reporter-method-output">Successfully logged out of the browser</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -279,29 +243,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.TC_11_AirbnbValidation</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcases.TC_07_DemoWebShop_PlaceOrder</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">openBrowser(Chrome)</span>
-                <span class="method-start">27 ms</span>
+                <span class="method-start">1041 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">priceRangeFilter</span>
-                <span class="method-start">1833 ms</span>
+                <span class="method-name">placeOrder_DemoWebshop</span>
+                <span class="method-start">5523 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
-                <span class="method-name">close_browser</span>
-                <span class="method-start">13217 ms</span>
+                <span class="method-name">afterClass</span>
+                <span class="method-start">17861 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
-<script type="text/javascript" src="testng-reports2.js"></script>
 </html>

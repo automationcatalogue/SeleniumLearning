@@ -2,6 +2,9 @@ package testcases;
 
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,16 +20,28 @@ import org.testng.asserts.SoftAssert;
 
 import utilities.Constant;
 import utilities.ExcelUtilities;
+import utilities.Log;
 import utilities.Utility;
 
 public class TC_07_DemoWebShop_PlaceOrder {
 	static WebDriver driver;
 	static SoftAssert assertion;
+	static String path;
 	
 	@BeforeClass
 	public void setup() throws Exception{
-		String path=System.getProperty("user.dir");
-		Reporter.log("Path of the Project is :"+path, true);
+		
+		
+		path=System.getProperty("user.dir");
+		//DOMConfigurator.configure(path+"\\resources\\Log4j.xml");
+		PropertyConfigurator.configure(path+"\\resources\\Log4j.properties");
+		
+		
+		String className=Thread.currentThread().getStackTrace()[1].getClassName().substring(Thread.currentThread().getStackTrace()[1].getClassName().indexOf('.')+1);
+		
+		Log.startTestCase(className);
+		Log.info("Path of the Project is :"+path);
+		
 		
 		ExcelUtilities.setExcelFile(path+"\\TestData\\TestData.xlsx");
 		assertion = new SoftAssert();
@@ -49,17 +64,20 @@ public class TC_07_DemoWebShop_PlaceOrder {
 		
 	@Test
 	public void placeOrder_DemoWebshop() throws Exception {
+		
+		
+		
 		//login
 		driver.findElement(By.className("ico-login")).click();
-		Reporter.log("Login button is clicked", true);
+		Log.info("Login button is clicked");
 		
 		String email=ExcelUtilities.getCellData(Constant.uRowNumber, Constant.col_Email, "DemoWebShop");
 		driver.findElement(By.id("Email")).sendKeys(email);
-		Reporter.log("Email Id is entered",true);
+		Log.info("Email Id is entered");
 		
 		String password=ExcelUtilities.getCellData(Constant.uRowNumber, Constant.col_Password, "DemoWebShop");
 		driver.findElement(By.id("Password")).sendKeys(password);
-		Reporter.log("Password is entered", true);
+		Log.info("Password is entered");
 		
 		driver.findElement(By.xpath("//input[@value='Log in']")).click();
 		Reporter.log("Login button is clicked", true);
@@ -142,7 +160,9 @@ public class TC_07_DemoWebShop_PlaceOrder {
 	@AfterClass
 	public void afterClass() {
 		driver.quit();
-		Reporter.log("Browser is closed", true);
+		Log.info("Browser is closed");
 		assertion.assertAll();
+		Log.endTestCase();
+		
 	}
 }
