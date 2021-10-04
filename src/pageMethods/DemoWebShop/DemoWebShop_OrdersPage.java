@@ -10,13 +10,14 @@ import org.testng.Reporter;
 
 import utilities.Constant;
 import utilities.ExcelUtilities;
+import utilities.Log;
 
 public class DemoWebShop_OrdersPage {
 	static WebDriver driver;
 	
 	public static void getNumberOfOrders() {
 		int totalorders = driver.findElements(By.xpath("//div[@class='order-list']/div")).size();
-		Reporter.log("Total number of orders placed are:" + totalorders, true);
+		Log.info("Total number of orders placed are:" + totalorders);
 		
 	}
 	
@@ -30,14 +31,14 @@ public class DemoWebShop_OrdersPage {
        	 //String order_number=orders.get(i).findElement(By.xpath("//div[@class='title']//strong[contains(text(),'Order Number')]")).getText();
        	 String order_number=orders.get(i).getText();
 
-       	 Reporter.log(order_number, true);
+       	 Log.info(order_number);
        	 
        	 String Order_Num=ExcelUtilities.getCellData(Constant.uRowNumber, Constant.col_orderno, "DemoWebShop");
 
             if(order_number.contains(Order_Num)){
 
            	 orders.get(i).findElement(By.xpath(".//following-sibling::div/input")).click();
-           	 Reporter.log("Order details button is clicked", true);
+           	 Log.info("Order details button is clicked");
            	 break;        	 
             }
         }
@@ -46,7 +47,7 @@ public class DemoWebShop_OrdersPage {
 	public static void reOrder() {
 		 //reorder
         driver.findElement(By.xpath("//input[@class='button-1 re-order-button']")).click();
-        Reporter.log("Re-Order button is clicked",true);
+        Log.info("Re-Order button is clicked");
 	}
 	
 	public static void getSumOfAllOrdersTotal() {
@@ -58,7 +59,7 @@ public class DemoWebShop_OrdersPage {
 			int total=Integer.parseInt(orderTotal);
 			sum=sum+total;
 		}
-		Reporter.log("Sum of Total orders is :"+sum , true);
+		Log.info("Sum of Total orders is :"+sum );
 	}
 	
 	public static void getSumOfAllOrdersTotal_DateWise() {

@@ -13,6 +13,7 @@ import org.testng.Reporter;
 
 import utilities.Constant;
 import utilities.ExcelUtilities;
+import utilities.Log;
 import utilities.RandomGenerator;
 import utilities.Utility;
 
@@ -27,26 +28,26 @@ public class OrangeHRM_PIMPage {
 		firstname = RandomGenerator.randomAlphabet(5, 8);
 		driver.findElement(By.xpath("//div[@class='input-group']/input[1]")).sendKeys(firstname);
 		ExcelUtilities.setCellData(firstname, Constant.RowNumber_five, Constant.col_Firstname, "OrangeHRM", excelPath);
-		Reporter.log(firstname + "First-name entered in the text-box", true);
+		Log.info(firstname + "First-name entered in the text-box");
 
 		// middlename
 		middlename = RandomGenerator.randomAlphabet(3, 4);
 		driver.findElement(By.xpath("//div[@class='input-group']/input[2]")).sendKeys(middlename);
 		ExcelUtilities.setCellData(firstname, Constant.RowNumber_five, Constant.col_middlename, "OrangeHRM", excelPath);
-		Reporter.log(middlename + " is enered as middle name in the text-box", true);
+		Log.info(middlename + " is enered as middle name in the text-box");
 
 		// lastname
 		lastname = RandomGenerator.randomAlphabet(3, 6);
 		driver.findElement(By.xpath("//div[@class='input-group']/input[3]")).sendKeys(lastname);
 		ExcelUtilities.setCellData(firstname, Constant.RowNumber_five, Constant.col_lastname, "OrangeHRM", excelPath);
-		Reporter.log(lastname + "is enered as  nalastme in the text-box", true);
+		Log.info(lastname + "is enered as  nalastme in the text-box");
 
 		driver.findElement(By.xpath("//i[text()='arrow_drop_down']")).click();
-		Reporter.log("Location dropdown button is clicked", true);
+		Log.info("Location dropdown button is clicked");
 
 		// locations
 		int location_size = driver.findElements(By.xpath("//ul[@class='dropdown-menu inner show']/li/a/span")).size();
-		Reporter.log("Number of locations available:" + location_size, true);
+		Log.info("Number of locations available:" + location_size);
 
 		String datalocation = ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_datalocation, "OrangeHRM");
 		Utility.selection_dropdown(driver, "//ul[@class='dropdown-menu inner show']/li/a/span", datalocation);
@@ -56,32 +57,32 @@ public class OrangeHRM_PIMPage {
 		Thread.sleep(1000);
 		WebElement btn_Next = driver.findElement(By.xpath("//button[@class='btn btn-secondary']"));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", btn_Next);
-		Reporter.log("Next button is clicked", true);
+		Log.info("Next button is clicked");
 
 		driver.findElement(By.xpath("//div[@id='personal_details_tab']")).isDisplayed();
-		Reporter.log("Personal details page is displayed", true);
+		Log.info("Personal details page is displayed");
 
 		driver.findElement(By.xpath("//input[@id='otherId']")).sendKeys("JJ123");
-		Reporter.log("Entered data in other Id field", true);
+		Log.info("Entered data in other Id field");
 
 		WebElement element_nationality_dd = driver
 				.findElement(By.xpath("//div[@id='nation_code_inputfileddiv']/div/input"));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", element_nationality_dd);
-		Reporter.log("Nationality drop-down is clicked", true);
+		Log.info("Nationality drop-down is clicked");
 
 		String nationality = ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_Nationality, "OrangeHRM");
 		Utility.selection_dropdown(driver, "//div[@id='nation_code_inputfileddiv']/div/ul/li/span", nationality);
-		Reporter.log(nationality + " is selected as nationality of the employee", true);
+		Log.info(nationality + " is selected as nationality of the employee");
 
 		int elements_marital_status = driver
 				.findElements(By.xpath("//div[@id='emp_marital_status_inputfileddiv']//following-sibling::ul/li/span"))
 				.size();
-		Reporter.log("Option under marital status are " + elements_marital_status, true);
+		Log.info("Option under marital status are " + elements_marital_status);
 
 		WebElement element_maritalstatus_dd1 = driver
 				.findElement(By.xpath("//div[@id='emp_marital_status_inputfileddiv']/div/input"));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", element_maritalstatus_dd1);
-		Reporter.log("marital status drop-down is clicked", true);
+		Log.info("marital status drop-down is clicked");
 
 		String maritalstatus = ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_maritalstatus, "OrangeHRM");
 		Utility.selection_dropdown(driver,
@@ -89,51 +90,51 @@ public class OrangeHRM_PIMPage {
 
 		WebElement element_gender_dd = driver.findElement(By.xpath("//div[@id='emp_gender_inputfileddiv']/div/input"));
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", element_gender_dd);
-		Reporter.log("Gender drop-down is clicked", true);
+		Log.info("Gender drop-down is clicked");
 
 		String gender = ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_Gender, "OrangeHRM");
 
 		Utility.selection_dropdown(driver, "//div[@id='emp_gender_inputfileddiv']/div/ul/li/span", gender);
-		Reporter.log("Gender is selcted as :" + gender, true);
+		Log.info("Gender is selcted as :" + gender);
 
 		driver.findElement(By.xpath("//label[text()='Hobbies']//preceding-sibling::input")).sendKeys("Reading novels");
-		Reporter.log("Data entered in hobbies field", true);
+		Log.info("Data entered in hobbies field");
 
 		driver.findElement(By.xpath("//button[text()='Next']")).click();
-		Reporter.log("Next button is clicked", true);
+		Log.info("Next button is clicked");
 
 		Utility.waitForPageLoad(driver);
-		Reporter.log("Employee details page is displayed", true);
+		Log.info("Employee details page is displayed");
 
 		js.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(By.xpath("//button[text()='Save']")));
 		Thread.sleep(1000);
 		Utility.retryClick(driver, By.xpath("//label[contains(text(),'Region')]/..//following-sibling::input[1]"));
-		Reporter.log("Region drop-down is clicked", true);
+		Log.info("Region drop-down is clicked");
 		Thread.sleep(1000);
 		String Region = ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_Region, "OrangeHRM");
 		Utility.selection_dropdown(driver, "//div[@id='9_inputfileddiv']/div/ul/li/span", Region);
-		Reporter.log(Region + " is selcted from the dropdown", true);
+		Log.info(Region + " is selcted from the dropdown");
 		Thread.sleep(1000);
 
 		js.executeScript("arguments[0].click();",
 				driver.findElement(By.xpath("//label[contains(text(),'FTE')]/..//following-sibling::input[1]")));
-		Reporter.log("FTE drop-down is clicked", true);
+		Log.info("FTE drop-down is clicked");
 
 		String FTE = ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_FTE, "OrangeHRM");
 		Utility.selection_dropdown(driver, "//div[@id='10_inputfileddiv']/div/ul/li/span", FTE);
-		Reporter.log(FTE + " is selected from the dropdown", true);
+		Log.info(FTE + " is selected from the dropdown");
 		Thread.sleep(1000);
 
 		js.executeScript("arguments[0].click();",
 				driver.findElement(By.xpath("//label[contains(text(),'Temporary')]/..//following-sibling::input[1]")));
-		Reporter.log("Temporary department drop-down is clicked", true);
+		Log.info("Temporary department drop-down is clicked");
 		Thread.sleep(1000);
 		String TempDep = ExcelUtilities.getCellData(Constant.iRowNumber, Constant.col_TempDepartment, "OrangeHRM");
 		Utility.selection_dropdown(driver, "//div[@id='11_inputfileddiv']/div/ul/li/span", TempDep);
-		Reporter.log(TempDep + " is selected  from the dropdown", true);
+		Log.info(TempDep + " is selected  from the dropdown");
 
 		driver.findElement(By.xpath("//button[text()='Save']")).click();
-		Reporter.log("Save button is clicked", true);
+		Log.info("Save button is clicked");
 
 		Assert.assertTrue(driver.findElement(By.xpath("(//div[@class='pim-container'])[2]")).isDisplayed(),
 				"Personal Details page is not displayed");
@@ -142,41 +143,41 @@ public class OrangeHRM_PIMPage {
 
 		Actions action = new Actions(driver);
 		action.click(save_btn).build().perform();
-		Reporter.log("save buttonn is clicked", true);
+		Log.info("save buttonn is clicked");
 
 		driver.findElement(By.xpath("(//li[@ng-repeat='item in form.titleMap'])[1]")).click();
-		Reporter.log("Food selection radio button is clicked", true);
+		Log.info("Food selection radio button is clicked");
 
 		WebElement save_btn1 = driver.findElement(By.xpath("(//button[text()='save'])[2]"));
 
 		Actions action1 = new Actions(driver);
 		action1.click(save_btn1).build().perform();
-		Reporter.log("save button is clicked", true);
+		Log.info("save button is clicked");
 
 		((JavascriptExecutor) driver).executeScript("window.scrollTo(0, -250)");
 
 		driver.findElement(By.xpath("//span[text()='Employee List']")).click();
-		Reporter.log("Emloyee list is seleced", true);
+		Log.info("Emloyee list is seleced");
 	}
 	
 	public static void verifyEmployeeDetails() throws Exception{
 		String employee_name= firstname + " ".concat(middlename) + " ".concat(lastname); 
-		Reporter.log( employee_name+ " is selected as employee full name", true);
+		Log.info( employee_name+ " is selected as employee full name");
 		
 		driver.findElement(By.xpath("//input[@placeholder='Employee Name']")).sendKeys(employee_name);
-		Reporter.log("Employee name entered in search tab",true);
+		Log.info("Employee name entered in search tab");
 		
 		driver.findElement(By.xpath("//input[@placeholder='Employee Name']")).sendKeys(Keys.ARROW_DOWN);
-		Reporter.log("Employee selected from the dropdown",true);
+		Log.info("Employee selected from the dropdown");
 
 		driver.findElement(By.xpath("//input[@placeholder='Employee Name']")).sendKeys(Keys.ENTER);
 		
 		Thread.sleep(2000);
 		
 		String element_employee=driver.findElement(By.xpath("//table[@id='employeeListTable']//td[3]")).getText();
-		Reporter.log(element_employee, true);
+		Log.info(element_employee);
 		
 		Assert.assertEquals(element_employee, employee_name, "Employee details do not exist");
-		Reporter.log("Employee details exist",true);
+		Log.info("Employee details exist");
 	}
 }

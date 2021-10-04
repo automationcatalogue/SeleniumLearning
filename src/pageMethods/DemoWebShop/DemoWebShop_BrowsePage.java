@@ -19,13 +19,13 @@ public class DemoWebShop_BrowsePage {
 		Log.info("first option selected from the dropdown");
 
 		scategory.selectByValue("http://demowebshop.tricentis.com/books?orderby=6");
-		Reporter.log("Category Z to A slected from the dropdown", true);
+		Log.info("Category Z to A slected from the dropdown");
 
 		driver.findElement(By.xpath("(//input[@value='Add to cart'])[1]")).click();
-		Reporter.log("Added item to the cart",true);
+		Log.info("Added item to the cart");
 		
 		//cart
 		driver.findElement(By.xpath("//span[text()='Shopping cart']")).click();
-		Reporter.log("Selected shopping cart",true);
+		Log.info("Selected shopping cart");
 	}
 }
