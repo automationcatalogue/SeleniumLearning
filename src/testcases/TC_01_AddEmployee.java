@@ -34,7 +34,6 @@ import utilities.Log;
 import utilities.RandomGenerator;
 import utilities.Utility;
 
-@Listeners(utilities.Listeners.class)
 public class TC_01_AddEmployee{
 	
 	static WebDriver driver;
@@ -57,7 +56,7 @@ public class TC_01_AddEmployee{
 		Log.info("Browser Name from the TestNG.xml is :"+browser);
 		driver=Utility.getDriver(browser);
 		new BaseClass(driver);
-		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		
 	}
 	
 	@Test

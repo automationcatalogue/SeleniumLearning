@@ -34,15 +34,15 @@ public class Listeners extends BaseClass implements ITestListener{
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		try {
-			TakesScreenshot ts = (TakesScreenshot)driver;
-			String path=System.getProperty("user.dir");
-			File src = ts.getScreenshotAs(OutputType.FILE);
-			File dest = new File(path+"\\Screenshots\\Failure.jpg");
-			FileUtils.copyFile(src, dest);
-		}catch (Exception e) {
-			Reporter.log("Exception Occurred while taking the screenshot "+e.getMessage(), true);
-		}
+		/*
+		 * try { TakesScreenshot ts = (TakesScreenshot)getDriver(); String
+		 * path=System.getProperty("user.dir"); File src =
+		 * ts.getScreenshotAs(OutputType.FILE); File dest = new
+		 * File(path+"\\Screenshots\\Failure.jpg"); FileUtils.copyFile(src, dest);
+		 * }catch (Exception e) {
+		 * Reporter.log("Exception Occurred while taking the screenshot "+e.getMessage()
+		 * , true); }
+		 */
 	}
 
 	@Override

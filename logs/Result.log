@@ -20,3 +20,287 @@
 01-10-2021 08:48:03 -  INFO [main] - Log.java:16 - XXX---------E-N-D--------------XXX
 01-10-2021 08:48:03 -  INFO [main] - Log.java:17 - X
 01-10-2021 08:48:03 -  INFO [main] - Log.java:18 - X
+05-10-2021 08:09:43 -  INFO [main] - Log.java:10 - *****************************************************************
+05-10-2021 08:09:43 -  INFO [main] - Log.java:11 - **********TC_07_DemoWebShop_PlaceOrder************
+05-10-2021 08:09:43 -  INFO [main] - Log.java:12 - ******************************************************************
+05-10-2021 08:09:43 -  INFO [main] - Log.java:23 - Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning
+05-10-2021 08:09:44 -  INFO [main] - Log.java:23 - Browser Name from the TestNG.xml is :Chrome
+05-10-2021 08:09:47 -  INFO [main] - Log.java:23 - Browser window maximized
+05-10-2021 08:09:50 -  INFO [main] - Log.java:23 - Website is loaded
+05-10-2021 08:09:50 -  INFO [main] - Log.java:23 - Login button is clicked
+05-10-2021 08:09:51 -  INFO [main] - Log.java:23 - Email Id is entered
+05-10-2021 08:09:51 -  INFO [main] - Log.java:23 - Password is entered
+05-10-2021 08:09:53 -  INFO [main] - Log.java:23 - Login button is clicked
+05-10-2021 08:09:59 -  INFO [main] - Log.java:23 - Successfully logged out of the browser
+05-10-2021 08:09:59 -  INFO [main] - Log.java:23 - Browser is closed
+05-10-2021 08:09:59 -  INFO [main] - Log.java:16 - XXX---------E-N-D--------------XXX
+05-10-2021 08:09:59 -  INFO [main] - Log.java:17 - X
+05-10-2021 08:09:59 -  INFO [main] - Log.java:18 - X
+05-10-2021 08:12:00 -  INFO [main] - Log.java:10 - *****************************************************************
+05-10-2021 08:12:00 -  INFO [main] - Log.java:11 - **********TC_07_DemoWebShop_PlaceOrder************
+05-10-2021 08:12:00 -  INFO [main] - Log.java:12 - ******************************************************************
+05-10-2021 08:12:00 -  INFO [main] - Log.java:23 - Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning
+05-10-2021 08:12:01 -  INFO [main] - Log.java:23 - Browser Name from the TestNG.xml is :Chrome
+05-10-2021 08:12:02 -  INFO [main] - Log.java:23 - Browser window maximized
+05-10-2021 08:12:05 -  INFO [main] - Log.java:23 - Website is loaded
+05-10-2021 08:12:05 -  INFO [main] - Log.java:23 - Login button is clicked
+05-10-2021 08:12:05 -  INFO [main] - Log.java:23 - Email Id is entered
+05-10-2021 08:12:05 -  INFO [main] - Log.java:23 - Password is entered
+05-10-2021 08:12:07 -  INFO [main] - Log.java:23 - Login button is clicked
+05-10-2021 08:12:12 -  INFO [main] - Log.java:23 - Successfully logged out of the browser
+05-10-2021 08:12:13 -  INFO [main] - Log.java:23 - Selected Books from top menu
+05-10-2021 08:12:13 -  INFO [main] - Log.java:23 - Browser is closed
+05-10-2021 08:12:13 -  INFO [main] - Log.java:16 - XXX---------E-N-D--------------XXX
+05-10-2021 08:12:13 -  INFO [main] - Log.java:17 - X
+05-10-2021 08:12:13 -  INFO [main] - Log.java:18 - X
+05-10-2021 08:26:31 -  INFO [TestNG-tests-2] - Log.java:10 - *****************************************************************
+05-10-2021 08:26:31 -  INFO [TestNG-tests-2] - Log.java:11 - **********TC_07_DemoWebShop_PlaceOrder************
+05-10-2021 08:26:31 -  INFO [TestNG-tests-2] - Log.java:12 - ******************************************************************
+05-10-2021 08:26:31 -  INFO [TestNG-tests-2] - Log.java:23 - Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning
+05-10-2021 08:26:31 -  INFO [TestNG-tests-2] - Log.java:23 - Browser Name from the TestNG.xml is :Chrome
+05-10-2021 08:26:32 -  INFO [TestNG-tests-1] - Log.java:23 - Orange HRM website is loaded
+05-10-2021 08:26:32 -  INFO [TestNG-tests-1] - Log.java:23 - Browser window is maximized
+05-10-2021 08:26:32 -  INFO [TestNG-tests-2] - Log.java:23 - Browser window maximized
+05-10-2021 08:26:32 -  INFO [TestNG-tests-1] - Log.java:23 - Browser is closed
+05-10-2021 08:26:32 -  INFO [TestNG-tests-1] - Log.java:23 - Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning
+05-10-2021 08:26:33 -  INFO [TestNG-tests-1] - Log.java:23 - Browser Name from the TestNG.xml is :Chrome
+05-10-2021 08:26:33 -  INFO [TestNG-tests-1] - Log.java:23 - Browser window maximized
+05-10-2021 08:26:35 -  INFO [TestNG-tests-2] - Log.java:23 - Website is loaded
+05-10-2021 08:26:36 -  INFO [TestNG-tests-2] - Log.java:23 - Browser is closed
+05-10-2021 08:26:36 -  INFO [TestNG-tests-2] - Log.java:16 - XXX---------E-N-D--------------XXX
+05-10-2021 08:26:36 -  INFO [TestNG-tests-2] - Log.java:17 - X
+05-10-2021 08:26:36 -  INFO [TestNG-tests-2] - Log.java:18 - X
+05-10-2021 08:26:36 -  INFO [TestNG-tests-2] - Log.java:23 - Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning
+05-10-2021 08:26:36 -  INFO [TestNG-tests-2] - Log.java:23 - Browser Name from the TestNG.xml is :Chrome
+05-10-2021 08:26:37 -  INFO [TestNG-tests-1] - Log.java:23 - Orange HRM website is loaded
+05-10-2021 08:26:37 -  INFO [TestNG-tests-2] - Log.java:23 - Browser window maximized
+05-10-2021 08:26:37 -  INFO [TestNG-tests-1] - Log.java:23 - Browser is closed
+05-10-2021 08:26:39 -  INFO [TestNG-tests-2] - Log.java:23 - Website is successfully loaded
+05-10-2021 08:26:40 -  INFO [TestNG-tests-2] - Log.java:23 - Browser is successfully closed
+05-10-2021 08:26:40 -  INFO [TestNG-tests-2] - Log.java:23 - Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning
+05-10-2021 08:26:40 -  INFO [TestNG-tests-2] - Log.java:23 - Browser Name from the TestNG.xml is :Chrome
+05-10-2021 08:26:41 -  INFO [TestNG-tests-2] - Log.java:23 - Browser window maximized
+05-10-2021 08:26:43 -  INFO [TestNG-tests-2] - Log.java:23 - Website is successfully loaded
+05-10-2021 08:26:43 -  INFO [TestNG-tests-2] - Log.java:23 - Browser is successfully closed
+05-10-2021 08:28:22 -  INFO [main] - Log.java:10 - *****************************************************************
+05-10-2021 08:28:22 -  INFO [main] - Log.java:11 - **********TC_07_DemoWebShop_PlaceOrder************
+05-10-2021 08:28:22 -  INFO [main] - Log.java:12 - ******************************************************************
+05-10-2021 08:28:22 -  INFO [main] - Log.java:23 - Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning
+05-10-2021 08:28:22 -  INFO [main] - Log.java:23 - Browser Name from the TestNG.xml is :Chrome
+05-10-2021 08:28:23 -  INFO [main] - Log.java:23 - Browser window maximized
+05-10-2021 08:28:26 -  INFO [main] - Log.java:23 - Website is loaded
+05-10-2021 08:28:26 -  INFO [main] - Log.java:23 - Browser is closed
+05-10-2021 08:28:26 -  INFO [main] - Log.java:16 - XXX---------E-N-D--------------XXX
+05-10-2021 08:28:26 -  INFO [main] - Log.java:17 - X
+05-10-2021 08:28:26 -  INFO [main] - Log.java:18 - X
+05-10-2021 08:28:26 -  INFO [main] - Log.java:23 - Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning
+05-10-2021 08:28:26 -  INFO [main] - Log.java:23 - Browser Name from the TestNG.xml is :Chrome
+05-10-2021 08:28:27 -  INFO [main] - Log.java:23 - Browser window maximized
+05-10-2021 08:28:30 -  INFO [main] - Log.java:23 - Website is successfully loaded
+05-10-2021 08:28:30 -  INFO [main] - Log.java:23 - Browser is successfully closed
+05-10-2021 08:28:30 -  INFO [main] - Log.java:23 - Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning
+05-10-2021 08:28:30 -  INFO [main] - Log.java:23 - Browser Name from the TestNG.xml is :Chrome
+05-10-2021 08:28:31 -  INFO [main] - Log.java:23 - Browser window maximized
+05-10-2021 08:28:34 -  INFO [main] - Log.java:23 - Website is successfully loaded
+05-10-2021 08:28:34 -  INFO [main] - Log.java:23 - Browser is successfully closed
+05-10-2021 08:28:34 -  INFO [main] - Log.java:23 - Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning
+05-10-2021 08:28:34 -  INFO [main] - Log.java:23 - Browser Name from the TestNG.xml is :Chrome
+05-10-2021 08:28:35 -  INFO [main] - Log.java:23 - Browser window maximized
+05-10-2021 08:28:36 -  INFO [main] - Log.java:23 - Airbnb website is loaded
+05-10-2021 08:28:37 -  INFO [main] - Log.java:23 - Accept cookies button is clicked
+05-10-2021 08:28:37 -  INFO [main] - Log.java:23 - Location is clicked 
+05-10-2021 08:28:39 -  INFO [main] - Log.java:23 - I’m flexible button is clicked
+05-10-2021 08:28:40 -  INFO [main] - Log.java:23 - Search results are displayed
+05-10-2021 08:28:41 -  INFO [main] - Log.java:23 - Guests dropdown is clicked
+05-10-2021 08:28:42 -  INFO [main] - Log.java:23 - Number of adults selected from filter : 2
+05-10-2021 08:28:42 -  INFO [main] - Log.java:23 - Save button is clicked
+05-10-2021 08:28:43 -  INFO [main] - Log.java:23 - Filters button is clicked
+05-10-2021 08:28:44 -  INFO [main] - Log.java:23 - Employee details page is displayed
+05-10-2021 08:28:45 -  INFO [main] - Log.java:23 - Entire place checkbox is selected
+05-10-2021 08:28:45 -  INFO [main] - Log.java:23 - Hotel room checkbox is selected
+05-10-2021 08:28:45 - ERROR [main] - Log.java:31 - Airbnb switch is already disabled
+05-10-2021 08:28:46 -  INFO [main] - Log.java:23 - Final Actual max price is :34708
+05-10-2021 08:28:47 -  INFO [main] - Log.java:23 - Final actual min price is 3718
+05-10-2021 08:28:47 -  INFO [main] - Log.java:23 - Number of bedrooms set to one
+05-10-2021 08:28:47 -  INFO [main] - Log.java:23 - Show listings button is clicked
+05-10-2021 08:31:03 -  INFO [main] - Log.java:10 - *****************************************************************
+05-10-2021 08:31:03 -  INFO [main] - Log.java:11 - **********TC_07_DemoWebShop_PlaceOrder************
+05-10-2021 08:31:03 -  INFO [main] - Log.java:12 - ******************************************************************
+05-10-2021 08:31:03 -  INFO [main] - Log.java:23 - Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning
+05-10-2021 08:31:03 -  INFO [main] - Log.java:23 - Browser Name from the TestNG.xml is :Chrome
+05-10-2021 08:31:04 -  INFO [main] - Log.java:23 - Browser window maximized
+05-10-2021 08:31:07 -  INFO [main] - Log.java:23 - Website is loaded
+05-10-2021 08:31:08 -  INFO [main] - Log.java:23 - Login button is clicked
+05-10-2021 08:31:08 -  INFO [main] - Log.java:23 - Email Id is entered
+05-10-2021 08:31:08 -  INFO [main] - Log.java:23 - Password is entered
+05-10-2021 08:31:09 -  INFO [main] - Log.java:23 - Login button is clicked
+05-10-2021 08:31:15 -  INFO [main] - Log.java:23 - Successfully logged out of the browser
+05-10-2021 08:31:15 -  INFO [main] - Log.java:23 - Selected Books from top menu
+05-10-2021 08:31:15 -  INFO [main] - Log.java:23 - first option selected from the dropdown
+05-10-2021 08:31:16 -  INFO [main] - Log.java:23 - Category Z to A slected from the dropdown
+05-10-2021 08:31:16 -  INFO [main] - Log.java:23 - Added item to the cart
+05-10-2021 08:31:17 -  INFO [main] - Log.java:23 - Selected shopping cart
+05-10-2021 08:31:17 -  INFO [main] - Log.java:23 - India is selected from the country drop down
+05-10-2021 08:31:17 -  INFO [main] - Log.java:23 - Other (Non US) selected from the state dropdown
+05-10-2021 08:31:18 -  INFO [main] - Log.java:23 - Entered pincode as 500020
+05-10-2021 08:31:18 -  INFO [main] - Log.java:23 - Termsofservice Check-box is selected
+05-10-2021 08:31:18 -  INFO [main] - Log.java:23 - Checkout button is clicked
+05-10-2021 08:31:38 -  INFO [main] - Log.java:23 - Browser is closed
+05-10-2021 08:31:38 -  INFO [main] - Log.java:16 - XXX---------E-N-D--------------XXX
+05-10-2021 08:31:38 -  INFO [main] - Log.java:17 - X
+05-10-2021 08:31:38 -  INFO [main] - Log.java:18 - X
+05-10-2021 08:34:49 -  INFO [main] - Log.java:10 - *****************************************************************
+05-10-2021 08:34:49 -  INFO [main] - Log.java:11 - **********TC_07_DemoWebShop_PlaceOrder************
+05-10-2021 08:34:49 -  INFO [main] - Log.java:12 - ******************************************************************
+05-10-2021 08:34:49 -  INFO [main] - Log.java:23 - Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning
+05-10-2021 08:34:49 -  INFO [main] - Log.java:23 - Browser Name from the TestNG.xml is :Chrome
+05-10-2021 08:34:50 -  INFO [main] - Log.java:23 - Browser window maximized
+05-10-2021 08:34:53 -  INFO [main] - Log.java:23 - Website is loaded
+05-10-2021 08:34:54 -  INFO [main] - Log.java:23 - Login button is clicked
+05-10-2021 08:34:54 -  INFO [main] - Log.java:23 - Email Id is entered
+05-10-2021 08:34:54 -  INFO [main] - Log.java:23 - Password is entered
+05-10-2021 08:34:55 -  INFO [main] - Log.java:23 - Login button is clicked
+05-10-2021 08:35:01 -  INFO [main] - Log.java:23 - Successfully logged out of the browser
+05-10-2021 08:35:01 -  INFO [main] - Log.java:23 - Selected Books from top menu
+05-10-2021 08:35:02 -  INFO [main] - Log.java:23 - first option selected from the dropdown
+05-10-2021 08:35:02 -  INFO [main] - Log.java:23 - Category Z to A slected from the dropdown
+05-10-2021 08:35:02 -  INFO [main] - Log.java:23 - Added item to the cart
+05-10-2021 08:35:03 -  INFO [main] - Log.java:23 - Selected shopping cart
+05-10-2021 08:35:04 -  INFO [main] - Log.java:23 - India is selected from the country drop down
+05-10-2021 08:35:04 -  INFO [main] - Log.java:23 - Other (Non US) selected from the state dropdown
+05-10-2021 08:35:04 -  INFO [main] - Log.java:23 - Entered pincode as 500020
+05-10-2021 08:35:04 -  INFO [main] - Log.java:23 - Termsofservice Check-box is selected
+05-10-2021 08:35:04 -  INFO [main] - Log.java:23 - Checkout button is clicked
+05-10-2021 08:35:25 -  INFO [main] - Log.java:23 - Browser is closed
+05-10-2021 08:35:25 -  INFO [main] - Log.java:16 - XXX---------E-N-D--------------XXX
+05-10-2021 08:35:25 -  INFO [main] - Log.java:17 - X
+05-10-2021 08:35:25 -  INFO [main] - Log.java:18 - X
+05-10-2021 08:35:59 -  INFO [main] - Log.java:10 - *****************************************************************
+05-10-2021 08:35:59 -  INFO [main] - Log.java:11 - **********TC_07_DemoWebShop_PlaceOrder************
+05-10-2021 08:35:59 -  INFO [main] - Log.java:12 - ******************************************************************
+05-10-2021 08:35:59 -  INFO [main] - Log.java:23 - Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning
+05-10-2021 08:35:59 -  INFO [main] - Log.java:23 - Browser Name from the TestNG.xml is :Chrome
+05-10-2021 08:36:00 -  INFO [main] - Log.java:23 - Browser window maximized
+05-10-2021 08:36:03 -  INFO [main] - Log.java:23 - Website is loaded
+05-10-2021 08:36:03 -  INFO [main] - Log.java:23 - Login button is clicked
+05-10-2021 08:36:03 -  INFO [main] - Log.java:23 - Email Id is entered
+05-10-2021 08:36:03 -  INFO [main] - Log.java:23 - Password is entered
+05-10-2021 08:36:04 -  INFO [main] - Log.java:23 - Login button is clicked
+05-10-2021 08:36:10 -  INFO [main] - Log.java:23 - Successfully logged out of the browser
+05-10-2021 08:36:11 -  INFO [main] - Log.java:23 - Selected Books from top menu
+05-10-2021 08:36:30 -  INFO [main] - Log.java:23 - first option selected from the dropdown
+05-10-2021 08:36:38 -  INFO [main] - Log.java:23 - Category Z to A slected from the dropdown
+05-10-2021 08:36:51 -  INFO [main] - Log.java:23 - Added item to the cart
+05-10-2021 08:37:02 -  INFO [main] - Log.java:23 - Selected shopping cart
+05-10-2021 08:37:29 -  INFO [main] - Log.java:23 - India is selected from the country drop down
+05-10-2021 08:37:33 -  INFO [main] - Log.java:23 - Other (Non US) selected from the state dropdown
+05-10-2021 08:37:35 -  INFO [main] - Log.java:23 - Entered pincode as 500020
+05-10-2021 08:37:45 -  INFO [main] - Log.java:23 - Termsofservice Check-box is selected
+05-10-2021 08:37:50 -  INFO [main] - Log.java:23 - Checkout button is clicked
+05-10-2021 08:41:43 -  INFO [main] - Log.java:10 - *****************************************************************
+05-10-2021 08:41:43 -  INFO [main] - Log.java:11 - **********TC_07_DemoWebShop_PlaceOrder************
+05-10-2021 08:41:43 -  INFO [main] - Log.java:12 - ******************************************************************
+05-10-2021 08:41:43 -  INFO [main] - Log.java:23 - Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning
+05-10-2021 08:41:43 -  INFO [main] - Log.java:23 - Browser Name from the TestNG.xml is :Chrome
+05-10-2021 08:41:44 -  INFO [main] - Log.java:23 - Browser window maximized
+05-10-2021 08:41:47 -  INFO [main] - Log.java:23 - Website is loaded
+05-10-2021 08:41:47 -  INFO [main] - Log.java:23 - Login button is clicked
+05-10-2021 08:41:47 -  INFO [main] - Log.java:23 - Email Id is entered
+05-10-2021 08:41:47 -  INFO [main] - Log.java:23 - Password is entered
+05-10-2021 08:41:48 -  INFO [main] - Log.java:23 - Login button is clicked
+05-10-2021 08:41:54 -  INFO [main] - Log.java:23 - Successfully logged out of the browser
+05-10-2021 08:41:55 -  INFO [main] - Log.java:23 - Selected Books from top menu
+05-10-2021 08:41:55 -  INFO [main] - Log.java:23 - first option selected from the dropdown
+05-10-2021 08:41:55 -  INFO [main] - Log.java:23 - Category Z to A slected from the dropdown
+05-10-2021 08:41:55 -  INFO [main] - Log.java:23 - Added item to the cart
+05-10-2021 08:41:56 -  INFO [main] - Log.java:23 - Selected shopping cart
+05-10-2021 08:41:56 -  INFO [main] - Log.java:23 - India is selected from the country drop down
+05-10-2021 08:41:56 -  INFO [main] - Log.java:23 - Other (Non US) selected from the state dropdown
+05-10-2021 08:42:06 -  INFO [main] - Log.java:23 - Entered pincode as 500020
+05-10-2021 08:42:25 -  INFO [main] - Log.java:23 - Termsofservice Check-box is selected
+05-10-2021 08:43:23 -  INFO [main] - Log.java:10 - *****************************************************************
+05-10-2021 08:43:23 -  INFO [main] - Log.java:11 - **********TC_07_DemoWebShop_PlaceOrder************
+05-10-2021 08:43:23 -  INFO [main] - Log.java:12 - ******************************************************************
+05-10-2021 08:43:23 -  INFO [main] - Log.java:23 - Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning
+05-10-2021 08:43:23 -  INFO [main] - Log.java:23 - Browser Name from the TestNG.xml is :Chrome
+05-10-2021 08:43:24 -  INFO [main] - Log.java:23 - Browser window maximized
+05-10-2021 08:43:27 -  INFO [main] - Log.java:23 - Website is loaded
+05-10-2021 08:43:37 -  INFO [main] - Log.java:23 - Login button is clicked
+05-10-2021 08:43:37 -  INFO [main] - Log.java:23 - Email Id is entered
+05-10-2021 08:43:37 -  INFO [main] - Log.java:23 - Password is entered
+05-10-2021 08:43:38 -  INFO [main] - Log.java:23 - Login button is clicked
+05-10-2021 08:43:44 -  INFO [main] - Log.java:23 - Successfully logged out of the browser
+05-10-2021 08:44:20 -  INFO [main] - Log.java:10 - *****************************************************************
+05-10-2021 08:44:20 -  INFO [main] - Log.java:11 - **********TC_07_DemoWebShop_PlaceOrder************
+05-10-2021 08:44:20 -  INFO [main] - Log.java:12 - ******************************************************************
+05-10-2021 08:44:20 -  INFO [main] - Log.java:23 - Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning
+05-10-2021 08:44:20 -  INFO [main] - Log.java:23 - Browser Name from the TestNG.xml is :Chrome
+05-10-2021 08:44:21 -  INFO [main] - Log.java:23 - Browser window maximized
+05-10-2021 08:44:24 -  INFO [main] - Log.java:23 - Website is loaded
+05-10-2021 08:44:24 -  INFO [main] - Log.java:23 - Login button is clicked
+05-10-2021 08:44:25 -  INFO [main] - Log.java:23 - Email Id is entered
+05-10-2021 08:44:25 -  INFO [main] - Log.java:23 - Password is entered
+05-10-2021 08:44:25 -  INFO [main] - Log.java:23 - Login button is clicked
+05-10-2021 08:44:26 -  INFO [main] - Log.java:23 - Selected Books from top menu
+05-10-2021 08:44:26 -  INFO [main] - Log.java:23 - first option selected from the dropdown
+05-10-2021 08:44:27 -  INFO [main] - Log.java:23 - Category Z to A slected from the dropdown
+05-10-2021 08:44:27 -  INFO [main] - Log.java:23 - Added item to the cart
+05-10-2021 08:44:28 -  INFO [main] - Log.java:23 - Selected shopping cart
+05-10-2021 08:44:28 -  INFO [main] - Log.java:23 - India is selected from the country drop down
+05-10-2021 08:44:28 -  INFO [main] - Log.java:23 - Other (Non US) selected from the state dropdown
+05-10-2021 08:44:28 -  INFO [main] - Log.java:23 - Entered pincode as 500020
+05-10-2021 08:44:28 -  INFO [main] - Log.java:23 - Termsofservice Check-box is selected
+05-10-2021 08:44:30 -  INFO [main] - Log.java:23 - Checkout button is clicked
+05-10-2021 08:44:30 -  INFO [main] - Log.java:23 - Continue button is selected for billing
+05-10-2021 08:44:30 -  INFO [main] - Log.java:23 - Continue button is selected for shipping
+05-10-2021 08:44:31 -  INFO [main] - Log.java:23 - Continue button is selected for shipping method
+05-10-2021 08:44:31 -  INFO [main] - Log.java:23 - Continue button is selected for payment method
+05-10-2021 08:44:31 -  INFO [main] - Log.java:23 - Continue button is selected for payment info
+05-10-2021 08:44:32 -  INFO [main] - Log.java:23 - Confirm button is clicked
+05-10-2021 08:44:33 -  INFO [main] - Log.java:23 - Order number: 1026834
+05-10-2021 08:44:36 -  INFO [main] - Log.java:23 - Successfully logged out of the browser
+05-10-2021 08:44:37 -  INFO [main] - Log.java:23 - Browser is closed
+05-10-2021 08:44:37 -  INFO [main] - Log.java:16 - XXX---------E-N-D--------------XXX
+05-10-2021 08:44:37 -  INFO [main] - Log.java:17 - X
+05-10-2021 08:44:37 -  INFO [main] - Log.java:18 - X
+05-10-2021 08:47:36 -  INFO [main] - Log.java:10 - *****************************************************************
+05-10-2021 08:47:36 -  INFO [main] - Log.java:11 - **********TC_07_DemoWebShop_PlaceOrder************
+05-10-2021 08:47:36 -  INFO [main] - Log.java:12 - ******************************************************************
+05-10-2021 08:47:36 -  INFO [main] - Log.java:23 - Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning
+05-10-2021 08:47:36 -  INFO [main] - Log.java:23 - Browser Name from the TestNG.xml is :Chrome
+05-10-2021 08:47:37 -  INFO [main] - Log.java:23 - Browser window maximized
+05-10-2021 08:47:39 -  INFO [main] - Log.java:23 - Website is loaded
+05-10-2021 08:47:40 -  INFO [main] - Log.java:23 - Browser is closed
+05-10-2021 08:47:40 -  INFO [main] - Log.java:16 - XXX---------E-N-D--------------XXX
+05-10-2021 08:47:40 -  INFO [main] - Log.java:17 - X
+05-10-2021 08:47:40 -  INFO [main] - Log.java:18 - X
+05-10-2021 08:47:40 -  INFO [main] - Log.java:23 - Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning
+05-10-2021 08:47:40 -  INFO [main] - Log.java:23 - Browser Name from the TestNG.xml is :Chrome
+05-10-2021 08:47:41 -  INFO [main] - Log.java:23 - Browser window maximized
+05-10-2021 08:47:43 -  INFO [main] - Log.java:23 - Website is successfully loaded
+05-10-2021 08:47:43 -  INFO [main] - Log.java:23 - Browser is successfully closed
+05-10-2021 08:47:43 -  INFO [main] - Log.java:23 - Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning
+05-10-2021 08:47:44 -  INFO [main] - Log.java:23 - Browser Name from the TestNG.xml is :Chrome
+05-10-2021 08:47:45 -  INFO [main] - Log.java:23 - Browser window maximized
+05-10-2021 08:47:47 -  INFO [main] - Log.java:23 - Website is successfully loaded
+05-10-2021 08:47:47 -  INFO [main] - Log.java:23 - Browser is successfully closed
+05-10-2021 08:47:47 -  INFO [main] - Log.java:23 - Path of the Project is :C:\Users\AaradhyaVashisht\git\SeleniumLearning
+05-10-2021 08:47:47 -  INFO [main] - Log.java:23 - Browser Name from the TestNG.xml is :Chrome
+05-10-2021 08:47:48 -  INFO [main] - Log.java:23 - Browser window maximized
+05-10-2021 08:47:49 -  INFO [main] - Log.java:23 - Airbnb website is loaded
+05-10-2021 08:47:49 -  INFO [main] - Log.java:23 - Accept cookies button is clicked
+05-10-2021 08:47:50 -  INFO [main] - Log.java:23 - Location is clicked 
+05-10-2021 08:47:51 -  INFO [main] - Log.java:23 - I’m flexible button is clicked
+05-10-2021 08:47:53 -  INFO [main] - Log.java:23 - Search results are displayed
+05-10-2021 08:47:53 -  INFO [main] - Log.java:23 - Guests dropdown is clicked
+05-10-2021 08:47:54 -  INFO [main] - Log.java:23 - Number of adults selected from filter : 2
+05-10-2021 08:47:54 -  INFO [main] - Log.java:23 - Save button is clicked
+05-10-2021 08:47:54 -  INFO [main] - Log.java:23 - Filters button is clicked
+05-10-2021 08:47:55 -  INFO [main] - Log.java:23 - Employee details page is displayed
+05-10-2021 08:47:56 -  INFO [main] - Log.java:23 - Entire place checkbox is selected
+05-10-2021 08:47:56 -  INFO [main] - Log.java:23 - Hotel room checkbox is selected
+05-10-2021 08:47:56 - ERROR [main] - Log.java:31 - Airbnb switch is already disabled
+05-10-2021 08:47:57 -  INFO [main] - Log.java:23 - Final Actual max price is :34708
+05-10-2021 08:47:58 -  INFO [main] - Log.java:23 - Final actual min price is 3718
+05-10-2021 08:47:58 -  INFO [main] - Log.java:23 - Number of bedrooms set to one
+05-10-2021 08:47:58 -  INFO [main] - Log.java:23 - Show listings button is clicked

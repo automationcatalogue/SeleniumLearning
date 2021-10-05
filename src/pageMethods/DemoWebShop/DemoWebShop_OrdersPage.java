@@ -8,12 +8,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Reporter;
 
+import pageMethods.BaseClass;
 import utilities.Constant;
 import utilities.ExcelUtilities;
 import utilities.Log;
 
 public class DemoWebShop_OrdersPage {
-	static WebDriver driver;
+	static WebDriver driver=BaseClass.getDriver();
 	
 	public static void getNumberOfOrders() {
 		int totalorders = driver.findElements(By.xpath("//div[@class='order-list']/div")).size();

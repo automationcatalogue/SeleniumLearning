@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
 
+import pageMethods.BaseClass;
 import utilities.Constant;
 import utilities.ExcelUtilities;
 import utilities.Log;
@@ -18,7 +19,7 @@ import utilities.RandomGenerator;
 import utilities.Utility;
 
 public class OrangeHRM_PIMPage {
-	static WebDriver driver;
+	static WebDriver driver=BaseClass.getDriver();
 	static String firstname, middlename, lastname;
 
 	public static void allAddEmployeeActions(String excelPath) throws Exception{

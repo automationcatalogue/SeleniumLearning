@@ -3,7 +3,7 @@ package pageMethods;
 import org.openqa.selenium.WebDriver;
 
 public class BaseClass {
-	public static WebDriver driver;
+	private static WebDriver driver;
 	
 	//This Parameterized constructor will assign the Testcase driver to the BaseClass driver
 	public BaseClass(WebDriver driver) {

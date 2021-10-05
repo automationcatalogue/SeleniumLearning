@@ -6,12 +6,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Reporter;
 
+import pageMethods.BaseClass;
 import utilities.Constant;
 import utilities.ExcelUtilities;
 import utilities.Log;
 
 public class OrangeHRM_AdminPage {
-	static WebDriver driver;
+	static WebDriver driver=BaseClass.getDriver();
 	
 	public static void changePassword() throws Exception{
 		WebElement edit = driver.findElement(By.xpath("(//table[@class='highlight bordered']//td[8]/i[contains(text(),'ohrm_edit')])[1]"));

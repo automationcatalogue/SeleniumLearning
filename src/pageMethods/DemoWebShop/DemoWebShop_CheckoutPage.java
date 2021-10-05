@@ -6,10 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Reporter;
 
+import pageMethods.BaseClass;
 import utilities.Log;
 
 public class DemoWebShop_CheckoutPage {
-	static WebDriver driver;
+	static WebDriver driver=BaseClass.getDriver();
 	
 	public static void allCheckoutActions() {
 		driver.findElement(By.xpath("//input[@onclick='Billing.save()']")).click();

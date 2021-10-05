@@ -7,10 +7,11 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.Reporter;
 
+import pageMethods.BaseClass;
 import utilities.Log;
 
 public class OrangeHRM_Login_LogoutPage {
-	static WebDriver driver;
+	static WebDriver driver=BaseClass.getDriver();
 	
 	public static void login(String username, String password) {
 		driver.findElement(By.id("txtUsername")).sendKeys(username);

@@ -23,6 +23,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import pageMethods.BaseClass;
 import pageMethods.OrangeHRM.OrangeHRM_Login_LogoutPage;
 import utilities.Constant;
 import utilities.ExcelUtilities;
@@ -50,19 +51,16 @@ public class TC_00_LoginOrangeHRM {
 	public void openBrowser(@Optional("Chrome") String browser) {
 		Log.info("Browser Name from the TestNG.xml is :"+browser);
 		driver=Utility.getDriver(browser);
-		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		
+		new BaseClass(driver);
+		
+		driver.get("https://testseleniumcod-trials72.orangehrmlive.com");
+		Log.info("Orange HRM website is loaded");
 	}
 	
 	@Parameters({"username","password"})
 	@Test(enabled = true)
 	public void login_OrangeHRM_Parameterization(@Optional("Admin")String username, @Optional("Admin@123")String password) throws Exception {
-		
-		
-		driver.get("https://testseleniumcod-trials72.orangehrmlive.com");
-		Log.info("Orange HRM website is loaded");
-		driver.manage().window().maximize();
-		Log.info("Browser window is maximized");
-		
 	
 		OrangeHRM_Login_LogoutPage.login(username, password);
 		
@@ -71,14 +69,7 @@ public class TC_00_LoginOrangeHRM {
 	
 	@Test(dataProviderClass = utilities.DataProviders.class, dataProvider = "OrangeHRMLoginData", enabled=true) 
 	public void login_OrangeHRM_DataProvider(String username, String password) throws Exception {
-		
-		
-		driver.get("https://testseleniumcod-trials72.orangehrmlive.com");
-		Log.info("Orange HRM website is loaded");
-		driver.manage().window().maximize();
-		Log.info("Browser window is maximized");
-		
-	
+		Reporter.log("UserName is :"+username+" Password is :"+password);
 		OrangeHRM_Login_LogoutPage.login(username, password);
 		
 		OrangeHRM_Login_LogoutPage.logout();

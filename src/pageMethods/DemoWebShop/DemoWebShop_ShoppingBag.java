@@ -6,10 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Reporter;
 
+import pageMethods.BaseClass;
 import utilities.Log;
 
 public class DemoWebShop_ShoppingBag {
-	static WebDriver driver;
+	static WebDriver driver=BaseClass.getDriver();
 	
 	public static void allShoppingBagActions() {
 		WebElement element_country = driver.findElement(By.xpath("//select[@name='CountryId']"));

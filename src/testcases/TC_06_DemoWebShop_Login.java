@@ -18,6 +18,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import pageMethods.BaseClass;
 import pageMethods.DemoWebShop.DemoWebShop_Login_LogoutPage;
 import utilities.Constant;
 import utilities.ExcelUtilities;
@@ -45,13 +46,11 @@ public class TC_06_DemoWebShop_Login {
 		Log.info("Browser Name from the TestNG.xml is :"+browser );
 		driver=Utility.getDriver(browser);
 				
-		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		new BaseClass(driver);
 
 		driver.get("http://demowebshop.tricentis.com");
 		Log.info("Website is loaded");
 
-		driver.manage().window().maximize();
-		Log.info("Browser window maximized");
 	}
 	
 	@Test(dataProviderClass = utilities.DataProviders.class, dataProvider = "DemoWebShopLoginData") 

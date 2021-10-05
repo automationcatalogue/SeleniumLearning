@@ -13,10 +13,13 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import pageMethods.BaseClass;
 import pageMethods.OrangeHRM.OrangeHRM_AdminPage;
 import pageMethods.OrangeHRM.OrangeHRM_HomePage;
 import pageMethods.OrangeHRM.OrangeHRM_Login_LogoutPage;
@@ -26,7 +29,6 @@ import utilities.ExcelUtilities;
 import utilities.Log;
 import utilities.Utility;
 
-@Listeners(utilities.Listeners.class)
 public class TC_02_ChangePassword {
 	
 static WebDriver driver;
@@ -42,22 +44,21 @@ static SoftAssert assertion;
 
 	}
 	
+	@Parameters({"browser"})
 	@BeforeMethod
-	public void openBrowser() {
-		WebDriverManager.chromedriver().setup();
+	public void openBrowser(@Optional("Chrome") String browser) {
+		Log.info("Browser Name from the TestNG.xml is :"+browser);
+		driver=Utility.getDriver(browser);
 		
-		driver=new ChromeDriver();		
-		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		new BaseClass(driver);
+
+		driver.get("https://testseleniumcod-trials72.orangehrmlive.com");
+		Log.info("Orange HRM website is loaded");	
+		
 	}
 	
 	@Test
 	public void change_password() throws Exception {
-		
-		driver.get("https://testseleniumcod-trials72.orangehrmlive.com");
-		Log.info("Orange HRM website is loaded");
-		driver.manage().window().maximize();
-		Log.info("Browser window is maximized");
-		
 		
 		OrangeHRM_Login_LogoutPage.login("Admin", "Admin@123");
 		

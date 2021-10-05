@@ -4,13 +4,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
 
+import pageMethods.BaseClass;
 import utilities.Constant;
 import utilities.ExcelUtilities;
 import utilities.Log;
 import utilities.RandomGenerator;
 
 public class DemoWebShop_RegistrationPage {
-	static WebDriver driver;
+	static WebDriver driver=BaseClass.getDriver();
 	
 	public static void register(String excelPath) throws Exception{
 		driver.findElement(By.xpath("//a[text()='Register']")).click();

@@ -18,6 +18,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import pageMethods.BaseClass;
 import pageMethods.DemoWebShop.DemoWebShop_CustomerInfoPage;
 import pageMethods.DemoWebShop.DemoWebShop_Login_LogoutPage;
 import pageMethods.DemoWebShop.DemoWebShop_OrdersPage;
@@ -47,13 +48,11 @@ static SoftAssert assertion;
 		Log.info("Browser Name from the TestNG.xml is :"+browser);
 		driver=Utility.getDriver(browser);
 		
-		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		new BaseClass(driver);
 		
 		driver.get("http://demowebshop.tricentis.com");
 		Log.info("Website is successfully loaded");
-
-		driver.manage().window().maximize();
-		Log.info("Browser window maximized");
+		
 	}
 	
 	@Test
@@ -73,7 +72,7 @@ static SoftAssert assertion;
 	}
 	@AfterClass
 	public void close_browser() {
-		//driver.quit();
+		driver.quit();
 		Log.info("Browser is successfully closed");
 		assertion.assertAll();
   }

@@ -4,10 +4,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
 
+import pageMethods.BaseClass;
 import utilities.Log;
 
 public class DemoWebShop_HomePage {
-	static WebDriver driver;
+	static WebDriver driver = BaseClass.getDriver();
 	
 	public static void selectBooksCategory() {
 		

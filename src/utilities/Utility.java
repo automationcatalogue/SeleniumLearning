@@ -89,6 +89,11 @@ public class Utility {
 			WebDriverManager.operadriver().setup();
 			driver = new OperaDriver();
 		}
+		driver.manage().window().maximize();
+		Log.info("Browser window maximized");
+		
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		
 		return driver;
 	}
 	

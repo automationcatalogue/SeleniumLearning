@@ -16,6 +16,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import pageMethods.BaseClass;
 import pageMethods.DemoWebShop.DemoWebShop_Login_LogoutPage;
 import pageMethods.DemoWebShop.DemoWebShop_RegistrationPage;
 import utilities.Constant;
@@ -46,14 +47,12 @@ public class TC_05_DemoWebShop_Register {
 	public static void openBrowser(@Optional("Chrome") String browser) {
 		Log.info("Browser Name from the TestNG.xml is :"+browser);
 		driver=Utility.getDriver(browser);
-				
-		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		
+		new BaseClass(driver);
 
 		driver.get("http://demowebshop.tricentis.com");
 		Log.info("Website is successfully loaded");
 
-		driver.manage().window().maximize();
-		Log.info("Browser window maximized");
 	}
 	
 	
