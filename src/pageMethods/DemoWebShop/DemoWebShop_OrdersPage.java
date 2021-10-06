@@ -15,15 +15,16 @@ import utilities.Log;
 
 public class DemoWebShop_OrdersPage {
 	static WebDriver driver=BaseClass.getDriver();
+	public static final String orders="//div[@class='order-list']/div";
 	
 	public static void getNumberOfOrders() {
-		int totalorders = driver.findElements(By.xpath("//div[@class='order-list']/div")).size();
+		int totalorders = driver.findElements(By.xpath(orders)).size();
 		Log.info("Total number of orders placed are:" + totalorders);
 		
 	}
 	
 	public static void selectSpecificOrder() throws Exception{
-		List<WebElement> orders = driver.findElements(By.xpath("//div[@class='order-list']/div/div[1]")); 
+		List<WebElement> orders = driver.findElements(By.xpath()); 
         for(int i=1;i<=orders.size();i++){
            
        	 System.out.print(orders.get(i));

@@ -9,6 +9,7 @@ import utilities.Log;
 
 public class DemoWebShop_Login_LogoutPage {
 	static WebDriver driver=BaseClass.getDriver();
+	public static final String btn_logout="//a[text()='Log out']";
 	
 	public static void login(String email, String password) throws Exception{
 
@@ -30,7 +31,7 @@ public class DemoWebShop_Login_LogoutPage {
 	public static void logout() throws Exception{
 		Thread.sleep(3000);
 		
-		driver.findElement(By.xpath("//a[text()='Log out']")).click();
+		driver.findElement(By.xpath(btn_logout)).click();
 		Log.info("Successfully logged out of the browser");
 	}
 }

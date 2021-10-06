@@ -12,7 +12,8 @@ import utilities.RandomGenerator;
 
 public class DemoWebShop_RegistrationPage {
 	static WebDriver driver=BaseClass.getDriver();
-	
+	public static final String rbtn_genderM="//input[@id='gender-male']";
+	public static final String rbtn_genderF="//input[@id='gender-female']";
 	public static void register(String excelPath) throws Exception{
 		driver.findElement(By.xpath("//a[text()='Register']")).click();
 		Log.info("Register button is clicked");
@@ -20,10 +21,10 @@ public class DemoWebShop_RegistrationPage {
 		String Gender=ExcelUtilities.getCellData(Constant.iRowNumber,Constant.col_gender ,"DemoWebShop");
 		
 		if(Gender.equalsIgnoreCase("Male")) {
-			driver.findElement(By.xpath("//input[@id='gender-male']")).click();
+			driver.findElement(By.xpath(rbtn_genderM)).click();
 			Log.info("Gender is selected as: "+ Gender);
 		}else if (Gender.equalsIgnoreCase("Female")) {
-			driver.findElement(By.xpath("//input[@id='gender-female']")).click();
+			driver.findElement(By.xpath(rbtn_genderF)).click();
 			Log.info("Gender is selected as :" +Gender);
 		}else {
 			Log.error("Gender data provided in excel is invaid");

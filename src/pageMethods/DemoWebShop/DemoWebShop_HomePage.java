@@ -9,10 +9,11 @@ import utilities.Log;
 
 public class DemoWebShop_HomePage {
 	static WebDriver driver = BaseClass.getDriver();
+	public static final String link_books="(//ul[@class='top-menu']/li/a)[1]";
 	
 	public static void selectBooksCategory() {
 		
-		driver.findElement(By.xpath("(//ul[@class='top-menu']/li/a)[1]")).click();
+		driver.findElement(By.xpath(link_books)).click();
 		Log.info("Selected Books from top menu");
 	}
 }
