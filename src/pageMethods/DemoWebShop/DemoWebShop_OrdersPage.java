@@ -16,6 +16,8 @@ import utilities.Log;
 public class DemoWebShop_OrdersPage {
 	static WebDriver driver=BaseClass.getDriver();
 	public static final String orders="//div[@class='order-list']/div";
+	public static final String totalNumberOforders="//div[@class='order-list']/div/div[1]";
+	
 	
 	public static void getNumberOfOrders() {
 		int totalorders = driver.findElements(By.xpath(orders)).size();
@@ -24,7 +26,7 @@ public class DemoWebShop_OrdersPage {
 	}
 	
 	public static void selectSpecificOrder() throws Exception{
-		List<WebElement> orders = driver.findElements(By.xpath()); 
+		List<WebElement> orders = driver.findElements(By.xpath(totalNumberOforders)); 
         for(int i=1;i<=orders.size();i++){
            
        	 System.out.print(orders.get(i));
