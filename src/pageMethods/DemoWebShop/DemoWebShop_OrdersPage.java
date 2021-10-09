@@ -4,29 +4,26 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.Reporter;
-
 import pageMethods.BaseClass;
 import utilities.Constant;
 import utilities.ExcelUtilities;
 import utilities.Log;
 
 public class DemoWebShop_OrdersPage {
-	static WebDriver driver=BaseClass.getDriver();
+
 	public static final String orders="//div[@class='order-list']/div";
 	public static final String totalNumberOforders="//div[@class='order-list']/div/div[1]";
 	
 	
 	public static void getNumberOfOrders() {
-		int totalorders = driver.findElements(By.xpath(orders)).size();
+		int totalorders = BaseClass.getDriver().findElements(By.xpath(orders)).size();
 		Log.info("Total number of orders placed are:" + totalorders);
 		
 	}
 	
 	public static void selectSpecificOrder() throws Exception{
-		List<WebElement> orders = driver.findElements(By.xpath(totalNumberOforders)); 
+		List<WebElement> orders = BaseClass.getDriver().findElements(By.xpath(totalNumberOforders)); 
         for(int i=1;i<=orders.size();i++){
            
        	 System.out.print(orders.get(i));
@@ -50,12 +47,12 @@ public class DemoWebShop_OrdersPage {
 	
 	public static void reOrder() {
 		 //reorder
-        driver.findElement(By.xpath("//input[@class='button-1 re-order-button']")).click();
+        BaseClass.getDriver().findElement(By.xpath("//input[@class='button-1 re-order-button']")).click();
         Log.info("Re-Order button is clicked");
 	}
 	
 	public static void getSumOfAllOrdersTotal() {
-		List<WebElement> list_totalorders = driver.findElements(By.xpath("//div[@class='order-list']/div/ul/li[3]"));
+		List<WebElement> list_totalorders = BaseClass.getDriver().findElements(By.xpath("//div[@class='order-list']/div/ul/li[3]"));
 		int sum=0;
 		for(WebElement element_orderTotal:list_totalorders) {
 			String orderTotal=element_orderTotal.getText();
@@ -67,7 +64,7 @@ public class DemoWebShop_OrdersPage {
 	}
 	
 	public static void getSumOfAllOrdersTotal_DateWise() {
-		List<WebElement> list_totalorders_daywise=driver.findElements(By.xpath("//div[@class='order-list']/div/ul/li[2]"));
+		List<WebElement> list_totalorders_daywise=BaseClass.getDriver().findElements(By.xpath("//div[@class='order-list']/div/ul/li[2]"));
 		for (WebElement daywise_list:list_totalorders_daywise) {
 			String daywise_ordervalue=daywise_list.getText().split(" ")[2];
 			//System.out.println(daywise_ordervalue);
