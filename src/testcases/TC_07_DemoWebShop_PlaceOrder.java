@@ -1,18 +1,12 @@
 package testcases;
 
-import java.util.concurrent.TimeUnit;
-
-import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-import org.apache.log4j.xml.DOMConfigurator;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -29,6 +23,7 @@ import utilities.ExcelUtilities;
 import utilities.Log;
 import utilities.Utility;
 
+@Listeners (utilities.Listeners.class)
 public class TC_07_DemoWebShop_PlaceOrder {
 	static WebDriver driver;
 	static SoftAssert assertion;
@@ -44,8 +39,9 @@ public class TC_07_DemoWebShop_PlaceOrder {
 		
 		
 		String className=Thread.currentThread().getStackTrace()[1].getClassName().substring(Thread.currentThread().getStackTrace()[1].getClassName().indexOf('.')+1);
-		
+		Utility.setClassName(className);
 		Log.startTestCase(className);
+		
 		Log.info("Path of the Project is :"+path);
 		
 		
@@ -70,7 +66,7 @@ public class TC_07_DemoWebShop_PlaceOrder {
 	public void placeOrder_DemoWebshop() throws Exception {
 		
 		
-		DemoWebShop_Login_LogoutPage.login("aarosagarch@gmail.com", "Admin@123");
+		DemoWebShop_Login_LogoutPage.login("aarosagarch@gmail.com", "Admin@12345");
 		Reporter.log("DemoWebShop Login is successful", true);
 		
 		DemoWebShop_HomePage.selectBooksCategory();

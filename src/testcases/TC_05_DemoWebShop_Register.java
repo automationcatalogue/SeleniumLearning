@@ -11,6 +11,7 @@ import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -25,7 +26,7 @@ import utilities.ExcelUtilities;
 import utilities.Log;
 import utilities.RandomGenerator;
 import utilities.Utility;
-
+@Listeners(utilities.Listeners.class)
 public class TC_05_DemoWebShop_Register {
 	
 	static WebDriver driver;

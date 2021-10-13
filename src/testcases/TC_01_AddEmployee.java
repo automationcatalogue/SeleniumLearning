@@ -33,7 +33,7 @@ import utilities.ExcelUtilities;
 import utilities.Log;
 import utilities.RandomGenerator;
 import utilities.Utility;
-
+@Listeners(utilities.Listeners.class)
 public class TC_01_AddEmployee{
 	
 	static WebDriver driver;

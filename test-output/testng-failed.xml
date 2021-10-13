@@ -1,8 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="browser" value="classes"/>
-  <test thread-count="5" parallel="tests" name="DemoWebShop(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="Chrome"/>
+  <test thread-count="5" name="OrangeHRM(failed)">
+    <classes>
+      <class name="testcases.TC_02_ChangePassword">
+        <methods>
+          <include name="setup"/>
+          <include name="openBrowser"/>
+          <include name="change_password"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testcases.TC_02_ChangePassword -->
+      <class name="testcases.TC_01_AddEmployee">
+        <methods>
+          <include name="add_Employee"/>
+          <include name="tearDown"/>
+          <include name="openBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testcases.TC_01_AddEmployee -->
+      <class name="testcases.TC_00_LoginOrangeHRM">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="openBrowser"/>
+          <include name="login_OrangeHRM_DataProvider" invocation-numbers="0 1 2 3"/>
+          <include name="login_OrangeHRM_Parameterization" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testcases.TC_00_LoginOrangeHRM -->
+    </classes>
+  </test> <!-- OrangeHRM(failed) -->
+  <test thread-count="5" name="DemoWebShop(failed)">
     <classes>
       <class name="testcases.TC_07_DemoWebShop_PlaceOrder">
         <methods>
@@ -12,14 +41,6 @@
           <include name="placeOrder_DemoWebshop"/>
         </methods>
       </class> <!-- testcases.TC_07_DemoWebShop_PlaceOrder -->
-      <class name="testcases.TC_05_DemoWebShop_Register">
-        <methods>
-          <include name="setup"/>
-          <include name="register"/>
-          <include name="openBrowser"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- testcases.TC_05_DemoWebShop_Register -->
     </classes>
   </test> <!-- DemoWebShop(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="16" passed="8" failed="8" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[UserName is :Admin Password is :Admin@123]]>
+    </line>
+    <line>
+      <![CDATA[UserName is :aaliyah.haq Password is :Test@1234]]>
+    </line>
+    <line>
+      <![CDATA[UserName is :Adella Password is :abcd@123]]>
+    </line>
+    <line>
+      <![CDATA[UserName is :alice Password is :Admin@1234]]>
+    </line>
+    <line>
+      <![CDATA[onFinish Method is executed: OrangeHRM]]>
+    </line>
+    <line>
+      <![CDATA[onTestSuccess Method is executed: register]]>
+    </line>
+    <line>
+      <![CDATA[onTestSuccess Method is executed: login_DemoWebShop_DataProvider]]>
+    </line>
+    <line>
+      <![CDATA[onTestSuccess Method is executed: login_DemoWebShop_DataProvider]]>
+    </line>
+    <line>
+      <![CDATA[onTestSuccess Method is executed: login_DemoWebShop_DataProvider]]>
+    </line>
+    <line>
+      <![CDATA[onTestSuccess Method is executed: login_DemoWebShop_DataProvider]]>
+    </line>
     <line>
       <![CDATA[DemoWebShop Login is successful]]>
     </line>
@@ -11,25 +41,28 @@
       <![CDATA[Items are added into the Cart]]>
     </line>
     <line>
-      <![CDATA[All Shopping Bag actions are performed]]>
+      <![CDATA[onTestSuccess Method is executed: re_Order]]>
     </line>
     <line>
-      <![CDATA[All Checkout page actions are performed]]>
+      <![CDATA[onTestSuccess Method is executed: allorders_total]]>
     </line>
     <line>
-      <![CDATA[Logout is Successful]]>
+      <![CDATA[onFinish Method is executed: DemoWebShop]]>
+    </line>
+    <line>
+      <![CDATA[onTestSuccess Method is executed: priceRangeFilter]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-10-07T03:22:25Z" name="Suite" finished-at="2021-10-07T03:22:49Z" duration-ms="24498">
+  <suite started-at="2021-10-12T03:15:04Z" name="Suite" finished-at="2021-10-12T03:19:38Z" duration-ms="274074">
     <groups>
     </groups>
-    <test started-at="2021-10-07T03:22:25Z" name="DemoWebShop" finished-at="2021-10-07T03:22:49Z" duration-ms="24498">
-      <class name="testcases.TC_05_DemoWebShop_Register">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC_05_DemoWebShop_Register@67d18ed7]" started-at="2021-10-07T03:22:25Z" name="setup" finished-at="2021-10-07T03:22:26Z" duration-ms="1079" status="PASS">
+    <test started-at="2021-10-12T03:15:04Z" name="OrangeHRM" finished-at="2021-10-12T03:17:43Z" duration-ms="159396">
+      <class name="testcases.TC_02_ChangePassword">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC_02_ChangePassword@8576fa0]" started-at="2021-10-12T03:17:21Z" name="setup" finished-at="2021-10-12T03:17:21Z" duration-ms="108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_05_DemoWebShop_Register@67d18ed7]" started-at="2021-10-07T03:22:26Z" name="openBrowser" finished-at="2021-10-07T03:22:33Z" duration-ms="7318" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_02_ChangePassword@8576fa0]" started-at="2021-10-12T03:17:21Z" name="openBrowser" finished-at="2021-10-12T03:17:23Z" duration-ms="1892" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,21 +73,718 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="register()[pri:0, instance:testcases.TC_05_DemoWebShop_Register@67d18ed7]" started-at="2021-10-07T03:22:33Z" name="register" finished-at="2021-10-07T03:22:42Z" duration-ms="9029" status="PASS">
+        <test-method signature="change_password()[pri:0, instance:testcases.TC_02_ChangePassword@8576fa0]" started-at="2021-10-12T03:17:23Z" name="change_password" finished-at="2021-10-12T03:17:43Z" duration-ms="20058" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#txtUsername"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-807AG9O', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\AARADH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52059}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0c86eb238d4aa0b32071c3dd023f9af5
+*** Element info: {Using=id, value=txtUsername}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#txtUsername"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-807AG9O', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\AARADH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52059}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0c86eb238d4aa0b32071c3dd023f9af5
+*** Element info: {Using=id, value=txtUsername}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at pageMethods.OrangeHRM.OrangeHRM_Login_LogoutPage.login(OrangeHRM_Login_LogoutPage.java:20)
+at testcases.TC_02_ChangePassword.change_password(TC_02_ChangePassword.java:63)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- change_password -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testcases.TC_02_ChangePassword@8576fa0]" started-at="2021-10-12T03:17:43Z" name="afterClass" finished-at="2021-10-12T03:17:43Z" duration-ms="233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testcases.TC_02_ChangePassword -->
+      <class name="testcases.TC_01_AddEmployee">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC_01_AddEmployee@558bdf1f]" started-at="2021-10-12T03:16:58Z" name="setup" finished-at="2021-10-12T03:16:58Z" duration-ms="149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_01_AddEmployee@558bdf1f]" started-at="2021-10-12T03:16:58Z" name="openBrowser" finished-at="2021-10-12T03:16:59Z" duration-ms="886" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="add_Employee()[pri:0, instance:testcases.TC_01_AddEmployee@558bdf1f]" started-at="2021-10-12T03:16:59Z" name="add_Employee" finished-at="2021-10-12T03:17:20Z" duration-ms="21121" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#txtUsername"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-807AG9O', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\AARADH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51393}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7763a9ba6443a3efca9eb1be4b7dccdb
+*** Element info: {Using=id, value=txtUsername}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#txtUsername"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-807AG9O', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\AARADH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51393}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7763a9ba6443a3efca9eb1be4b7dccdb
+*** Element info: {Using=id, value=txtUsername}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at pageMethods.OrangeHRM.OrangeHRM_Login_LogoutPage.login(OrangeHRM_Login_LogoutPage.java:20)
+at testcases.TC_01_AddEmployee.add_Employee(TC_01_AddEmployee.java:72)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_Employee -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_01_AddEmployee@558bdf1f]" started-at="2021-10-12T03:17:20Z" name="tearDown" finished-at="2021-10-12T03:17:21Z" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.TC_01_AddEmployee -->
+      <class name="testcases.TC_00_LoginOrangeHRM">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC_00_LoginOrangeHRM@27216cd]" started-at="2021-10-12T03:15:04Z" name="setup" finished-at="2021-10-12T03:15:04Z" duration-ms="587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_00_LoginOrangeHRM@27216cd]" started-at="2021-10-12T03:15:04Z" name="openBrowser" finished-at="2021-10-12T03:15:08Z" duration-ms="3870" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="login_OrangeHRM_DataProvider(java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_00_LoginOrangeHRM@27216cd]" started-at="2021-10-12T03:15:08Z" name="login_OrangeHRM_DataProvider" data-provider="OrangeHRMLoginData" finished-at="2021-10-12T03:15:28Z" duration-ms="20080" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin@123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#txtUsername"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-807AG9O', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\AARADH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e485f5f681c9a028ed799e9e56595a08
+*** Element info: {Using=id, value=txtUsername}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#txtUsername"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-807AG9O', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\AARADH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e485f5f681c9a028ed799e9e56595a08
+*** Element info: {Using=id, value=txtUsername}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at pageMethods.OrangeHRM.OrangeHRM_Login_LogoutPage.login(OrangeHRM_Login_LogoutPage.java:20)
+at testcases.TC_00_LoginOrangeHRM.login_OrangeHRM_DataProvider(TC_00_LoginOrangeHRM.java:74)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[UserName is :Admin Password is :Admin@123]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login_OrangeHRM_DataProvider -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_00_LoginOrangeHRM@27216cd]" started-at="2021-10-12T03:15:29Z" name="tearDown" finished-at="2021-10-12T03:15:29Z" duration-ms="206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_00_LoginOrangeHRM@27216cd]" started-at="2021-10-12T03:15:29Z" name="openBrowser" finished-at="2021-10-12T03:15:31Z" duration-ms="1951" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="login_OrangeHRM_DataProvider(java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_00_LoginOrangeHRM@27216cd]" started-at="2021-10-12T03:15:31Z" name="login_OrangeHRM_DataProvider" data-provider="OrangeHRMLoginData" finished-at="2021-10-12T03:15:51Z" duration-ms="20064" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[aaliyah.haq]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#txtUsername"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-807AG9O', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\AARADH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61496}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d404a7f63ed7dcb5f166d067aa37451
+*** Element info: {Using=id, value=txtUsername}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#txtUsername"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-807AG9O', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\AARADH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61496}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d404a7f63ed7dcb5f166d067aa37451
+*** Element info: {Using=id, value=txtUsername}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at pageMethods.OrangeHRM.OrangeHRM_Login_LogoutPage.login(OrangeHRM_Login_LogoutPage.java:20)
+at testcases.TC_00_LoginOrangeHRM.login_OrangeHRM_DataProvider(TC_00_LoginOrangeHRM.java:74)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[UserName is :aaliyah.haq Password is :Test@1234]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login_OrangeHRM_DataProvider -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_00_LoginOrangeHRM@27216cd]" started-at="2021-10-12T03:15:51Z" name="tearDown" finished-at="2021-10-12T03:15:51Z" duration-ms="221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_00_LoginOrangeHRM@27216cd]" started-at="2021-10-12T03:15:51Z" name="openBrowser" finished-at="2021-10-12T03:15:53Z" duration-ms="1884" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="login_OrangeHRM_DataProvider(java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_00_LoginOrangeHRM@27216cd]" started-at="2021-10-12T03:15:53Z" name="login_OrangeHRM_DataProvider" data-provider="OrangeHRMLoginData" finished-at="2021-10-12T03:16:13Z" duration-ms="20063" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Adella]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abcd@123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#txtUsername"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-807AG9O', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\AARADH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62112}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 68c27a658fd5157c9d15fc90d9227d67
+*** Element info: {Using=id, value=txtUsername}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#txtUsername"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-807AG9O', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\AARADH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62112}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 68c27a658fd5157c9d15fc90d9227d67
+*** Element info: {Using=id, value=txtUsername}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at pageMethods.OrangeHRM.OrangeHRM_Login_LogoutPage.login(OrangeHRM_Login_LogoutPage.java:20)
+at testcases.TC_00_LoginOrangeHRM.login_OrangeHRM_DataProvider(TC_00_LoginOrangeHRM.java:74)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[UserName is :Adella Password is :abcd@123]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login_OrangeHRM_DataProvider -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_00_LoginOrangeHRM@27216cd]" started-at="2021-10-12T03:16:13Z" name="tearDown" finished-at="2021-10-12T03:16:13Z" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_00_LoginOrangeHRM@27216cd]" started-at="2021-10-12T03:16:13Z" name="openBrowser" finished-at="2021-10-12T03:16:15Z" duration-ms="1898" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="login_OrangeHRM_DataProvider(java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_00_LoginOrangeHRM@27216cd]" started-at="2021-10-12T03:16:15Z" name="login_OrangeHRM_DataProvider" data-provider="OrangeHRMLoginData" finished-at="2021-10-12T03:16:35Z" duration-ms="20077" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[alice]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin@1234]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#txtUsername"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-807AG9O', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\AARADH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52837}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 25eea6a5f17de1d9b2634523868dc8f9
+*** Element info: {Using=id, value=txtUsername}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#txtUsername"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-807AG9O', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\AARADH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52837}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 25eea6a5f17de1d9b2634523868dc8f9
+*** Element info: {Using=id, value=txtUsername}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at pageMethods.OrangeHRM.OrangeHRM_Login_LogoutPage.login(OrangeHRM_Login_LogoutPage.java:20)
+at testcases.TC_00_LoginOrangeHRM.login_OrangeHRM_DataProvider(TC_00_LoginOrangeHRM.java:74)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[UserName is :alice Password is :Admin@1234]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login_OrangeHRM_DataProvider -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_00_LoginOrangeHRM@27216cd]" started-at="2021-10-12T03:16:36Z" name="tearDown" finished-at="2021-10-12T03:16:36Z" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_00_LoginOrangeHRM@27216cd]" started-at="2021-10-12T03:16:36Z" name="openBrowser" finished-at="2021-10-12T03:16:38Z" duration-ms="1884" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="login_OrangeHRM_Parameterization(java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_00_LoginOrangeHRM@27216cd]" started-at="2021-10-12T03:16:38Z" name="login_OrangeHRM_Parameterization" finished-at="2021-10-12T03:16:58Z" duration-ms="20034" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin@123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#txtUsername"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-807AG9O', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\AARADH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50481}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 71a170e8addaf7ffdcfe7a8b212b19e2
+*** Element info: {Using=id, value=txtUsername}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#txtUsername"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-807AG9O', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\AARADH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50481}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 71a170e8addaf7ffdcfe7a8b212b19e2
+*** Element info: {Using=id, value=txtUsername}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at pageMethods.OrangeHRM.OrangeHRM_Login_LogoutPage.login(OrangeHRM_Login_LogoutPage.java:20)
+at testcases.TC_00_LoginOrangeHRM.login_OrangeHRM_Parameterization(TC_00_LoginOrangeHRM.java:66)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_OrangeHRM_Parameterization -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_00_LoginOrangeHRM@27216cd]" started-at="2021-10-12T03:16:58Z" name="tearDown" finished-at="2021-10-12T03:16:58Z" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.TC_00_LoginOrangeHRM -->
+    </test> <!-- OrangeHRM -->
+    <test started-at="2021-10-12T03:17:43Z" name="DemoWebShop" finished-at="2021-10-12T03:19:26Z" duration-ms="102970">
+      <class name="testcases.TC_05_DemoWebShop_Register">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC_05_DemoWebShop_Register@39de3d36]" started-at="2021-10-12T03:17:43Z" name="setup" finished-at="2021-10-12T03:17:43Z" duration-ms="108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_05_DemoWebShop_Register@39de3d36]" started-at="2021-10-12T03:17:43Z" name="openBrowser" finished-at="2021-10-12T03:17:49Z" duration-ms="5945" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="register()[pri:0, instance:testcases.TC_05_DemoWebShop_Register@39de3d36]" started-at="2021-10-12T03:17:49Z" name="register" finished-at="2021-10-12T03:17:55Z" duration-ms="6175" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[onTestSuccess Method is executed: register]]>
+            </line>
+          </reporter-output>
         </test-method> <!-- register -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.TC_05_DemoWebShop_Register@67d18ed7]" started-at="2021-10-07T03:22:42Z" name="teardown" finished-at="2021-10-07T03:22:43Z" duration-ms="1182" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcases.TC_05_DemoWebShop_Register@39de3d36]" started-at="2021-10-12T03:17:55Z" name="teardown" finished-at="2021-10-12T03:17:56Z" duration-ms="264" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testcases.TC_05_DemoWebShop_Register -->
-      <class name="testcases.TC_07_DemoWebShop_PlaceOrder">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC_07_DemoWebShop_PlaceOrder@2c78d320]" started-at="2021-10-07T03:22:25Z" name="setup" finished-at="2021-10-07T03:22:26Z" duration-ms="1079" status="PASS">
+      <class name="testcases.TC_08_ReOrder">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC_08_ReOrder@3fed2870]" started-at="2021-10-12T03:19:00Z" name="setup" finished-at="2021-10-12T03:19:00Z" duration-ms="96" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_07_DemoWebShop_PlaceOrder@2c78d320]" started-at="2021-10-07T03:22:26Z" name="openBrowser" finished-at="2021-10-07T03:22:33Z" duration-ms="7069" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_08_ReOrder@3fed2870]" started-at="2021-10-12T03:19:00Z" name="openBrowser" finished-at="2021-10-12T03:19:03Z" duration-ms="3400" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -65,7 +795,244 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="placeOrder_DemoWebshop()[pri:0, instance:testcases.TC_07_DemoWebShop_PlaceOrder@2c78d320]" started-at="2021-10-07T03:22:33Z" name="placeOrder_DemoWebshop" finished-at="2021-10-07T03:22:48Z" duration-ms="15125" status="PASS">
+        <test-method signature="re_Order()[pri:0, instance:testcases.TC_08_ReOrder@3fed2870]" started-at="2021-10-12T03:19:03Z" name="re_Order" finished-at="2021-10-12T03:19:17Z" duration-ms="13837" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[onTestSuccess Method is executed: re_Order]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- re_Order -->
+        <test-method is-config="true" signature="close_browser()[pri:0, instance:testcases.TC_08_ReOrder@3fed2870]" started-at="2021-10-12T03:19:17Z" name="close_browser" finished-at="2021-10-12T03:19:17Z" duration-ms="255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_browser -->
+      </class> <!-- testcases.TC_08_ReOrder -->
+      <class name="testcases.TC_06_DemoWebShop_Login">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC_06_DemoWebShop_Login@6ce86ce1]" started-at="2021-10-12T03:17:56Z" name="setup" finished-at="2021-10-12T03:17:56Z" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_06_DemoWebShop_Login@6ce86ce1]" started-at="2021-10-12T03:17:56Z" name="openBrowser" finished-at="2021-10-12T03:17:59Z" duration-ms="3274" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="login_DemoWebShop_DataProvider(java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_06_DemoWebShop_Login@6ce86ce1]" started-at="2021-10-12T03:17:59Z" name="login_DemoWebShop_DataProvider" data-provider="DemoWebShopLoginData" finished-at="2021-10-12T03:18:04Z" duration-ms="5309" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GwiDFrKoK@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[login@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[onTestSuccess Method is executed: login_DemoWebShop_DataProvider]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login_DemoWebShop_DataProvider -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testcases.TC_06_DemoWebShop_Login@6ce86ce1]" started-at="2021-10-12T03:18:04Z" name="afterClass" finished-at="2021-10-12T03:18:05Z" duration-ms="300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_06_DemoWebShop_Login@6ce86ce1]" started-at="2021-10-12T03:18:05Z" name="openBrowser" finished-at="2021-10-12T03:18:08Z" duration-ms="3463" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="login_DemoWebShop_DataProvider(java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_06_DemoWebShop_Login@6ce86ce1]" started-at="2021-10-12T03:18:08Z" name="login_DemoWebShop_DataProvider" data-provider="DemoWebShopLoginData" finished-at="2021-10-12T03:18:14Z" duration-ms="5346" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[aarosagarch@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[onTestSuccess Method is executed: login_DemoWebShop_DataProvider]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login_DemoWebShop_DataProvider -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testcases.TC_06_DemoWebShop_Login@6ce86ce1]" started-at="2021-10-12T03:18:14Z" name="afterClass" finished-at="2021-10-12T03:18:14Z" duration-ms="257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_06_DemoWebShop_Login@6ce86ce1]" started-at="2021-10-12T03:18:14Z" name="openBrowser" finished-at="2021-10-12T03:18:17Z" duration-ms="3292" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="login_DemoWebShop_DataProvider(java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_06_DemoWebShop_Login@6ce86ce1]" started-at="2021-10-12T03:18:17Z" name="login_DemoWebShop_DataProvider" data-provider="DemoWebShopLoginData" finished-at="2021-10-12T03:18:23Z" duration-ms="5627" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[log-in123@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[login@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[onTestSuccess Method is executed: login_DemoWebShop_DataProvider]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login_DemoWebShop_DataProvider -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testcases.TC_06_DemoWebShop_Login@6ce86ce1]" started-at="2021-10-12T03:18:23Z" name="afterClass" finished-at="2021-10-12T03:18:23Z" duration-ms="272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_06_DemoWebShop_Login@6ce86ce1]" started-at="2021-10-12T03:18:23Z" name="openBrowser" finished-at="2021-10-12T03:18:26Z" duration-ms="3517" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="login_DemoWebShop_DataProvider(java.lang.String, java.lang.String)[pri:0, instance:testcases.TC_06_DemoWebShop_Login@6ce86ce1]" started-at="2021-10-12T03:18:26Z" name="login_DemoWebShop_DataProvider" data-provider="DemoWebShopLoginData" finished-at="2021-10-12T03:18:32Z" duration-ms="5357" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[RxYEuAdru@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[login@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[onTestSuccess Method is executed: login_DemoWebShop_DataProvider]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login_DemoWebShop_DataProvider -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testcases.TC_06_DemoWebShop_Login@6ce86ce1]" started-at="2021-10-12T03:18:32Z" name="afterClass" finished-at="2021-10-12T03:18:32Z" duration-ms="334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testcases.TC_06_DemoWebShop_Login -->
+      <class name="testcases.TC_07_DemoWebShop_PlaceOrder">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC_07_DemoWebShop_PlaceOrder@54e7df6a]" started-at="2021-10-12T03:18:32Z" name="setup" finished-at="2021-10-12T03:18:32Z" duration-ms="81" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_07_DemoWebShop_PlaceOrder@54e7df6a]" started-at="2021-10-12T03:18:32Z" name="openBrowser" finished-at="2021-10-12T03:18:36Z" duration-ms="3573" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="placeOrder_DemoWebshop()[pri:0, instance:testcases.TC_07_DemoWebShop_PlaceOrder@54e7df6a]" started-at="2021-10-12T03:18:36Z" name="placeOrder_DemoWebshop" finished-at="2021-10-12T03:18:59Z" duration-ms="23268" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='CountryId']"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-807AG9O', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\AARADH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59781}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 431c3440c8aeb2a4e7662c722d79d27e
+*** Element info: {Using=xpath, value=//select[@name='CountryId']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@name='CountryId']"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-807AG9O', ip: '192.168.1.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\AARADH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59781}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 431c3440c8aeb2a4e7662c722d79d27e
+*** Element info: {Using=xpath, value=//select[@name='CountryId']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at pageMethods.DemoWebShop.DemoWebShop_ShoppingBag.allShoppingBagActions(DemoWebShop_ShoppingBag.java:18)
+at testcases.TC_07_DemoWebShop_PlaceOrder.placeOrder_DemoWebshop(TC_07_DemoWebShop_PlaceOrder.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
               <![CDATA[DemoWebShop Login is successful]]>
@@ -76,22 +1043,71 @@
             <line>
               <![CDATA[Items are added into the Cart]]>
             </line>
-            <line>
-              <![CDATA[All Shopping Bag actions are performed]]>
-            </line>
-            <line>
-              <![CDATA[All Checkout page actions are performed]]>
-            </line>
-            <line>
-              <![CDATA[Logout is Successful]]>
-            </line>
           </reporter-output>
         </test-method> <!-- placeOrder_DemoWebshop -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testcases.TC_07_DemoWebShop_PlaceOrder@2c78d320]" started-at="2021-10-07T03:22:48Z" name="afterClass" finished-at="2021-10-07T03:22:49Z" duration-ms="1189" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testcases.TC_07_DemoWebShop_PlaceOrder@54e7df6a]" started-at="2021-10-12T03:18:59Z" name="afterClass" finished-at="2021-10-12T03:19:00Z" duration-ms="287" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- testcases.TC_07_DemoWebShop_PlaceOrder -->
+      <class name="testcases.TC_09_AllOrdersTotal">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC_09_AllOrdersTotal@77128536]" started-at="2021-10-12T03:19:17Z" name="setup" finished-at="2021-10-12T03:19:17Z" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_09_AllOrdersTotal@77128536]" started-at="2021-10-12T03:19:17Z" name="openBrowser" finished-at="2021-10-12T03:19:21Z" duration-ms="3599" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="allorders_total()[pri:0, instance:testcases.TC_09_AllOrdersTotal@77128536]" started-at="2021-10-12T03:19:21Z" name="allorders_total" finished-at="2021-10-12T03:19:26Z" duration-ms="5108" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[onTestSuccess Method is executed: allorders_total]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- allorders_total -->
+        <test-method is-config="true" signature="close_browser()[pri:0, instance:testcases.TC_09_AllOrdersTotal@77128536]" started-at="2021-10-12T03:19:26Z" name="close_browser" finished-at="2021-10-12T03:19:26Z" duration-ms="249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_browser -->
+      </class> <!-- testcases.TC_09_AllOrdersTotal -->
     </test> <!-- DemoWebShop -->
+    <test started-at="2021-10-12T03:19:26Z" name="AirBnb" finished-at="2021-10-12T03:19:38Z" duration-ms="11588">
+      <class name="testcases.TC_11_AirbnbValidation">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC_11_AirbnbValidation@4f5991f6]" started-at="2021-10-12T03:19:26Z" name="setup" finished-at="2021-10-12T03:19:26Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:testcases.TC_11_AirbnbValidation@4f5991f6]" started-at="2021-10-12T03:19:26Z" name="openBrowser" finished-at="2021-10-12T03:19:28Z" duration-ms="1770" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="priceRangeFilter()[pri:0, instance:testcases.TC_11_AirbnbValidation@4f5991f6]" started-at="2021-10-12T03:19:28Z" name="priceRangeFilter" finished-at="2021-10-12T03:19:37Z" duration-ms="9375" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[onTestSuccess Method is executed: priceRangeFilter]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- priceRangeFilter -->
+        <test-method is-config="true" signature="close_browser()[pri:0, instance:testcases.TC_11_AirbnbValidation@4f5991f6]" started-at="2021-10-12T03:19:37Z" name="close_browser" finished-at="2021-10-12T03:19:38Z" duration-ms="433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_browser -->
+      </class> <!-- testcases.TC_11_AirbnbValidation -->
+    </test> <!-- AirBnb -->
   </suite> <!-- Suite -->
 </testng-results>

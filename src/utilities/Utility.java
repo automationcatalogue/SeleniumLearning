@@ -24,6 +24,7 @@ import org.testng.Reporter;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Utility {
+	private static String className;
 	
 	public static void selection_dropdown(WebDriver driver, String xpathvalue, String expectedData) {
 		List<WebElement> GroupOfelements=driver.findElements(By.xpath(xpathvalue));
@@ -119,6 +120,12 @@ public class Utility {
 		wait.until(condition);
 	}
 	
+	public static void  setClassName(String className) {
+		Utility.className=className;
+	}
+	public static String getClassName() {
+		return className;
+	}
 	
  
 }

@@ -28,7 +28,7 @@ import utilities.Constant;
 import utilities.ExcelUtilities;
 import utilities.Log;
 import utilities.Utility;
-
+@Listeners(utilities.Listeners.class)
 public class TC_02_ChangePassword {
 	
 static WebDriver driver;
