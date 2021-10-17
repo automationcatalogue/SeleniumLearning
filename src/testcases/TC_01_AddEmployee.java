@@ -2,6 +2,8 @@
 
 
 import java.util.concurrent.TimeUnit;
+
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -39,10 +41,18 @@ public class TC_01_AddEmployee{
 	static WebDriver driver;
 	static SoftAssert assertion;
 	static String excelPath;
+	static String path;
 	
 	@BeforeClass
 	public void setup() throws Exception{
-		String path=System.getProperty("user.dir");
+		 path=System.getProperty("user.dir");
+		
+		 PropertyConfigurator.configure(path+"\\resources\\Log4j.properties");
+			
+		String className=Thread.currentThread().getStackTrace()[1].getClassName().substring(Thread.currentThread().getStackTrace()[1].getClassName().indexOf('.')+1);
+		Utility.setClassName(className);
+		Log.startTestCase(className);
+		
 		Log.info("Path of the Project is :"+path);
 		
 		excelPath=path+"\\TestData\\TestData.xlsx";

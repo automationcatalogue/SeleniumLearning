@@ -3,6 +3,7 @@ package testcases;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,7 +20,6 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import lombok.experimental.UtilityClass;
 import pageMethods.BaseClass;
 import pageMethods.airbnb.AirbnbFilterPage;
 import pageMethods.airbnb.AirbnbHomePage;
@@ -30,10 +30,17 @@ public class TC_11_AirbnbValidation {
 	
 	static WebDriver driver;
 	static SoftAssert assertion;
+	static String path;
 	
 	@BeforeClass
 	public void setup() throws Exception{
-		String path=System.getProperty("user.dir");
+		path=System.getProperty("user.dir");
+		
+		PropertyConfigurator.configure(path+"\\resources\\Log4j.properties");
+		
+		String className=Thread.currentThread().getStackTrace()[1].getClassName().substring(Thread.currentThread().getStackTrace()[1].getClassName().indexOf('.')+1);
+		Utility.setClassName(className);
+		Log.startTestCase(className);
 		Log.info("Path of the Project is :"+path);
 	
 		assertion = new SoftAssert();
@@ -54,7 +61,6 @@ public class TC_11_AirbnbValidation {
 	@Test
 	public void priceRangeFilter() throws Exception {
 
-		
 		AirbnbHomePage.openFilterWindow();
 		
 		//filters
