@@ -55,7 +55,7 @@ public class TC_00_LoginOrangeHRM {
 		
 		new BaseClass(driver);
 		
-		driver.get("https://testseleniumcod-trials72.orangehrmlive.com");
+		driver.get("https://catalogue-trials72.orangehrmlive.com/");
 		Log.info("Orange HRM website is loaded");
 	}
 	

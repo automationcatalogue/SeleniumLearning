@@ -63,7 +63,7 @@ public class TC_01_AddEmployee{
 	public void add_Employee() throws Exception {
 		JavascriptExecutor js = ((JavascriptExecutor)driver);
 		
-		driver.get("https://testseleniumcod-trials72.orangehrmlive.com");
+		driver.get("https://catalogue-trials72.orangehrmlive.com/");
 		Log.info("Orange HRM website is loaded");
 		driver.manage().window().maximize();
 		Log.info("Browser window is maximized");
